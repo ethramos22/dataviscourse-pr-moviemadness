@@ -1,0 +1,10 @@
+table {
+    border-collapse: collapse;
+    font: 14px sans-serif;
+}
+
+th {
+    font-weight: normal;
+    text-align: center;
+}
+

@@ -5,7 +5,7 @@ import os.path
 
 # Popular Movies
 if(not os.path.isfile("main/data/popular.json")):
-    popular = requests.get('https://api.themoviedb.org/3/movie/popular/?api_key=fbdfdfb1677b79c41f66c0aa9123b210').json()
+    popular = requests.get('https://api.themoviedb.org/3/movie/popular/?api_key=fbdfdfb1677b79c41f66c0aa9123b210&language=en-US&page=1').json()
     popular_details = []
     for movie in popular['results']:
         movie_details = requests.get(f'https://api.themoviedb.org/3/movie/{movie["id"]}?api_key=fbdfdfb1677b79c41f66c0aa9123b210&language=en-US').json()
@@ -15,7 +15,6 @@ if(not os.path.isfile("main/data/popular.json")):
     popular_details = json.dumps(popular_details, indent=4)
     with open("main/data/popular.json", "w") as outfile:
         outfile.write(popular_details)
-
 
 # Top Rated Movies
 if(not os.path.isfile("main/data/topRated.json")):
