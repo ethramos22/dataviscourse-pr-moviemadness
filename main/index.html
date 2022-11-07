@@ -2,20 +2,39 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/movieTable.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Madness</title>
 </head>
 <body>
+    <h1>Movie Madness</h1>
     <div id="content-container">
+        <div id="chart-filter"></div>
         <div id="top-content">
-            <div id="movie-list"></div>
-            <div id="movie-detail-card"></div>
-            <div id="overview-chart"></div>
+            <table id="movie-list">
+                <thead>
+                <tr id="columnHeaders">
+                    <th>Movie Name</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th>Popularity</th>
+                    <th>Language</th>
+                </tr>
+                </thead>
+                <tbody id="movie-list-body">
+                </tbody>
+            </table>
+            <svg id="movie-detail-card"></svg>
+            <svg id="overview-chart">
+                <g id="x-axis"></g>
+                <g id="y-axis"></g>
+                <g id="bars"></g>
+                <g id="tooltip"></g>
+            </svg>
         </div>
         <div id="bottom-content"></div>
-    </div>
-    
+    </div> 
 </body>
 </html>
