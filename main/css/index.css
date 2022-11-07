@@ -19,6 +19,8 @@
 #bottom-content {
     height: 40%;
     width: 1500px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #movie-list {
@@ -31,4 +33,8 @@
 
 #overview-chart {
     width: 45%;
+}
+
+.data-viz {
+    width: 30%;
 }
