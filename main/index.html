@@ -3,6 +3,14 @@
 <head>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/movieTable.css">
+
+    <script src="https://d3js.org/d3.v7.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/movieTable.js"></script>
+    <script src="js/distributionChart.js"></script>
+    <script src="js/detailCard.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +21,21 @@
     <div id="content-container">
         <div id="chart-filter"></div>
         <div id="top-content">
-            <table id="movie-list">
-                <thead>
-                <tr id="columnHeaders">
-                    <th>Movie Name</th>
-                    <th>Genre</th>
-                    <th>Rating</th>
-                    <th>Popularity</th>
-                    <th>Language</th>
-                </tr>
-                </thead>
-                <tbody id="movie-list-body">
-                </tbody>
-            </table>
+            <div id="movie-list">
+                <table>
+                    <thead>
+                    <tr id="columnHeaders">
+                        <th>Movie Name</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Language</th>
+                        <th>Revenue</th>
+                    </tr>
+                    </thead>
+                    <tbody id="movie-list-body">
+                    </tbody>
+                </table>
+            </div>
             <svg id="movie-detail-card"></svg>
             <svg id="overview-chart">
                 <g id="x-axis"></g>
@@ -35,7 +45,7 @@
             </svg>
         </div>
         <div id="bottom-content">
-            
+
             <svg class="data-viz">
                 <g id="small-viz-x"></g>
                 <g id="small-viz-y"></g>
