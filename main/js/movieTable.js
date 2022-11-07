@@ -1,0 +1,1 @@
+// This is the table we'll use to display the list of movies and some details about each (popular, topRated, nowPlaying)
