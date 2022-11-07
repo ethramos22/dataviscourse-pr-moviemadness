@@ -1,0 +1,16 @@
+#content-container {
+    height: 100vh;
+    width: 1500px;
+}
+
+#top-content {
+    height: 60vh;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom-content {
+    height: 40vh;
+    width: 1500px;
+}
