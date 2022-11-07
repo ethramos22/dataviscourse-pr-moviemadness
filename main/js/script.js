@@ -19,7 +19,7 @@ const globalMovieData = {
 
 // ***** APPLICATION MOUNTING *****
 loadData().then((loadedData) => {
-    console.log('Here is the loaded data', loadData);
+    console.log('Here is the loaded data', loadedData);
 
     // Setup global data
     globalMovieData.popularMovies = loadedData.popularMovies;
@@ -27,9 +27,9 @@ loadData().then((loadedData) => {
     globalMovieData.nowPlayingMovies = loadedData.nowPlayingMovies;
 
     // Create the visualiztions
-    // const movieTable = new MovieTable();
-    // const movieDetailCard = new MovieDetailCard();
-    // const distributionChart = new DistributionChart();
+    const movieTable = new MovieTable(globalMovieData);
+    const movieDetailCard = new MovieDetailCard(globalMovieData);
+    const distributionChart = new DistributionChart(globalMovieData);
 })
 
 // ***** GLOBAL EVENT BINDING *****
