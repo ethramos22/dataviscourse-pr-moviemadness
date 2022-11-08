@@ -1,49 +1,4 @@
-/* table {
-    border-collapse: collapse;
-    font: 14px sans-serif;
-    table-layout: fixed;
-    border: 1px black solid ;
-    width: 100% ;
-}
-
-th {
-    font-weight: normal;
-    text-align: center;
-    min-width: 20%;
-    width: 20%;
-    border: 1px black solid ;
-}
-
-th, td {
-    text-align: left;
-    width: 20%;
-    border: 1px black solid ;
-
-}
-
-thead tr {
-    display: block;
-    width: 100%;
-}
-
-tbody {
-    display:block;
-    overflow:auto;
-    height:400px;
-    width:100%;
-
-}
-
-/* tbody, thead {
-    display: block;
-}
-
-tbody {
-    overflow: scroll;
-} */
-
- 
-#movie-list-table {
+ #movie-list-table {
     width: 450px;
     height: 100%;
     table-layout: fixed;
@@ -65,7 +20,12 @@ tbody {
 #movie-list-table th,
 #movie-list-table td {
     padding: 5px;
-    /* width: 20%; */
+    width: 20%;
     border: 1px black solid ;
+    line-height: 1;
+}
+
+#movie-list-table td {
+    font-size: 12px;
 }
 

@@ -19,10 +19,6 @@ class MovieTable {
             .domain([0, 10])
             .range([0, this.circumference]);
 
-
-        // console.log('TEST RATING SCALE:')
-        // console.log(this.ratingScale())
-
         this.drawMovieList();
     }
 
