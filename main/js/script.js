@@ -14,7 +14,8 @@ async function loadData() {
 const globalMovieData = {
     popularMovies: null,
     topRatedMovies: null,
-    nowPlayingMovies: null
+    nowPlayingMovies: null,
+    selectedMovie: null
 };
 
 // ***** APPLICATION MOUNTING *****
@@ -25,7 +26,8 @@ loadData().then((loadedData) => {
     globalMovieData.popularMovies = loadedData.popularMovies;
     globalMovieData.topRatedMovies = loadedData.topRatedMovies;
     globalMovieData.nowPlayingMovies = loadedData.nowPlayingMovies;
-
+    // Testing purposes, remove with table interaction
+    globalMovieData.selectedMovie = globalMovieData.popularMovies[0];
     // Create the visualiztions
     const movieTable = new MovieTable(globalMovieData);
     const movieDetailCard = new MovieDetailCard(globalMovieData);

@@ -5,5 +5,52 @@ class MovieDetailCard {
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Movie Detail Card', this.globalMovieData);
+        
+        console.log('selected movie: ', this.globalMovieData.selectedMovie);
+        
+        this.drawPoster();
+    }
+
+    drawPoster() {
+        let d = this.globalMovieData.selectedMovie;
+        let base_image_url = 'https://image.tmdb.org/t/p/w200';
+        let selection = d3.select('#movie-poster');
+        selection.append('div')
+            .attr('id', 'poster-title')
+            .attr('href', d.homepage)
+            .text(d.title);
+        
+        let subhead = selection.append('div')
+            .attr('id', 'poster-subhead');
+        subhead.append('div')
+            .attr('id', 'poster-runtime')
+            .text(d.runtime+' minutes');
+        subhead.append('div')
+            .attr('id', 'poster-genre')
+            .text(d.genres.map(d => d.name).toString());
+        // TODO: format revenue
+        subhead.append('div')
+            .attr('id', 'poster-revenue')
+            .text('$'+d.revenue);
+        
+        let body = selection.append('div')
+            .attr('id', 'poster-body')
+            .classed('float-container', true);
+        body.append('svg')
+            .attr('id', 'poster-image')
+            .classed('float-child', true)
+            .attr('height', 300)
+            .append('image')
+            .attr('href', base_image_url + d.poster_path);
+        body.append('div')
+            .attr('id', 'poster-overview')
+            .classed('float-child', true)
+            .text(d.overview);
+       
+        
+        let footing = selection.append('div')
+            .attr('id', 'poster-footing');
+        footing.append('div')
+            .attr('id', 'poster-related');
     }
 }
