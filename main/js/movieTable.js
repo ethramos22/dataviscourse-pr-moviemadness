@@ -10,6 +10,19 @@ class MovieTable {
         this.movieData = [...new Set(allMovies)];
         console.log('All movies', this.movieData);
 
+        this.vizHeight = 50;
+        this.vizWidth = 70;
+        this.radius = 18;
+
+        this.circumference = this.radius * 2 * Math.PI;
+        this.ratingScale = d3.scaleLinear()
+            .domain([0, 10])
+            .range([0, this.circumference]);
+
+
+        // console.log('TEST RATING SCALE:')
+        // console.log(this.ratingScale())
+
         this.drawMovieList();
     }
 
@@ -24,19 +37,63 @@ class MovieTable {
             .data(this.rowToCellDataTransform)
             .join('td');
 
+        // Draw text items
         let textSelection = cellSelection.filter(d => d.type === 'text');
-        let vizSelection = cellSelection.filter(d => d.type === 'viz');
+        this.drawText(textSelection);
 
+        let vizSelection = cellSelection.filter(d => d.type === 'viz');
+        let svgSelection = vizSelection.selectAll('svg')
+            .data(d => [d])
+            .join('svg')
+            .attr('width', this.vizWidth)
+            .attr('height', this.vizHeight);
+
+        // Draw rating circles
+        let ratingSelection = svgSelection.filter(d => d.viz === 'rating');
+        this.drawRatingCircles(ratingSelection);
+        
+
+    }
+
+    drawRatingCircles(ratingSelection) {
+
+        let ratingGroup = ratingSelection.selectAll('g')
+            .data(d => [d])
+            .join('g')
+            .attr('transform', (d,i) => {
+                return "translate(" + (this.vizWidth/2 ) + "," + (this.vizHeight/2 ) + ")";
+            });
+
+        ratingGroup.append('circle')
+            .attr('r', this.radius)
+            .attr('stroke', 'green')
+            .attr('stroke-width', '3')
+            .attr('stroke-dasharray', d => {
+                const rating = parseFloat(d.value);
+                return(`${this.ratingScale(rating)},${this.circumference}`);
+            })
+            .attr('fill', 'none')
+            .attr('transform', 'rotate(-90)');
+        
+        ratingGroup.append('text')
+            .attr("text-anchor", "middle")
+            .text(d => {
+                const rating = d3.format(".0%")(parseFloat(d.value) / 10);
+                return rating;
+            })
+            .attr('font-size', 13)
+            .attr('dy', '.3em');
+
+    }
+    drawText(textSelection) {
         textSelection.selectAll('text')
             .data(d => [d])
             .join('text')
             .text(d => d.value);
-
-
     }
 
     rowToCellDataTransform(movie) {
-        // Need to return array with 5 objects on it, so that we draw 5 coluns
+        // Need to return array with 5 objects on it, so that we draw 5 columns
         // Each object needs to contain the data relevant to the column, as well as the type of content that it is (ie. text or viz)
 
         const movieName = {
@@ -53,18 +110,21 @@ class MovieTable {
         // Rating is 'vote_average' * 100
         const rating = {
             value: `${movie.vote_average}`,
-            type: 'viz'
+            type: 'viz',
+            viz: 'rating'
         };
 
         let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
         const language = {
             value: languageNames.of(movie.original_language),
             type: 'text'
+
         };
 
         const revenue = {
             value: movie.revenue,
-            type: 'viz'
+            type: 'viz',
+            viz: 'revenue'
         };
         return [movieName, genre, rating, language, revenue];
     };
