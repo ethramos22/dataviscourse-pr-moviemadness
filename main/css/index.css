@@ -1,5 +1,5 @@
 #content-container {
-    height: 800px;
+    height: 900px;
     width: 1500px;
 }
 
@@ -27,7 +27,7 @@
     width: 30%;
 }
 
-#movie-detail-card {
+#movie-poster {
     width: 20%
 }
 
