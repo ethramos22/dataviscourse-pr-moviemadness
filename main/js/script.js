@@ -14,7 +14,8 @@ async function loadData() {
 const globalMovieData = {
     popularMovies: null,
     topRatedMovies: null,
-    nowPlayingMovies: null
+    nowPlayingMovies: null,
+    selectedMovie: null
 };
 
 // ***** APPLICATION MOUNTING *****
