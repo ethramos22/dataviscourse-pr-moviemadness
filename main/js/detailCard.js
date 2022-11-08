@@ -13,7 +13,7 @@ class MovieDetailCard {
 
     drawPoster() {
         let d = this.globalMovieData.selectedMovie;
-        let base_image_url = 'https://image.tmdb.org/t/p/w500';
+        let base_image_url = 'https://image.tmdb.org/t/p/w200';
         let selection = d3.select('#movie-poster');
         selection.append('div')
             .attr('id', 'poster-title')
@@ -39,8 +39,7 @@ class MovieDetailCard {
         body.append('svg')
             .attr('id', 'poster-image')
             .classed('float-child', true)
-            .attr('width', 500)
-            .attr('height', 800)
+            .attr('height', 300)
             .append('image')
             .attr('href', base_image_url + d.poster_path);
         body.append('div')

@@ -15,7 +15,6 @@
 
 #poster-body {
     display: flex;
-    align-items: flex-start;
 }
 
 #poster-subhead {
@@ -27,7 +26,7 @@
 /* Classes */
 
 .float-container {
-    padding: 20px;
+    padding: 0px;
 }
 
 .float-child {
