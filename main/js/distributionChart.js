@@ -13,7 +13,7 @@ class DistributionChart {
         this.ANIMATION_DUATION = 300;
 
         // TODO: Fix when movies have multiple genres
-        let groupedData = d3.group(this.globalMovieData.allMovies, d => d.genres[0].name);
+        let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
         console.log('groupedData', groupedData);
 
         // Scales
