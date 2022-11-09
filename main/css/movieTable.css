@@ -54,3 +54,8 @@
 #movie-list-table tbody::-webkit-scrollbar {
     display: none;
 }
+
+#movie-list-table tbody tr:hover {
+    cursor: pointer;
+    background: #d1d1d1;
+}
