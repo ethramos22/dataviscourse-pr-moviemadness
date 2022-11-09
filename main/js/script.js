@@ -41,9 +41,13 @@ loadData().then((loadedData) => {
     // Create the visualiztions
     const movieTable = new MovieTable(globalMovieData);
     globalMovieData.movieTable = movieTable;
+    
     const movieDetailCard = new MovieDetailCard(globalMovieData);
     globalMovieData.moviePoster = movieDetailCard;
+    
     const distributionChart = new DistributionChart(globalMovieData);
+
+    const budgetVsRevenueChart = new BudgetVsRevenueChart(globalMovieData);
 
 
     d3.selectAll('.change-movie-selection-btn')
