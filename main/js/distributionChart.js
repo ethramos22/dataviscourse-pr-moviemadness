@@ -8,7 +8,7 @@ class DistributionChart {
         this.globalMovieData = globalMovieData;
         
         this.CHART_WIDTH = 500;
-        this.CHART_HEIGHT = 250;
+        this.CHART_HEIGHT = 500;
         this.MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
         this.ANIMATION_DUATION = 300;
 
