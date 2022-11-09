@@ -111,7 +111,7 @@ class MovieTable {
                 let rating = parseFloat(d.value);
                 if(rating < 6)
                     return 'red';
-                if(rating < 8.5)
+                if(rating < 7.4)
                     return 'yellow';
                 return 'green';
             })
