@@ -5,9 +5,7 @@ class MovieTable {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Movie Table', this.globalMovieData);
 
-        // Combine all movies, then filter out duplicates by initializing a Set
-        const allMovies = this.globalMovieData.popularMovies.concat(this.globalMovieData.topRatedMovies, this.globalMovieData.nowPlayingMovies);
-        this.movieData = [...new Set(allMovies)];
+        this.movieData = this.globalMovieData.allMovies;
         console.log('All movies', this.movieData);
 
         this.vizHeight = 50;
@@ -27,7 +25,8 @@ class MovieTable {
         let rowSelection = d3.select('#movie-list-body')
             .selectAll('tr')
             .data(this.movieData)
-            .join('tr');
+            .join('tr')
+            .on('click', (_, d) => this.selectMovie(_, d));
 
         let cellSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
@@ -86,6 +85,11 @@ class MovieTable {
             .data(d => [d])
             .join('text')
             .text(d => d.value);
+    }
+
+    selectMovie(_, d) {
+        this.globalMovieData.selectedMovie = d;
+        this.globalMovieData.moviePoster.drawPoster();
     }
 
     rowToCellDataTransform(movie) {
