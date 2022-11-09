@@ -18,7 +18,8 @@ const globalMovieData = {
     displayedMovies: null,
     selectedMovie: null,
     movieTable: null,
-    moviePoster: null
+    moviePoster: null,
+    movieChart: null
 };
 
 // have list of displayedMovies
@@ -44,6 +45,7 @@ loadData().then((loadedData) => {
     const movieDetailCard = new MovieDetailCard(globalMovieData);
     globalMovieData.moviePoster = movieDetailCard;
     const distributionChart = new DistributionChart(globalMovieData);
+    globalMovieData.movieChart = distributionChart;
 
 
     d3.selectAll('.change-movie-selection-btn')
@@ -63,6 +65,7 @@ loadData().then((loadedData) => {
         globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
         globalMovieData.movieTable.updateMovieList();
         globalMovieData.moviePoster.drawPoster();
+        globalMovieData.movieChart.drawChart();
     });
 })
 
