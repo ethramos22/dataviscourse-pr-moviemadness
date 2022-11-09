@@ -8,14 +8,39 @@ class MovieTable {
         this.movieData = this.globalMovieData.allMovies;
         console.log('All movies', this.movieData);
 
-        this.vizHeight = 50;
-        this.vizWidth = 70;
-        this.radius = 18;
+        this.vizHeight = 25;
+        this.vizWidth = 50;
+        this.radius = 10;
+        this.fontSize = 10;
 
         this.circumference = this.radius * 2 * Math.PI;
         this.ratingScale = d3.scaleLinear()
             .domain([0, 10])
             .range([0, this.circumference]);
+
+        this.revenueScale = d3.scaleLinear()
+            .domain(d3.extent(this.movieData.map(d => d.revenue)))
+            .range([1, this.vizWidth]);
+
+        
+
+        let revenueAxis = d3.axisTop()
+            .scale(this.revenueScale)
+            .tickFormat(d3.format(d3.format("$,")))
+            .ticks(2);
+        
+            
+        d3.select('#revenue-header')
+            .append('svg')
+            .attr('width', this.vizWidth)
+            .attr('height', 20) 
+            .append('g')
+            .attr('id', 'revenue-axis')
+            .attr('transform', 'translate(0, 20)');
+            
+        d3.select('#revenue-header')
+                .select('svg g')
+                .call(revenueAxis)
 
         this.drawMovieList();
     }
@@ -46,12 +71,32 @@ class MovieTable {
         // Draw rating circles
         let ratingSelection = svgSelection.filter(d => d.viz === 'rating');
         this.drawRatingCircles(ratingSelection);
+
+        // Draw revenue
+        let revenueSelection = svgSelection.filter(d => d.viz === 'revenue');
+        this.drawRevenueBars(revenueSelection);
         
 
     }
 
-    drawRatingCircles(ratingSelection) {
+    drawRevenueBars(revenueSelection) {
 
+        revenueSelection.selectAll('rect')
+            .data(d => [d])
+            .join('rect')
+            .attr('height', this.vizHeight)
+            .attr('width', d => this.revenueScale(d.value));
+
+        revenueSelection.selectAll('text')
+            .data(d => [d])
+            .join('text')
+            .text(d => d3.format("$,")(d.value))
+            .attr('x', 5)
+            .attr('y', this.vizHeight/1.75)
+            .attr('fill', 'red');
+    }
+
+    drawRatingCircles(ratingSelection) {
         let ratingGroup = ratingSelection.selectAll('g')
             .data(d => [d])
             .join('g')
@@ -61,7 +106,14 @@ class MovieTable {
 
         ratingGroup.append('circle')
             .attr('r', this.radius)
-            .attr('stroke', 'green')
+            .attr('stroke', d => {
+                let rating = parseFloat(d.value);
+                if(rating < 6)
+                    return 'red';
+                if(rating < 8.5)
+                    return 'yellow';
+                return 'green';
+            })
             .attr('stroke-width', '3')
             .attr('stroke-dasharray', d => {
                 const rating = parseFloat(d.value);
@@ -76,7 +128,7 @@ class MovieTable {
                 const rating = d3.format(".0%")(parseFloat(d.value) / 10);
                 return rating;
             })
-            .attr('font-size', 13)
+            // .attr('font-size', this.fontSize)
             .attr('dy', '.3em');
 
     }
