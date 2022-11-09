@@ -8,9 +8,9 @@ class MovieTable {
         this.movieData = this.globalMovieData.allMovies;
         console.log('All movies', this.movieData);
 
-        this.vizHeight = 25;
-        this.vizWidth = 50;
-        this.radius = 10;
+        this.vizHeight = 60;
+        this.vizWidth = 70;
+        this.radius = 14;
         this.fontSize = 10;
 
         this.circumference = this.radius * 2 * Math.PI;
@@ -85,7 +85,8 @@ class MovieTable {
             .data(d => [d])
             .join('rect')
             .attr('height', this.vizHeight)
-            .attr('width', d => this.revenueScale(d.value));
+            .attr('width', d => this.revenueScale(d.value))
+            .attr('y', 5);
 
         revenueSelection.selectAll('text')
             .data(d => [d])
@@ -128,7 +129,6 @@ class MovieTable {
                 const rating = d3.format(".0%")(parseFloat(d.value) / 10);
                 return rating;
             })
-            // .attr('font-size', this.fontSize)
             .attr('dy', '.3em');
 
     }

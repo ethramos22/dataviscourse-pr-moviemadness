@@ -1,24 +1,24 @@
 #content-container {
-    height: 500px;
-    width: 1000px;
+    height: 900px;
+    width: 1400px;
 }
 
 #chart-filter {
     height: 5%;
-    width: 1000px;
+    width: 1400px;
     text-align: left;
 }
 
 #top-content {
     height: 60%;
-    width: 1000px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
 }
 
 #bottom-content {
     height: 40%;
-    width: 1000px;
+    width: 1400px;
     display: flex;
     justify-content: space-between;
 }
