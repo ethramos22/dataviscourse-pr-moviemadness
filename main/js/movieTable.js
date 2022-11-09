@@ -22,6 +22,8 @@ class MovieTable {
             .domain(d3.extent(this.movieData.map(d => d.revenue)))
             .range([1, this.vizWidth]);
 
+        
+
         let revenueAxis = d3.axisTop()
             .scale(this.revenueScale)
             .tickFormat(d3.format(d3.format("$,")))
@@ -39,9 +41,6 @@ class MovieTable {
         d3.select('#revenue-header')
                 .select('svg g')
                 .call(revenueAxis)
-
-
-
 
         this.drawMovieList();
     }
@@ -81,12 +80,7 @@ class MovieTable {
     }
 
     drawRevenueBars(revenueSelection) {
-        // let revenueGroups = revenueSelection.selectAll('g')
-        //     .data(d => [d, d])
-        //     .join('g');
 
-        // let revenueTextGroup = revenueGroups.filter((d,i) => i === 0);
-        // let revenueBarGroup = revenueGroups.filter((d,i) => i === 1);
         revenueSelection.selectAll('rect')
             .data(d => [d])
             .join('rect')
@@ -97,15 +91,9 @@ class MovieTable {
             .data(d => [d])
             .join('text')
             .text(d => d3.format("$,")(d.value))
-            .attr('x', this.vizWidth/10)
-            .attr('y', this.vizHeight/2)
+            .attr('x', 5)
+            .attr('y', this.vizHeight/1.75)
             .attr('fill', 'red');
-
-            
-
-        
-
-        // revenueSelection
     }
 
     drawRatingCircles(ratingSelection) {
@@ -118,7 +106,14 @@ class MovieTable {
 
         ratingGroup.append('circle')
             .attr('r', this.radius)
-            .attr('stroke', 'green')
+            .attr('stroke', d => {
+                let rating = parseFloat(d.value);
+                if(rating < 6)
+                    return 'red';
+                if(rating < 8.5)
+                    return 'yellow';
+                return 'green';
+            })
             .attr('stroke-width', '3')
             .attr('stroke-dasharray', d => {
                 const rating = parseFloat(d.value);
