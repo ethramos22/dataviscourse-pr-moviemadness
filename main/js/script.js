@@ -18,7 +18,8 @@ const globalMovieData = {
     displayedMovies: null,
     selectedMovie: null,
     movieTable: null,
-    moviePoster: null
+    moviePoster: null,
+    movieChart: null
 };
 
 // have list of displayedMovies
@@ -46,6 +47,7 @@ loadData().then((loadedData) => {
     globalMovieData.moviePoster = movieDetailCard;
     
     const distributionChart = new DistributionChart(globalMovieData);
+    globalMovieData.movieChart = distributionChart;
 
     const budgetVsRevenueChart = new BudgetVsRevenueChart(globalMovieData);
     const budgetVsRatingChart = new BudgetVsRatingChart(globalMovieData);
@@ -70,6 +72,7 @@ loadData().then((loadedData) => {
         globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
         globalMovieData.movieTable.updateMovieList();
         globalMovieData.moviePoster.drawPoster();
+        globalMovieData.movieChart.drawChart();
     });
 })
 

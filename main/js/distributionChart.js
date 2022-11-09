@@ -11,11 +11,19 @@ class DistributionChart {
         this.CHART_HEIGHT = 500;
         this.MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
         this.ANIMATION_DUATION = 300;
+        
+        this.setupChart();
+        this.drawChart();
+    }
 
+    setupChart() {
+    }
+
+    drawChart() {
         // TODO: Fix when movies have multiple genres
         let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
         console.log('groupedData', groupedData);
-
+        let data = groupedData;
         // Scales
         this.xScale = d3.scaleBand()
             .domain(groupedData.keys())
@@ -45,15 +53,6 @@ class DistributionChart {
                 '#198038', '#6929c4', '#9f1853', '#005d5d',
                 '#002d9c', '#8a3800', '#1192e8', '#ee538b',
                 '#b28600', '#a56eff', '#009d9a']);
-        
-        this.setupChart();
-        this.drawChart(groupedData);
-    }
-
-    setupChart() {
-    }
-
-    drawChart(data) {
         // X Axis
         let xAxis = d3.select('#x-axis')
             .attr('transform', `translate(0,${this.CHART_HEIGHT - this.MARGIN.bottom})`)
