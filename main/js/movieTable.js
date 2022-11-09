@@ -5,7 +5,7 @@ class MovieTable {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Movie Table', this.globalMovieData);
 
-        this.movieData = this.globalMovieData.allMovies;
+        this.movieData = this.globalMovieData.displayedMovies;
         console.log('All movies', this.movieData);
 
         this.vizHeight = 60;
@@ -105,7 +105,9 @@ class MovieTable {
                 return "translate(" + (this.vizWidth/2 ) + "," + (this.vizHeight/2 ) + ")";
             });
 
-        ratingGroup.append('circle')
+        ratingGroup.selectAll('circle')
+            .data(d => [d])
+            .join('circle')
             .attr('r', this.radius)
             .attr('stroke', d => {
                 let rating = parseFloat(d.value);
@@ -123,7 +125,9 @@ class MovieTable {
             .attr('fill', 'none')
             .attr('transform', 'rotate(-90)');
         
-        ratingGroup.append('text')
+        ratingGroup.selectAll('text')
+            .data(d=> [d])
+            .join('text')
             .attr("text-anchor", "middle")
             .text(d => {
                 const rating = d3.format(".0%")(parseFloat(d.value) / 10);
@@ -180,4 +184,9 @@ class MovieTable {
         };
         return [movieName, genre, rating, language, revenue];
     };
+
+    updateMovieList() {
+        this.movieData = this.globalMovieData.displayedMovies;
+        this.drawMovieList();
+    }
 }

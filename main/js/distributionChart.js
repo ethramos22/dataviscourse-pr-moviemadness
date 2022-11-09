@@ -8,8 +8,8 @@ class DistributionChart {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Distribution Chart', this.globalMovieData);
         // TODO: Fix when movies have multiple genres
-        let groupedData = d3.group(this.globalMovieData.allMovies, d => d.genres[0].name);
-        console.log('groupedData', groupedData);
+        // let groupedData = d3.group(this.globalMovieData.allMovies, d => d.genres[0].name);
+        // console.log('groupedData', groupedData);
         this.setupChart();
         this.drawChart();
     }
