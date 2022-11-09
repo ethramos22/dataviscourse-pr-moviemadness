@@ -26,7 +26,7 @@ class MovieTable {
             .selectAll('tr')
             .data(this.movieData)
             .join('tr')
-            .on('click', (event, d) => this.selectMovie(_, d));
+            .on('click', (_, d) => this.selectMovie(_, d));
 
         let cellSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
