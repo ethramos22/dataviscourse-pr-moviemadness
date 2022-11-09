@@ -55,7 +55,7 @@ class DistributionChart {
 
     drawChart(data) {
         // X Axis
-        d3.select('#x-axis')
+        let xAxis = d3.select('#x-axis')
             .attr('transform', `translate(0,${this.CHART_HEIGHT - this.MARGIN.bottom})`)
             .call(d3.axisBottom(this.xScale));
         // Y Axis
@@ -75,5 +75,12 @@ class DistributionChart {
             .attr('fill', d => {
                 return this.colorScale(d[0]);
             });
+        // Tick rotate: https://bl.ocks.org/mbostock/4403522
+        xAxis.selectAll('.tick text')
+            .attr("y", 0)
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .attr("transform", "rotate(75)")
+            .style("text-anchor", "start");
     }
 }
