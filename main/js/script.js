@@ -48,6 +48,9 @@ loadData().then((loadedData) => {
     const distributionChart = new DistributionChart(globalMovieData);
 
     const budgetVsRevenueChart = new BudgetVsRevenueChart(globalMovieData);
+    const budgetVsRatingChart = new BudgetVsRatingChart(globalMovieData);
+    const ratingVsRevenueChart = new RatingVsRevenueChart(globalMovieData);
+
 
 
     d3.selectAll('.change-movie-selection-btn')

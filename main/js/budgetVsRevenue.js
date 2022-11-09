@@ -31,9 +31,9 @@ class BudgetVsRevenueChart {
 
     drawAxis() {
         // Tranlate axis to correct position
-        let xAxisSelect = d3.select('#bvr-x-axis')
+        let xAxisSelect = d3.select('#bvrev-x-axis')
             .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
-        let yAxisSelect = d3.select('#bvr-y-axis')
+        let yAxisSelect = d3.select('#bvrev-y-axis')
             .attr('transform', `translate(${this.MARGIN.left}, 0)`)
         
         // xAxis
