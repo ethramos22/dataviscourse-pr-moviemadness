@@ -26,7 +26,7 @@ class MovieTable {
             .selectAll('tr')
             .data(this.movieData)
             .join('tr')
-            .on('click', d => this.selectMovie(d));
+            .on('click', (event, d) => this.selectMovie(_, d));
 
         let cellSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
@@ -87,9 +87,8 @@ class MovieTable {
             .text(d => d.value);
     }
 
-    selectMovie(d) {
-        let data = d.path[2]['__data__'];
-        this.globalMovieData.selectedMovie = data;
+    selectMovie(_, d) {
+        this.globalMovieData.selectedMovie = d;
         this.globalMovieData.moviePoster.drawPoster();
     }
 
