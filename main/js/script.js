@@ -31,11 +31,13 @@ loadData().then((loadedData) => {
     globalMovieData.popularMovies = loadedData.popularMovies;
     globalMovieData.topRatedMovies = loadedData.topRatedMovies;
     globalMovieData.nowPlayingMovies = loadedData.nowPlayingMovies;
+    
     // Combine all movies, then filter out duplicates by initializing a Set
     const allMovies = globalMovieData.popularMovies.concat(globalMovieData.topRatedMovies, globalMovieData.nowPlayingMovies);
     globalMovieData.displayedMovies = [...new Set(allMovies)];
+    
     // Start poster as first movie on list
-    globalMovieData.selectedMovie = globalMovieData.popularMovies[0];
+    globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
     // Create the visualiztions
     const movieTable = new MovieTable(globalMovieData);
     globalMovieData.movieTable = movieTable;
@@ -58,7 +60,9 @@ loadData().then((loadedData) => {
             globalMovieData.displayedMovies = globalMovieData[value];
         }
         // console.log('calling updateMovieList');
+        globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
         globalMovieData.movieTable.updateMovieList();
+        globalMovieData.moviePoster.drawPoster();
     });
 })
 
