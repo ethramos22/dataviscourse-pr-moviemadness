@@ -25,6 +25,26 @@ class DistributionChart {
             .domain([0, d3.max(groupedData, d => d[1].length)])
             .range([this.CHART_HEIGHT - this.MARGIN.bottom - this.MARGIN.top, 0])
             .nice();
+        // Set Color Scale
+        this.colorScale = d3.scaleOrdinal()
+            .domain(['Horror',
+                'Action',
+                'Thriller',
+                'Fantasy',
+                'Science Fiction',
+                'War',
+                'Drama',
+                'Animation',
+                'Comedy',
+                'Family',
+                'Romance',
+                'Western',
+                'Music',
+                'Crime'])
+            .range(['#570408', '#fa4d56', '#012749',
+                '#198038', '#6929c4', '#9f1853', '#005d5d',
+                '#002d9c', '#8a3800', '#1192e8', '#ee538b',
+                '#b28600', '#a56eff', '#009d9a']);
         
         this.setupChart();
         this.drawChart(groupedData);
@@ -51,6 +71,9 @@ class DistributionChart {
             .attr('x', d => this.xScale(d[0]))
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - this.yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', this.xScale.bandwidth())
-            .attr('height', d => this.yScale(0) - this.yScale(d[1].length));
+            .attr('height', d => this.yScale(0) - this.yScale(d[1].length))
+            .attr('fill', d => {
+                return this.colorScale(d[0]);
+            });
     }
 }
