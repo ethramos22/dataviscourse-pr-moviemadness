@@ -15,7 +15,9 @@ const globalMovieData = {
     popularMovies: null,
     topRatedMovies: null,
     nowPlayingMovies: null,
-    selectedMovie: null
+    selectedMovie: null,
+    movieTable: null,
+    moviePoster: null
 };
 
 // ***** APPLICATION MOUNTING *****
@@ -26,11 +28,13 @@ loadData().then((loadedData) => {
     globalMovieData.popularMovies = loadedData.popularMovies;
     globalMovieData.topRatedMovies = loadedData.topRatedMovies;
     globalMovieData.nowPlayingMovies = loadedData.nowPlayingMovies;
-    // Testing purposes, remove with table interaction
+    // Start poster as first movie on list
     globalMovieData.selectedMovie = globalMovieData.popularMovies[0];
     // Create the visualiztions
     const movieTable = new MovieTable(globalMovieData);
+    globalMovieData.movieTable = movieTable;
     const movieDetailCard = new MovieDetailCard(globalMovieData);
+    globalMovieData.moviePoster = movieDetailCard;
     const distributionChart = new DistributionChart(globalMovieData);
 })
 

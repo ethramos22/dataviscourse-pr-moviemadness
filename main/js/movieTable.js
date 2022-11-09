@@ -27,7 +27,8 @@ class MovieTable {
         let rowSelection = d3.select('#movie-list-body')
             .selectAll('tr')
             .data(this.movieData)
-            .join('tr');
+            .join('tr')
+            .on('click', d => this.selectMovie(d));
 
         let cellSelection = rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
@@ -86,6 +87,12 @@ class MovieTable {
             .data(d => [d])
             .join('text')
             .text(d => d.value);
+    }
+
+    selectMovie(d) {
+        let data = d.path[2]['__data__'];
+        this.globalMovieData.selectedMovie = data;
+        this.globalMovieData.moviePoster.drawPoster();
     }
 
     rowToCellDataTransform(movie) {
