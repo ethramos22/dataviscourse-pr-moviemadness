@@ -14,22 +14,22 @@ class MovieDetailCard {
     posterSetup() {
         let selection = d3.select('#movie-poster');
         selection.append('div')
-            .attr('id', 'poster-title')
+            .attr('id', 'poster-title');
         // Setup Subheader
         let subhead = selection.append('div')
             .attr('id', 'poster-subhead');
         subhead.append('div')
-            .attr('id', 'poster-runtime')
+            .attr('id', 'poster-runtime');
         subhead.append('div')
-            .attr('id', 'poster-genre')
+            .attr('id', 'poster-genre');
         subhead.append('div')
-            .attr('id', 'poster-revenue')
+            .attr('id', 'poster-revenue');
         // Setup Image section
         selection.append('svg')
             .attr('id', 'poster-svg')
             .attr('height', 300)
             .append('image')
-            .attr('id', 'poster-image')
+            .attr('id', 'poster-image');
         // Overview    
         selection.append('div')
             .attr('id', 'poster-overview');    
@@ -58,7 +58,7 @@ class MovieDetailCard {
             .text(d.genres.map(d => d.name).toString());
         // TODO: format revenue
         d3.select('#poster-revenue')
-            .text('$' + d.revenue);
+            .text(d.revenue == "0" ? "" : '$' + d3.format("~s")(d.revenue));
         // Image of poster
         d3.select('#poster-image')
             .attr('href', base_image_url + d.poster_path);
