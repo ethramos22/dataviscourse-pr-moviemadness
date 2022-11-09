@@ -15,6 +15,7 @@ const globalMovieData = {
     popularMovies: null,
     topRatedMovies: null,
     nowPlayingMovies: null,
+    allMovies: null,
     selectedMovie: null,
     movieTable: null,
     moviePoster: null
@@ -28,6 +29,9 @@ loadData().then((loadedData) => {
     globalMovieData.popularMovies = loadedData.popularMovies;
     globalMovieData.topRatedMovies = loadedData.topRatedMovies;
     globalMovieData.nowPlayingMovies = loadedData.nowPlayingMovies;
+    // Combine all movies, then filter out duplicates by initializing a Set
+    const allMovies = globalMovieData.popularMovies.concat(globalMovieData.topRatedMovies, globalMovieData.nowPlayingMovies);
+    globalMovieData.allMovies = [...new Set(allMovies)];
     // Start poster as first movie on list
     globalMovieData.selectedMovie = globalMovieData.popularMovies[0];
     // Create the visualiztions
