@@ -14,7 +14,7 @@ class BudgetVsRatingChart {
             .range([this.MARGIN.left, this.CHART_WIDTH - this.MARGIN.right]);
 
         this.yScale = d3.scaleLinear()
-            .domain([0,10])
+            .domain([5,10])
             .range([this.CHART_HEIGHT - this.MARGIN.bottom, this.MARGIN.top])
 
 
@@ -24,6 +24,7 @@ class BudgetVsRatingChart {
     drawChart() {
 
         this.drawAxis();
+        this.drawCircles();
 
     }
 
@@ -45,8 +46,23 @@ class BudgetVsRatingChart {
         yAxisSelect.call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
+    }
 
+    drawCircles() {
+        let circleSelection = d3.select('#bvrat-content')
+            .selectAll('circle')
+            .data(this.movieData)
+            .join('circle')
+            .transition().duration(300)
+            .attr('cx', d => this.xScale(d.budget))
+            .attr('cy', d => this.yScale(d.vote_average))
+            .attr('r', 3)
+            .attr('stroke', 'black')
+            .attr('fill', 'red');
+    }
 
-
+    updateChart() {
+        this.movieData = this.globalMovieData.displayedMovies;
+        this.drawChart();
     }
 }
