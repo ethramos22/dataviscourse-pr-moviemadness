@@ -27,6 +27,7 @@ class BudgetVsRevenueChart {
         this.drawAxis();
 
         //TODO: Draw circles
+        this.drawCircles();
     }
 
     drawAxis() {
@@ -47,7 +48,24 @@ class BudgetVsRevenueChart {
         yAxisSelect.call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
+    }
 
+    drawCircles() {
+        let circleSelection = d3.select('#bvrev-content')
+            .selectAll('circle')
+            .data(this.movieData)
+            .join('circle')
+            .transition().duration(300)
+            .attr('cx', d => this.xScale(d.budget))
+            .attr('cy', d => this.yScale(d.revenue))
+            .attr('r', 3)
+            .attr('stroke', 'black')
+            .attr('fill', 'red');
+    }
+
+    updateChart() {
+        this.movieData = this.globalMovieData.displayedMovies;
+        this.drawChart();
     }
 
 }
