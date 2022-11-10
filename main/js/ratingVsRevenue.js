@@ -9,13 +9,17 @@ class RatingVsRevenueChart {
         this.CHART_WIDTH = 420;
 
         this.xScale = d3.scaleLinear()
-            .domain([5,10])
+            .domain(d3.extent(this.movieData.map(d => d.revenue)))
             .range([this.MARGIN.left, this.CHART_WIDTH - this.MARGIN.right]);
 
         this.yScale = d3.scaleLinear()
-            .domain(d3.extent(this.movieData.map(d => d.revenue)))
+            .domain(d3.extent(this.movieData.map(d => d.vote_average)))
             .range([this.CHART_HEIGHT - this.MARGIN.bottom, this.MARGIN.top])
 
+        d3.select('#rvr-x-axis')
+            .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
+        d3.select('#rvr-y-axis')
+            .attr('transform', `translate(${this.MARGIN.left}, 0)`)
 
         this.drawChart();
     }
@@ -30,21 +34,20 @@ class RatingVsRevenueChart {
     }
 
     drawAxis() {
-        // Tranlate axis to correct position
-        let xAxisSelect = d3.select('#rvr-x-axis')
-            .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
-        let yAxisSelect = d3.select('#rvr-y-axis')
-            .attr('transform', `translate(${this.MARGIN.left}, 0)`)
+        this.xScale
+        .domain(d3.extent(this.movieData.map(d => d.revenue)));
+        this.yScale
+            .domain(d3.extent(this.movieData.map(d => d.vote_average)));
         
         // xAxis
         let xAxis = d3.axisBottom()
             .scale(this.xScale);
-        xAxisSelect.call(xAxis);
+            d3.select('#rvr-x-axis').call(xAxis);
 
         // yAxis
         let yAxis = d3.axisLeft()
             .scale(this.yScale);
-        yAxisSelect.call(yAxis);
+        d3.select('#rvr-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
     }
@@ -55,8 +58,8 @@ class RatingVsRevenueChart {
             .data(this.movieData)
             .join('circle')
             .transition().duration(300)
-            .attr('cx', d => this.xScale(d.vote_average))
-            .attr('cy', d => this.yScale(d.revenue))
+            .attr('cx', d => this.xScale(d.revenue))
+            .attr('cy', d => this.yScale(d.vote_average))
             .attr('r', 3)
             .attr('stroke', 'black')
             .attr('fill', 'red');

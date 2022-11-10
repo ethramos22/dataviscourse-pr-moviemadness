@@ -16,6 +16,11 @@ class BudgetVsRevenueChart {
             .domain(d3.extent(this.movieData.map(d => d.revenue)))
             .range([this.CHART_HEIGHT - this.MARGIN.bottom, this.MARGIN.top])
 
+        // position axis
+        d3.select('#bvrev-x-axis')
+            .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
+        d3.select('#bvrev-y-axis')
+            .attr('transform', `translate(${this.MARGIN.left}, 0)`)
 
         this.drawChart();
     }
@@ -31,21 +36,21 @@ class BudgetVsRevenueChart {
     }
 
     drawAxis() {
-        // Tranlate axis to correct position
-        let xAxisSelect = d3.select('#bvrev-x-axis')
-            .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
-        let yAxisSelect = d3.select('#bvrev-y-axis')
-            .attr('transform', `translate(${this.MARGIN.left}, 0)`)
-        
-        // xAxis
+        // Change domain to be specific to displayed data
+        this.xScale
+            .domain(d3.extent(this.movieData.map(d => d.budget)));
+        this.yScale
+            .domain(d3.extent(this.movieData.map(d => d.revenue)));
+
+        // draw xAxis
         let xAxis = d3.axisBottom()
             .scale(this.xScale);
-        xAxisSelect.call(xAxis);
+        d3.select('#bvrev-x-axis').call(xAxis);
 
-        // yAxis
+        // draw yAxis
         let yAxis = d3.axisLeft()
             .scale(this.yScale);
-        yAxisSelect.call(yAxis);
+        d3.select('#bvrev-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
     }
