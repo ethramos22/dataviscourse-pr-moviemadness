@@ -23,18 +23,18 @@
     <title>Movie Madness</title>
 </head>
 <body>
-    <h1>Movie Madness</h1>
     <div id="content-container">
-        <div id="chart-filter">
-            <button class="change-movie-selection-btn" value="all">All</button>
-            <button class="change-movie-selection-btn" value="nowPlayingMovies">Now Playing</button>
-            <button class="change-movie-selection-btn" value="popularMovies">Popular</button>
-            <button class="change-movie-selection-btn" value="topRatedMovies">Top Rated</button>
-
-
+        <div class="header">
+            <h1 id="page-title">Movie Madness</h1>
+            <div id="chart-filter">
+                <button class="change-movie-selection-btn btn" value="all">All</button>
+                <button class="change-movie-selection-btn btn" value="nowPlayingMovies">Now Playing</button>
+                <button class="change-movie-selection-btn btn" value="popularMovies">Popular</button>
+                <button class="change-movie-selection-btn btn" value="topRatedMovies">Top Rated</button>
+            </div>
         </div>
         <div id="top-content">
-            <div id="movie-list">
+            <div id="movie-list" class="card">
                 <table id="movie-list-table">
                     <thead>
                     <tr id="columnHeaders">
@@ -49,8 +49,8 @@
                     </tbody>
                 </table>
             </div>
-            <div id="movie-poster"></div>
-            <svg id="overview-chart">
+            <div id="movie-poster" class="card"></div>
+            <svg id="overview-chart" class="card">
                 <g id="x-axis"></g>
                 <g id="y-axis"></g>
                 <g id="bars"></g>
@@ -58,21 +58,17 @@
             </svg>
         </div>
         <div id="bottom-content">
-
-            <svg class="data-viz">
+            <svg class="data-viz card">
                 <g id="bvrev-x-axis"></g>
                 <g id="bvrev-y-axis"></g>
                 <g id="bvrev-content"></g>
-
             </svg>
-
-            <svg class="data-viz">
+            <svg class="data-viz card">
                 <g id="bvrat-x-axis"></g>
                 <g id="bvrat-y-axis"></g>
                 <g id="bvrat-content"></g>
             </svg>
-            
-            <svg class="data-viz">
+            <svg class="data-viz card">
                 <g id="rvr-x-axis"></g>
                 <g id="rvr-y-axis"></g>
                 <g id="rvr-content"></g>
