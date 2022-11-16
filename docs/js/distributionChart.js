@@ -24,18 +24,40 @@ class DistributionChart {
     }
 
     setupChart() {
+        var tooltip = d3.select('#overview-chart').append('div')
+            .style('visibility', 'hidden')
+            .style('position', 'absolute')
+            .style('background', '#fff')
+            .style('border-radius', 5)
+            .style('padding', "0.6em 1em")
+            .style('box-shadow', '0 6px 8px rgba(52, 73, 94, .2), 0 1px 1px rgba(52, 73, 94, 0.1)')
+            .style('z-index', 10)
+            .style('text-align', 'center')
+            .classed('tooltip', true)
+            .attr('id', 'tooltip-barchart');
+        tooltip.append('div')
+            .attr('id', 'movie-amount');
+        tooltip.append('div')
+            .attr('id', 'movies');
+        tooltip.append('div')
+            .attr('id', 'percentage');
     }
 
     drawChart() {
         // TODO: Fix when movies have multiple genres
         let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
         console.log('groupedData', groupedData);
-        let data = groupedData;
+        let data = groupedData; 
+        const tooltip = d3.select('#tooltip-barchart');
         function onMouseEnter(e, datum) {
             console.log(datum);
+            console.log(e);
+            // Outline Bar
+            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
         }
-        function onMouseLeave() {
+        function onMouseLeave(e) {
             console.log('left');
+            d3.select(e.path[0]).attr('fill', 'lightgrey');
         }
         // Scales
         this.xScale = d3.scaleBand()
