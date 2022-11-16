@@ -31,6 +31,12 @@ class DistributionChart {
         let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
         console.log('groupedData', groupedData);
         let data = groupedData;
+        function onMouseEnter(e, datum) {
+            console.log(datum);
+        }
+        function onMouseLeave() {
+            console.log('left');
+        }
         // Scales
         this.xScale = d3.scaleBand()
             .domain(groupedData.keys())
@@ -51,8 +57,11 @@ class DistributionChart {
         // Draw Chart
         let bars = d3.select('#bars')
             .selectAll('rect')
-            .data(data);
+            .data(data)
+        
         bars.join('rect')
+            .on('mouseenter', onMouseEnter)
+            .on('mouseleave', onMouseLeave)
             .transition().duration(this.ANIMATION_DUATION)
             .attr('x', d => this.xScale(d[0]))
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - this.yScale(d[1].length)) + this.MARGIN.top)

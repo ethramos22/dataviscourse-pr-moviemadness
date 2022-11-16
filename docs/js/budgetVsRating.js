@@ -51,6 +51,13 @@ class BudgetVsRatingChart {
         d3.select('#bvrat-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
+        // Tick rotate: https://bl.ocks.org/mbostock/4403522
+        d3.select('#bvrat-x-axis').selectAll('.tick text')
+            .attr("y", 0)
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .attr("transform", "rotate(55)")
+            .style("text-anchor", "start");
     }
 
     drawCircles() {
