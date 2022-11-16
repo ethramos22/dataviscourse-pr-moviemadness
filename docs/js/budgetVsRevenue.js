@@ -5,8 +5,8 @@ class BudgetVsRevenueChart {
 
         this.MARGIN = {top: 10, right: 10, bottom: 20, left: 80}
 
-        this.CHART_HEIGHT = 360;
-        this.CHART_WIDTH = 420;
+        this.CHART_WIDTH = 500;
+        this.CHART_HEIGHT = 375;
 
         this.xScale = d3.scaleLinear()
             .domain(d3.extent(this.movieData.map(d => d.budget)))
@@ -53,6 +53,12 @@ class BudgetVsRevenueChart {
         d3.select('#bvrev-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
+        d3.select('#bvrev-x-axis').selectAll('.tick text')
+            .attr("y", 0)
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .attr("transform", "rotate(55)")
+            .style("text-anchor", "start");
     }
 
     drawCircles() {
