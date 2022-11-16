@@ -57,7 +57,7 @@ body {
     flex-wrap: wrap;
     color: #858788;
     padding: 10px;
-    min-height: 300px;
+    min-height: 400px;  
     border-radius: 15px;
     background: #17191c;
     box-shadow: inset -5px -5px 10px #141618, inset 5px 5px 10px #1a1c20;
