@@ -86,7 +86,8 @@ class MovieTable {
             .join('rect')
             .attr('height', this.vizHeight)
             .attr('width', d => this.revenueScale(d.value))
-            .attr('y', 5);
+            .attr('y', 5)
+            .attr('fill', 'lightgrey');
 
         revenueSelection.selectAll('text')
             .data(d => [d])
@@ -133,7 +134,8 @@ class MovieTable {
                 const rating = d3.format(".0%")(parseFloat(d.value) / 10);
                 return rating;
             })
-            .attr('dy', '.3em');
+            .attr('dy', '.3em')
+            .attr('fill', 'white');
 
     }
     drawText(textSelection) {

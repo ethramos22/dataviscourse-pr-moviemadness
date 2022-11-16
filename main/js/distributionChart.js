@@ -58,15 +58,13 @@ class DistributionChart {
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - this.yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', this.xScale.bandwidth())
             .attr('height', d => this.yScale(0) - this.yScale(d[1].length))
-            .attr('fill', d => {
-                return this.colorScale(d[0]);
-            });
+            .attr('fill', 'lightgrey');
         // Tick rotate: https://bl.ocks.org/mbostock/4403522
         xAxis.selectAll('.tick text')
             .attr("y", 0)
             .attr("x", 9)
             .attr("dy", ".35em")
-            .attr("transform", "rotate(75)")
+            .attr("transform", "rotate(55)")
             .style("text-anchor", "start");
     }
 }
