@@ -24,7 +24,8 @@
 </head>
 <body>
     <div id="content-container">
-        <div class="header">
+
+        <div id="header">
             <h1 id="page-title">Movie Madness</h1>
             <div id="chart-filter">
                 <button class="change-movie-selection-btn btn" value="all">All</button>
@@ -33,7 +34,9 @@
                 <button class="change-movie-selection-btn btn" value="topRatedMovies">Top Rated</button>
             </div>
         </div>
-        <div id="top-content">
+
+        <div id="viz-content">
+           
             <div id="movie-list" class="card">
                 <table id="movie-list-table">
                     <thead>
@@ -49,15 +52,36 @@
                     </tbody>
                 </table>
             </div>
+
+        
             <div id="movie-poster" class="card"></div>
-            <svg id="overview-chart" class="card">
-                <g id="x-axis"></g>
-                <g id="y-axis"></g>
-                <g id="bars"></g>
-                <g id="tooltip"></g>
-            </svg>
+            
+            <div id="chart-content">
+    
+                <div id="overview-chart" class="card">
+                    <svg class="chart-viz">
+                        <g id="x-axis"></g>
+                        <g id="y-axis"></g>
+                        <g id="bars"></g>
+                        <g id="tooltip"></g>
+                    </svg>
+                </div>
+                
+                <div id="dot-plot" class="card">
+                    <svg class="chart-viz">
+                        <g id="bvrev-x-axis"></g>
+                        <g id="bvrev-y-axis"></g>
+                        <g id="bvrev-content"></g>
+                    </svg>
+                </div>
+
+
+            </div>
+            
         </div>
-        <div id="bottom-content">
+
+
+        <!-- <div id="bottom-content">
             <svg class="data-viz card">
                 <g id="bvrev-x-axis"></g>
                 <g id="bvrev-y-axis"></g>
@@ -73,7 +97,7 @@
                 <g id="rvr-y-axis"></g>
                 <g id="rvr-content"></g>
             </svg>
-        </div>
+        </div> -->
     </div> 
 </body>
 </html>

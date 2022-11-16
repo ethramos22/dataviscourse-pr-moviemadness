@@ -55,11 +55,11 @@ loadData().then((loadedData) => {
     const budgetVsRevenueChart = new BudgetVsRevenueChart(globalMovieData);
     globalMovieData.budgetVsRevenueChart = budgetVsRevenueChart;
 
-    const budgetVsRatingChart = new BudgetVsRatingChart(globalMovieData);
-    globalMovieData.budgetVsRatingChart = budgetVsRatingChart;
+    // const budgetVsRatingChart = new BudgetVsRatingChart(globalMovieData);
+    // globalMovieData.budgetVsRatingChart = budgetVsRatingChart;
 
-    const ratingVsRevenueChart = new RatingVsRevenueChart(globalMovieData);
-    globalMovieData.ratingVsRevenueChart = ratingVsRevenueChart;
+    // const ratingVsRevenueChart = new RatingVsRevenueChart(globalMovieData);
+    // globalMovieData.ratingVsRevenueChart = ratingVsRevenueChart;
 
 
 
@@ -82,8 +82,8 @@ loadData().then((loadedData) => {
         globalMovieData.moviePoster.drawPoster();
         globalMovieData.distributionChart.drawChart();
         globalMovieData.budgetVsRevenueChart.updateChart();
-        globalMovieData.budgetVsRatingChart.updateChart();
-        globalMovieData.ratingVsRevenueChart.updateChart();
+        // globalMovieData.budgetVsRatingChart.updateChart();
+        // globalMovieData.ratingVsRevenueChart.updateChart();
 
 
 

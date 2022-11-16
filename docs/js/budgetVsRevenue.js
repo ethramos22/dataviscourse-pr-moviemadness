@@ -5,8 +5,8 @@ class BudgetVsRevenueChart {
 
         this.MARGIN = {top: 10, right: 10, bottom: 20, left: 80}
 
-        this.CHART_HEIGHT = 360;
-        this.CHART_WIDTH = 420;
+        this.CHART_WIDTH = 500;
+        this.CHART_HEIGHT = 375;
 
         this.xScale = d3.scaleLinear()
             .domain(d3.extent(this.movieData.map(d => d.budget)))

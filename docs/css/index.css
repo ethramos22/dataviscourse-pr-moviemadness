@@ -1,20 +1,21 @@
 body {
     background-color: #212529;
 }
+#content-container {
+    height: 1000px;
+    width: 1400px;
+    
+}
+
+/* Top of page styling */
 
 #page-title {
     color: whitesmoke;
 }
 
-.header {
-    margin-bottom: 10px;
+#header {
     text-align: center;
-}
-
-#content-container {
-    height: 900px;
-    width: 1400px;
-    
+    height: 10%;
 }
 
 #chart-filter {
@@ -22,20 +23,15 @@ body {
     width: 1400px;
 }
 
-#top-content {
-    height: 60%;
+
+#viz-content {
+    height: 90%;
     width: 1400px;
     display: flex;
     justify-content: space-between;
 }
 
-#bottom-content {
-    height: 40%;
-    width: 1400px;
-    display: flex;
-    justify-content: space-between;
-}
-
+/* 3 main div width styling */
 #movie-list {
     width: 35%;
 }
@@ -45,19 +41,30 @@ body {
     text-align: center;
 }
 
-#overview-chart {
+#chart-content {
     width: 40%;
 }
 
-.data-viz {
-    width: 30%;
+/* 2 chart height styling */
+#overview-chart {
+    height: calc(50% - 20px);
 }
 
+#dot-plot {
+    height: calc(50% - 20px);
+}
+
+.chart-viz {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+/* Button and card styling */
 .card {
     flex-wrap: wrap;
     color: #858788;
     padding: 10px;
-    min-height: 400px;  
     border-radius: 15px;
     background: #17191c;
     box-shadow: inset -5px -5px 10px #141618, inset 5px 5px 10px #1a1c20;

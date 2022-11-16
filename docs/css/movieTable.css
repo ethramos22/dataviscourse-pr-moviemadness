@@ -8,7 +8,7 @@
 #movie-list-table tbody {
     display: block;
     width: 100%;
-    height: 85%;
+    height: 90%;
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -24,13 +24,10 @@
     text-align: left;
 }
 
-
-
 #movie-list-table th,
 #movie-list-table td {
     padding: 0px;
     width: 15%;
-    /* border: 1px black solid ; */
     line-height: 2;
     text-align: center;
 }
