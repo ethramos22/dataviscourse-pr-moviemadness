@@ -13,6 +13,39 @@ class MovieTable {
         this.radius = 14;
         this.fontSize = 10;
 
+        this.headerInfo = {
+            'MovieName': {
+                sorted: false,
+                ascending: false,
+                key:'title',
+                type: 'text'
+            },
+            'Genre': {
+                sorted: false,
+                ascending: false,
+                key:'genres',
+                type: 'arr'
+
+            },
+            'Rating': {
+                sorted: false,
+                ascending: false,
+                key:'vote_average'
+            },
+            'Language': {
+                sorted: false,
+                ascending: false,
+                key: 'original_language',
+                type: 'lang'
+            },
+            'Revenue': {
+                sorted: false,
+                ascending: false,
+                key: 'revenue'
+            }
+
+        }
+
         this.circumference = this.radius * 2 * Math.PI;
         this.ratingScale = d3.scaleLinear()
             .domain([0, 10])
@@ -23,7 +56,6 @@ class MovieTable {
             .range([1, this.vizWidth]);
 
         
-
         let revenueAxis = d3.axisTop()
             .scale(this.revenueScale)
             .tickFormat(d3.format(d3.format("$,")))
@@ -43,6 +75,7 @@ class MovieTable {
                 .call(revenueAxis)
 
         this.drawMovieList();
+        this.attachSortHandlers();
     }
 
 
@@ -143,6 +176,51 @@ class MovieTable {
             .data(d => [d])
             .join('text')
             .text(d => d.value);
+    }
+
+    attachSortHandlers() {
+        d3.select('#movie-list-table').selectAll('th')
+            .on('click', (event) => {
+                console.log();
+                const headerName = event.target.textContent.replace(/[^a-zA-Z]+/g, '');
+                let info = this.headerInfo[headerName];
+
+                // If it's already been sorted reverse it, set it to 'descending' and return
+                if(info.sorted) {
+                    console.log("we've already sorted by", headerName, "so we're going to reverse the list, and set ascending to opposite of what it was");
+                    info.ascending = !info.ascending;
+                    this.movieData.reverse();
+
+                } else {
+                    console.log(headerName, "hasn't been sorted yet. Sorting, and setting sorted and asending to true")
+                    // If sorted is false, reset all other sort data and sort it. Then set sorted to true and ascending to true
+                    for(let [_, value] of Object.entries(this.headerInfo)) {
+                        value.sorted = false;
+                        value.ascending = false;
+                    }
+                    console.log('headerinfo', this.headerInfo)
+
+                    if(info.type === 'text')
+                        // Alphabetical
+                        this.movieData.sort((a,b) => a[info.key] < b[info.key] ? -1 : 1);
+                    else if(info.type == 'lang') {
+                        // Sort Language Values
+                        let languageNames = new Intl.DisplayNames(['en'], {type: 'language'});
+                        this.movieData.sort((a,b) => languageNames.of(a[info.key]) < languageNames.of(b[info.key]) ? -1 : 1);
+                    } else if(info.type == 'arr'){
+                        // Sort Genre Array
+                        this.movieData.sort((a,b) => a[info.key][0].name < b[info.key][0].name ? -1 : 1);
+                    }else {
+                        // Sort Numerical Values
+                        this.movieData.sort((a,b) => a[info.key] > b[info.key] ? -1 : 1);
+                    }
+                    info.sorted = true;
+                    info.ascending = true;
+                }
+
+                this.drawMovieList();
+            });
+
     }
 
     selectMovie(_, d) {
