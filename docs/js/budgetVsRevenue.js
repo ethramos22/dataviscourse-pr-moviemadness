@@ -53,6 +53,12 @@ class BudgetVsRevenueChart {
         d3.select('#bvrev-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
+        d3.select('#bvrev-x-axis').selectAll('.tick text')
+            .attr("y", 0)
+            .attr("x", 9)
+            .attr("dy", ".35em")
+            .attr("transform", "rotate(55)")
+            .style("text-anchor", "start");
     }
 
     drawCircles() {
