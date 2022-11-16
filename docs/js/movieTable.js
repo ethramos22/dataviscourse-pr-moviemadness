@@ -140,8 +140,13 @@ class MovieTable {
         revenueSelection.selectAll('text')
             .data(d => [d])
             .join('text')
-            .text(d => d3.format("$,")(d.value))
-            .attr('x', 5)
+            .text(d => {
+                if(d.value < this.revenueRange[0] || d.value > this.revenueRange[1])
+                    return d3.format("$,")(d.value) + '*';
+                else
+                    return d3.format("$,")(d.value);   
+            })
+            .attr('x', 2)
             .attr('y', this.vizHeight/1.75)
             .attr('fill', 'red');
     }
