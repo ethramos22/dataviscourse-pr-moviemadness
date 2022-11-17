@@ -11,9 +11,7 @@
     <script src="js/movieTable.js"></script>
     <script src="js/distributionChart.js"></script>
     <script src="js/detailCard.js"></script>
-    <script src="js/budgetVsRevenue.js"></script>
-    <script src="js/budgetVsRating.js"></script>
-    <script src="js/ratingVsRevenue.js"></script>
+    <script src="js/dotplot.js"></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,11 +63,34 @@
                 </div>
                 
                 <div id="dot-plot" class="card">
+                    
                     <svg class="chart-viz">
                         <g id="bvrev-x-axis"></g>
                         <g id="bvrev-y-axis"></g>
                         <g id="bvrev-content"></g>
+                        <g id="dot-plot-labelY"></g>
+                        <g id="dot-plot-labelX"></g>
+                        <g id="dot-plot-title"></g>
                     </svg>
+                    <div id="selector-x">
+                        <label for="x-axis-select">x axis:</label>
+                        <select id="x-axis-select">
+                            <option selected value="budget">Budget</option>
+                            <option value="revenue">Revenue</option>
+                            <option value="runtime">Runtime</option>
+                            <option value="vote_average">Rating</option>
+                        </select>
+                    </div>
+                    
+                    <div id="selector-y">
+                        <label for="y-axis-select">y axis:</label>
+                        <select id="y-axis-select">
+                            <option value="budget">Budget</option>
+                            <option selected value="revenue">Revenue</option>
+                            <option value="runtime">Runtime</option>
+                            <option value="vote_average">Rating</option>
+                        </select>
+                    </div>
                 </div>
 
             </div>
