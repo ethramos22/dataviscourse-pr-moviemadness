@@ -62,9 +62,10 @@ class BudgetVsRevenueChart {
         let xAxis = d3.axisBottom()
             .scale(this.xScale)
             .tickFormat(d => {
-                // console.log('logging in tick', d);
-                
-                return d > 1000000 ? d/1000000 : d;
+                // console.log('logging in tick', this.xAxisData);
+                if(this.xAxisData.key === 'runtime')
+                    return d;
+                return d/1000000;
             });
         d3.select('#bvrev-x-axis').call(xAxis);
 
@@ -72,7 +73,9 @@ class BudgetVsRevenueChart {
         let yAxis = d3.axisLeft()
             .scale(this.yScale)
             .tickFormat(d => {
-                return d > 1000000 ? d/1000000 : d;
+                if(this.yAxisData.key === 'runtime')
+                    return d;
+                return d/1000000;
             });
 
         d3.select('#bvrev-y-axis').call(yAxis);
@@ -110,6 +113,8 @@ class BudgetVsRevenueChart {
             .data([this.yAxisData])
             .join('text')
             .text(d => {
+                if(this.yAxisData.key === 'runtime')
+                    return d.text + ' in minutes';
                 return d.text + ' in millions'
             })
             .attr('fill', 'white')
@@ -120,8 +125,10 @@ class BudgetVsRevenueChart {
             .data([this.xAxisData])
             .join('text')       
             .text(d => {
+                if(this.xAxisData.key === 'runtime')
+                    return d.text + ' in minutes';
                 //handle minutes
-                return d.text + ' in millions'
+                return d.text + ' in millions';
             })
             .attr('x', this.CHART_WIDTH/2 - 25)
             .attr('y', this.CHART_HEIGHT)
