@@ -1,4 +1,4 @@
-class BudgetVsRevenueChart {
+class Dotplot {
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
@@ -7,7 +7,7 @@ class BudgetVsRevenueChart {
         this.CHART_WIDTH = 500;
         this.CHART_HEIGHT = 400;
 
-        this.chartTitle = 'Budget vs Revenue';
+        this.chartTitle = 'Revenue vs Budget';
         this.xAxisData = {
             key: 'budget',
             text: 'Budget'
@@ -63,7 +63,7 @@ class BudgetVsRevenueChart {
             .scale(this.xScale)
             .tickFormat(d => {
                 // console.log('logging in tick', this.xAxisData);
-                if(this.xAxisData.key === 'runtime')
+                if(this.xAxisData.key === 'runtime'|| this.xAxisData.key == 'vote_average')
                     return d;
                 return d/1000000;
             });
@@ -73,7 +73,7 @@ class BudgetVsRevenueChart {
         let yAxis = d3.axisLeft()
             .scale(this.yScale)
             .tickFormat(d => {
-                if(this.yAxisData.key === 'runtime')
+                if(this.yAxisData.key === 'runtime' || this.yAxisData.key == 'vote_average')
                     return d;
                 return d/1000000;
             });
@@ -115,10 +115,14 @@ class BudgetVsRevenueChart {
             .text(d => {
                 if(this.yAxisData.key === 'runtime')
                     return d.text + ' in minutes';
+                
+                if(this.yAxisData.key === 'vote_average')
+                    return d.text;
+
                 return d.text + ' in millions'
             })
             .attr('fill', 'white')
-            .attr('transform', `translate(20, ${this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
+            .attr('transform', `translate(20, ${this.yAxisData.key === 'vote_average' ? this.CHART_HEIGHT/2 :this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
 
         // X axis label
         d3.select('#dot-plot-labelX').selectAll('text')
@@ -127,10 +131,11 @@ class BudgetVsRevenueChart {
             .text(d => {
                 if(this.xAxisData.key === 'runtime')
                     return d.text + ' in minutes';
-                //handle minutes
+                if(this.xAxisData.key === 'vote_average')
+                    return d.text;
                 return d.text + ' in millions';
             })
-            .attr('x', this.CHART_WIDTH/2 - 25)
+            .attr('x', d => this.xAxisData.key === 'vote_average' ? this.CHART_WIDTH/2 + 10 :this.CHART_WIDTH/2 - 25)
             .attr('y', this.CHART_HEIGHT)
             .attr('fill', 'white');
         
@@ -150,15 +155,12 @@ class BudgetVsRevenueChart {
             .on('change', (event) => {
                 let selectedKey = event.target.value;
 
-                // handle cases separately 
-                console.log('changed x axis data from:', this.xAxisData);
-
-
+                if(selectedKey === 'vote_average')
+                    this.xAxisData.text = 'Rating';
+                else 
+                    this.xAxisData.text = selectedKey.charAt(0).toUpperCase() + selectedKey.slice(1);
+                
                 this.xAxisData.key = selectedKey;
-                this.xAxisData.text = selectedKey.charAt(0).toUpperCase() + selectedKey.slice(1);
-
-                console.log('changed x axis data to:', this.xAxisData);
-
                 this.updateChart();
             })
 
@@ -166,14 +168,12 @@ class BudgetVsRevenueChart {
             .on('change', (event) => {
                 let selectedKey = event.target.value;
 
-                // handle cases separately 
-                console.log('changed y axis data from:', this.yAxisData);
-
+                if(selectedKey === 'vote_average')
+                    this.yAxisData.text = 'Rating';
+                else 
+                    this.yAxisData.text = selectedKey.charAt(0).toUpperCase() + selectedKey.slice(1);
+                
                 this.yAxisData.key = selectedKey;
-                this.yAxisData.text = selectedKey.charAt(0).toUpperCase() + selectedKey.slice(1);
-
-                console.log('changed y axis data to:', this.yAxisData);
-
                 this.updateChart();
             })
     }
@@ -181,8 +181,7 @@ class BudgetVsRevenueChart {
     updateChart() {
         // set movie data
         this.movieData = this.globalMovieData.displayedMovies;
-        this.chartTitle = this.xAxisData.text + ' vs ' + this.yAxisData.text;
-
+        this.chartTitle = this.yAxisData.text + ' vs ' + this.xAxisData.text;
         this.drawChart();
     }
 
