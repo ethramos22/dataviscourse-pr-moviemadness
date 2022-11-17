@@ -12,9 +12,10 @@ class MovieTable {
         this.vizWidth = 70;
         this.radius = 14;
         this.fontSize = 10;
+        this.revenueRange = [1000000, 1000000000]; // Revenue range from 1million to 1billion
 
         this.headerInfo = {
-            'MovieName': {
+            'Movie Name': {
                 sorted: false,
                 ascending: false,
                 key:'title',
@@ -52,14 +53,15 @@ class MovieTable {
             .range([0, this.circumference]);
 
         this.revenueScale = d3.scaleLinear()
-            .domain(d3.extent(this.movieData.map(d => d.revenue)))
-            .range([1, this.vizWidth]);
+            // .domain(d3.extent(this.movieData.map(d => d.revenue)))
+            .domain(this.revenueRange)
+            .range([0, this.vizWidth]);
 
         
         let revenueAxis = d3.axisTop()
             .scale(this.revenueScale)
-            .tickFormat(d3.format(d3.format("$,")))
-            .ticks(2);
+            .tickFormat(d3.format(d3.format("$.2s")))
+            .ticks(3);
         
             
         d3.select('#revenue-header')
@@ -74,10 +76,16 @@ class MovieTable {
                 .select('svg g')
                 .call(revenueAxis)
 
+        d3.select('#revenue-axis').selectAll('.tick text')
+                .attr("x", -20)
+                .attr("dy", ".4em")
+                .attr('dx', '-.35em')
+                .attr("transform", "rotate(30)")
+                .style("text-anchor", "start");
+
         this.drawMovieList();
         this.attachSortHandlers();
     }
-
 
     drawMovieList() {
         let rowSelection = d3.select('#movie-list-body')
@@ -118,15 +126,27 @@ class MovieTable {
             .data(d => [d])
             .join('rect')
             .attr('height', this.vizHeight)
-            .attr('width', d => this.revenueScale(d.value))
+            .attr('width', d => {
+                if(d.value >= this.revenueRange[0] && d.value <= this.revenueRange[1])
+                    return this.revenueScale(d.value);
+                else if(d.value < this.revenueRange[0])
+                    return this.revenueScale(this.revenueRange[0]);
+                else
+                    return this.revenueScale(this.revenueRange[1]);
+            })
             .attr('y', 5)
             .attr('fill', 'lightgrey');
 
         revenueSelection.selectAll('text')
             .data(d => [d])
             .join('text')
-            .text(d => d3.format("$,")(d.value))
-            .attr('x', 5)
+            .text(d => {
+                if(d.value < this.revenueRange[0] || d.value > this.revenueRange[1])
+                    return d3.format("$,")(d.value) + '*';
+                else
+                    return d3.format("$,")(d.value);   
+            })
+            .attr('x', 2)
             .attr('y', this.vizHeight/1.75)
             .attr('fill', 'red');
     }
@@ -182,9 +202,13 @@ class MovieTable {
         d3.select('#movie-list-table').selectAll('th')
             .on('click', (event) => {
                 console.log();
-                const headerName = event.target.textContent.replace(/[^a-zA-Z]+/g, '');
-                let info = this.headerInfo[headerName];
+                console.log('HEADER NAME:', event.target.textContent.replace(/[^a-zA-Z]+/g, ''));
+                console.log('HEADER NAME:', event);
+                console.log('HEADER NAME SPLIT:', event.target.textContent.split('$')[0])
 
+
+                const headerName = event.target.textContent.split('$')[0];
+                let info = this.headerInfo[headerName];
                 // If it's already been sorted reverse it, set it to 'descending' and return
                 if(info.sorted) {
                     console.log("we've already sorted by", headerName, "so we're going to reverse the list, and set ascending to opposite of what it was");

@@ -20,9 +20,7 @@ const globalMovieData = {
     movieTable: null,
     moviePoster: null,
     distributionChart: null,
-    budgetVsRevenueChart: null,
-    budgetVsRatingChart: null,
-    ratingVsRevenueChart: null
+    dotplot: null,
 };
 
 // have list of displayedMovies
@@ -52,15 +50,8 @@ loadData().then((loadedData) => {
     const distributionChart = new DistributionChart(globalMovieData);
     globalMovieData.distributionChart = distributionChart;
 
-    const budgetVsRevenueChart = new BudgetVsRevenueChart(globalMovieData);
-    globalMovieData.budgetVsRevenueChart = budgetVsRevenueChart;
-
-    // const budgetVsRatingChart = new BudgetVsRatingChart(globalMovieData);
-    // globalMovieData.budgetVsRatingChart = budgetVsRatingChart;
-
-    // const ratingVsRevenueChart = new RatingVsRevenueChart(globalMovieData);
-    // globalMovieData.ratingVsRevenueChart = ratingVsRevenueChart;
-
+    const dotplot = new Dotplot(globalMovieData);
+    globalMovieData.dotplot = dotplot;
 
 
     d3.selectAll('.change-movie-selection-btn')
@@ -81,13 +72,7 @@ loadData().then((loadedData) => {
         globalMovieData.movieTable.updateMovieList();
         globalMovieData.moviePoster.drawPoster();
         globalMovieData.distributionChart.drawChart();
-        globalMovieData.budgetVsRevenueChart.updateChart();
-        // globalMovieData.budgetVsRatingChart.updateChart();
-        // globalMovieData.ratingVsRevenueChart.updateChart();
-
-
-
-        
+        globalMovieData.dotplot.updateChart();        
     });
 })
 

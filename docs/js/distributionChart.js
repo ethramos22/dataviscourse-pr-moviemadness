@@ -8,8 +8,8 @@ class DistributionChart {
         this.globalMovieData = globalMovieData;
         
         this.CHART_WIDTH = 500;
-        this.CHART_HEIGHT = 375;
-        this.MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
+        this.CHART_HEIGHT = 400;
+        this.MARGIN = {top: 25, right: 10, bottom: 75, left: 75}
         this.ANIMATION_DUATION = 300;
         // Set Color Scale with the data keys
         let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
