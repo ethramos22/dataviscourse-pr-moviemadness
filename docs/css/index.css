@@ -52,6 +52,8 @@ body {
 
 #dot-plot {
     height: calc(50% - 20px);
+    z-index: 1;
+    position: relative;
 }
 
 .chart-viz {
@@ -81,4 +83,18 @@ body {
     background-color: #2d3035;
     border: 1px solid #2d3035;
     color: #858788;
+}
+
+#selector-x {
+    z-index: 2;
+    position: absolute;
+    top: 380px;
+    left: 20px;
+}
+
+#selector-y {
+    z-index: 2;
+    position: absolute;
+    top: 410px;
+    left: 20px;
 }

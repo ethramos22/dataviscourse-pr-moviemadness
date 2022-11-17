@@ -65,11 +65,34 @@
                 </div>
                 
                 <div id="dot-plot" class="card">
+                    
                     <svg class="chart-viz">
                         <g id="bvrev-x-axis"></g>
                         <g id="bvrev-y-axis"></g>
                         <g id="bvrev-content"></g>
+                        <g id="dot-plot-labelY"></g>
+                        <g id="dot-plot-labelX"></g>
+                        <g id="dot-plot-title"></g>
                     </svg>
+                    <div id="selector-x">
+                        <label for="x-axis-select">x axis:</label>
+                        <select id="x-axis-select">
+                            <option selected value="budget">Budget</option>
+                            <option value="revenue">Revenue</option>
+                            <option value="runtime">Runtime</option>
+                            <option value="vote_average">Rating</option>
+                        </select>
+                    </div>
+                    
+                    <div id="selector-y">
+                        <label for="y-axis-select">y axis:</label>
+                        <select id="y-axis-select">
+                            <option value="budget">Budget</option>
+                            <option selected value="revenue">Revenue</option>
+                            <option value="runtime">Runtime</option>
+                            <option value="vote_average">Rating</option>
+                        </select>
+                    </div>
                 </div>
 
             </div>
