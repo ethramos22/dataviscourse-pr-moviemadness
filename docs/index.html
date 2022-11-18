@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/movieTable.css">
     <link rel="stylesheet" href="css/detailCard.css">
+    <link rel="stylesheet" href="css/dotplot.css">
+
 
     <script src="https://d3js.org/d3.v7.js"></script>
     
@@ -62,15 +64,16 @@
                     </svg>
                 </div>
                 
-                <div id="dot-plot" class="card">
+                <div id="dotplot" class="card">
                     
                     <svg class="chart-viz">
-                        <g id="bvrev-x-axis"></g>
-                        <g id="bvrev-y-axis"></g>
-                        <g id="bvrev-content"></g>
-                        <g id="dot-plot-labelY"></g>
-                        <g id="dot-plot-labelX"></g>
-                        <g id="dot-plot-title"></g>
+                        <g id="dotplot-x-axis"></g>
+                        <g id="dotplot-y-axis"></g>
+                        <g id="dotplot-content"></g>
+                        <g id="dotplot-labelY"></g>
+                        <g id="dotplot-labelX"></g>
+                        <g id="dotplot-title"></g>
+                        <g id="dotplot-tooltip"></g>
                     </svg>
                     <div id="selector-x">
                         <label for="x-axis-select">x axis:</label>
