@@ -1,0 +1,16 @@
+.movie-dot {
+    stroke: black;
+    fill: red;
+    opacity: 0.5;
+}
+
+.movie-dot:hover {
+    /* fill: blue; */
+    opacity: 1;
+    /* cursor: pointer; */
+}
+
+.tooltip-label {
+    fill: white;
+    font-size: 12px;
+}

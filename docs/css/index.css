@@ -1,6 +1,7 @@
 body {
     background-color: #212529;
 }
+
 #content-container {
     height: 1000px;
     width: 1400px;
@@ -50,7 +51,7 @@ body {
     height: calc(50% - 20px);
 }
 
-#dot-plot {
+#dotplot {
     height: calc(50% - 20px);
     z-index: 1;
     position: relative;
