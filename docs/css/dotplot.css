@@ -5,11 +5,18 @@
 }
 
 .movie-dot:hover {
-    /* fill: blue; */
     opacity: 1;
-    /* cursor: pointer; */
 }
 
+#selected-movie {
+    stroke: black;
+    fill: white;
+    opacity: 0.5;
+}
+
+#selected-movie:hover {
+    opacity: 1;
+}
 .unbrushed {
     stroke: black;
     fill: grey;

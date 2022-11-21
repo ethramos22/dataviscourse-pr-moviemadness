@@ -2,6 +2,7 @@ class Dotplot {
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
+        this.selectedMovie = this.globalMovieData.selectedMovie;
 
         this.MARGIN = {top: 25, right: 10, bottom: 60, left: 75}
         this.CHART_WIDTH = 500;
@@ -11,7 +12,7 @@ class Dotplot {
         this.xAxisData = {
             key: 'budget',
             text: 'Budget'
-        };
+        }; 
         this.yAxisData = {
             key: 'revenue',
             text: 'Revenue'
@@ -183,6 +184,9 @@ class Dotplot {
             .attr('cy', d => this.yScale(d[this.yAxisData.key]))
             .attr('r', 5)
             .attr('class', 'movie-dot');
+            
+        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', 'selected-movie');
     }
 
     drawLabelsAndTitles() {
@@ -298,5 +302,18 @@ class Dotplot {
             .call(this.brush.move, null);
 
         this.drawChart();
+    }
+
+    updateSelectedCircle() {
+        console.log('updating styling of selected circle');
+        
+        // remove styling on previously selected movie
+        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', null);
+
+        // set styling on new selected movie
+        this.selectedMovie = this.globalMovieData.selectedMovie;
+        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', 'selected-movie');
     }
 }

@@ -36,7 +36,7 @@ loadData().then((loadedData) => {
     
     // Combine all movies, then filter out duplicates by initializing a Set
     const allMovies = globalMovieData.popularMovies.concat(globalMovieData.topRatedMovies, globalMovieData.nowPlayingMovies);
-    globalMovieData.displayedMovies = [...new Set(allMovies)];
+    globalMovieData.displayedMovies = [...new Map(allMovies.map((movie) => [movie.id, movie])).values()];
     
     // Start poster as first movie on list
     globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];

@@ -249,6 +249,7 @@ class MovieTable {
 
     selectMovie(_, d) {
         this.globalMovieData.selectedMovie = d;
+        this.globalMovieData.dotplot.updateSelectedCircle();
         this.globalMovieData.moviePoster.drawPoster();
     }
 
@@ -291,6 +292,12 @@ class MovieTable {
 
     updateMovieList() {
         this.movieData = this.globalMovieData.displayedMovies;
+        
+        // reset header info
+        for(let [_, value] of Object.entries(this.headerInfo)) {
+            value.sorted = false;
+            value.ascending = false;
+        }
         this.drawMovieList();
     }
 }
