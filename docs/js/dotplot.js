@@ -283,11 +283,17 @@ class Dotplot {
                         const y = this.yScale(d[this.yAxisData.key])
                         return x0 <= x && x < x1 && y0 <= y && y < y1;
                     })
-                    .attr('class', 'movie-dot')
-                    .data();
+                        .attr('class', 'movie-dot')
+                        .data();
+
+                    this.globalMovieData.displayedMovies = value;
+                    this.globalMovieData.movieTable.updateMovieList();                    
                 } else {
                     this.circleSelection
                         .attr('class', 'movie-dot')
+
+                    this.globalMovieData.displayedMovies = this.movieData;
+                    this.globalMovieData.movieTable.updateMovieList();
                 }
             })
 
