@@ -1,4 +1,13 @@
 class Dotplot {
+    // FUNCTIONALITY
+    // Ability to change Axis - Labels, axis values, and title change as well
+    // Tooltip and highlight on hover for each dot. Tooltip displays name, and the values for x and y axis.
+    // Selected movie in the table/detail card appears as a differnt color on the dotplot for easier locating
+
+
+    // TODO:
+    // Add 'exclude revenue outliers" button, that caps revenue at 1 billion
+    // Make brush selection set the 'displayed Movies global variable and redraw the distribution chart and the table"
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;

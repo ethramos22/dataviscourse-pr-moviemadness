@@ -1,6 +1,14 @@
-// This is the table we'll use to display the list of movies and some details about each (popular, topRated, nowPlaying)
-
 class MovieTable {
+    // FUNCTIONALITY
+    // Shows overview details about each movie (rating, language, revenue, genres)
+    // Has a vizualization representing rating - circumference of rating circle corresponds to rating, so does color
+    // Revenue displays a bar chart from $1,000,000 to $1,000,000,000 and gives an * for outliers. 
+    // Clicking on movie highlights it in the dotplot, and displays it on the movie detail card
+    // Movies can be sorted by all the columns
+
+
+    // TODO:
+    // Add tooltip hover for movies that have outlier revenue values ($1,000,000 < in revenue > $1,000,000,000)
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Movie Table', this.globalMovieData);
