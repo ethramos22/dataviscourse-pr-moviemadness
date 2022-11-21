@@ -257,10 +257,6 @@ class MovieTable {
 
     }
 
-    selectMovie(_, d) {
-        
-    }
-
     rowToCellDataTransform(movie) {
         // Need to return array with 5 objects on it, so that we draw 5 columns
         // Each object needs to contain the data relevant to the column, as well as the type of content that it is (ie. text or viz)
