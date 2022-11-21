@@ -287,16 +287,15 @@ class Dotplot {
                         .data();
 
                     this.globalMovieData.displayedMovies = value;
-                    this.globalMovieData.movieTable.updateMovieList();                    
                 } else {
                     this.circleSelection
                         .attr('class', 'movie-dot')
 
                     this.globalMovieData.displayedMovies = this.movieData;
-                    this.globalMovieData.movieTable.updateMovieList();
                 }
+                this.globalMovieData.movieTable.updateMovieList();
+                this.globalMovieData.distributionChart.drawChart();
             })
-
         d3.select('#brush-layer')
             .call(this.brush);
     }
