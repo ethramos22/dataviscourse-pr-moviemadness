@@ -272,8 +272,6 @@ class Dotplot {
             .extent(extent)
             .on('start brush end', ({selection}) => {
                 let value = [];
-                console.log('selection', selection);
-
                 if(selection) {
                     this.circleSelection
                         .attr("class", "unbrushed")
