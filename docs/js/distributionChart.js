@@ -71,16 +71,16 @@ class DistributionChart {
             console.log(datum);
             tooltip.select('#movies')
                 .text(datum[1].map(d => d.title).join(' '));
+            tooltip.select('#percentage')
+                .text(`${d3.format(".0%")(datum[1].length/currentDisplay.length)} of movies`);
             // Set position
             const x = xScale(datum.x0)
                 + (xScale(datum.x1) - xScale(datum.x0)) / 2
                 + MARGIN.left;
             const y = yScale(datum)
                 + MARGIN.top;
-            tooltip.style("transform", `translate(`
-                + `calc( -50% + ${x}px),`
-                + `calc(-100% + ${y}px)`
-                + `)`);
+            tooltip.style('top', y+'px')
+            .style('left', x+'px');
         }
 
         function onMouseLeave(e) {
