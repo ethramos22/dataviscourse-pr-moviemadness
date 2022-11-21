@@ -28,13 +28,26 @@ class Dotplot {
             .domain(d3.extent(this.movieData.map(d => d.revenue)))
             .range([this.CHART_HEIGHT - this.MARGIN.bottom, this.MARGIN.top])
 
-        // position axis
+        // Position axis
         d3.select('#dotplot-x-axis')
             .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
         d3.select('#dotplot-y-axis')
             .attr('transform', `translate(${this.MARGIN.left}, 0)`)
 
+        // Dismiss brush on click
+        d3.select('#dotplot')
+            .on('click', () => {
+                d3.select('#brush-layer')
+                    .call(this.brush.move, null);
+            })
+
+        // Draw Chart
         this.drawChart();
+        
+        // Add Brush Layer
+        this.addBrushLayer();
+
+        // Attach Button Handlers
         this.attachSelectHandlers();
     }
 
@@ -45,7 +58,7 @@ class Dotplot {
         this.drawAxis();
 
         //TODO: Draw circles
-        this.drawCircles();
+        this.drawCircles();   
     }
 
     drawAxis() {
@@ -94,10 +107,12 @@ class Dotplot {
     drawCircles() {
         let _this = this;
 
-        let circleSelection = d3.select('#dotplot-content')
+        this.circleSelection = d3.select('#dotplot-content')
             .selectAll('circle')
             .data(this.movieData)
-            .join('circle')
+            .join('circle');
+
+        this.circleSelection
             .on('mouseover', function(event, d ) {
                 console.log('in highlight selected:', event, d, this)
         
@@ -172,8 +187,6 @@ class Dotplot {
 
     drawLabelsAndTitles() {
 
-        // change .data binding to be information about what the label says
-
         // Y axis label
         d3.select('#dotplot-labelY').selectAll('text')
             .data([this.yAxisData])
@@ -244,10 +257,46 @@ class Dotplot {
             })
     }
 
+    addBrushLayer() {
+        const extent = [[this.MARGIN.left - 15, this.MARGIN.top - 15], [this.CHART_WIDTH + 15, this.CHART_HEIGHT - this.MARGIN.bottom + 15]];
+        
+        this.brush = d3.brush()
+            .extent(extent)
+            .on('start brush end', ({selection}) => {
+                let value = [];
+                if(selection) {
+                    this.circleSelection
+                        .attr("class", "unbrushed")
+
+                    const [[x0, y0], [x1, y1]] = selection;
+
+                    value = this.circleSelection.filter(d => {
+                        const x = this.xScale(d[this.xAxisData.key])
+                        const y = this.yScale(d[this.yAxisData.key])
+                        return x0 <= x && x < x1 && y0 <= y && y < y1;
+                    })
+                    .attr('class', 'movie-dot')
+                    .data();
+
+                    console.log(value);
+                } else {
+                    this.circleSelection
+                        .attr('class', 'movie-dot')
+                }
+            })
+
+        d3.select('#brush-layer')
+            .call(this.brush);
+    }
+
     updateChart() {
         // set movie data
         this.movieData = this.globalMovieData.displayedMovies;
         this.chartTitle = this.yAxisData.text + ' vs ' + this.xAxisData.text;
+
+        d3.select('#brush-layer')
+            .call(this.brush.move, null);
+
         this.drawChart();
     }
 }
