@@ -3,11 +3,12 @@ class Dotplot {
     // Ability to change Axis - Labels, axis values, and title change as well
     // Tooltip and highlight on hover for each dot. Tooltip displays name, and the values for x and y axis.
     // Selected movie in the table/detail card appears as a differnt color on the dotplot for easier locating
+    // Brush selection updates the list of movies and the movie distribution chart
 
 
     // TODO:
     // Add 'exclude revenue outliers" button, that caps revenue at 1 billion
-    // Make brush selection set the 'displayed Movies global variable and redraw the distribution chart and the table"
+    // Add 'on click' for movies, to set the selected movie
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
@@ -179,9 +180,11 @@ class Dotplot {
                 d3.select('#dotplot-tooltip')
                     .selectAll('text')
                     .remove();
-                // d3.select('#dotplot-tooltip')
-                //     .selectAll('rect')
-                //     .remove();
+            })
+            .on('click', (_, d) => {
+                this.globalMovieData.selectedMovie = d;
+                this.updateSelectedCircle();
+                globalMovieData.moviePoster.drawPoster();
             })
             .transition().duration(300)
             .attr('cx', d => this.xScale(d[this.xAxisData.key]))
@@ -270,7 +273,7 @@ class Dotplot {
         
         this.brush = d3.brush()
             .extent(extent)
-            .on('start brush end', ({selection}) => {
+            .on('brush end', ({selection}) => {
                 let value = [];
                 if(selection) {
                     this.circleSelection
@@ -308,6 +311,7 @@ class Dotplot {
         d3.select('#brush-layer')
             .call(this.brush.move, null);
 
+        this.updateSelectedCircle();
         this.drawChart();
     }
 
