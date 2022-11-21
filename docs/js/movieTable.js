@@ -3,7 +3,7 @@ class MovieTable {
     // Shows overview details about each movie (rating, language, revenue, genres)
     // Has a vizualization representing rating - circumference of rating circle corresponds to rating, so does color
     // Revenue displays a bar chart from $1,000,000 to $1,000,000,000 and gives an * for outliers. 
-    // Clicking on movie highlights it in the dotplot, and displays it on the movie detail card
+    // Clicking on movie highlights it in the dotplot and in the table, also displaying it on the movie detail card
     // Movies can be sorted by all the columns
 
 
@@ -104,7 +104,7 @@ class MovieTable {
                 _this.globalMovieData.selectedMovie = d;
                 _this.globalMovieData.dotplot.updateSelectedCircle();
                 _this.globalMovieData.moviePoster.drawPoster();
-                
+
                 d3.select('#movie-list-body')
                     .selectAll('tr')
                     .attr('id', null);
