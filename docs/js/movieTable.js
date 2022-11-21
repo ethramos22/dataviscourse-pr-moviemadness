@@ -6,7 +6,6 @@ class MovieTable {
         console.log('Start Constructor of Movie Table', this.globalMovieData);
 
         this.movieData = this.globalMovieData.displayedMovies;
-        console.log('All movies', this.movieData);
 
         this.vizHeight = 60;
         this.vizWidth = 70;
@@ -201,28 +200,19 @@ class MovieTable {
     attachSortHandlers() {
         d3.select('#movie-list-table').selectAll('th')
             .on('click', (event) => {
-                console.log();
-                console.log('HEADER NAME:', event.target.textContent.replace(/[^a-zA-Z]+/g, ''));
-                console.log('HEADER NAME:', event);
-                console.log('HEADER NAME SPLIT:', event.target.textContent.split('$')[0])
-
-
                 const headerName = event.target.textContent.split('$')[0];
                 let info = this.headerInfo[headerName];
                 // If it's already been sorted reverse it, set it to 'descending' and return
                 if(info.sorted) {
-                    console.log("we've already sorted by", headerName, "so we're going to reverse the list, and set ascending to opposite of what it was");
                     info.ascending = !info.ascending;
                     this.movieData.reverse();
 
                 } else {
-                    console.log(headerName, "hasn't been sorted yet. Sorting, and setting sorted and asending to true")
                     // If sorted is false, reset all other sort data and sort it. Then set sorted to true and ascending to true
                     for(let [_, value] of Object.entries(this.headerInfo)) {
                         value.sorted = false;
                         value.ascending = false;
                     }
-                    console.log('headerinfo', this.headerInfo)
 
                     if(info.type === 'text')
                         // Alphabetical

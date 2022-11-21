@@ -64,8 +64,6 @@ class Dotplot {
 
     drawAxis() {
         // Change domain to be specific to displayed data
-        console.log('new x domain is for', this.xAxisData.key, 'and it is ', d3.extent(this.movieData.map(d => d[this.xAxisData.key])));
-
         this.xScale
             .domain(d3.extent(this.movieData.map(d => d[this.xAxisData.key])));
 
@@ -76,7 +74,6 @@ class Dotplot {
         let xAxis = d3.axisBottom()
             .scale(this.xScale)
             .tickFormat(d => {
-                // console.log('logging in tick', this.xAxisData);
                 if(this.xAxisData.key === 'runtime'|| this.xAxisData.key == 'vote_average')
                     return d;
                 return d/1000000;
@@ -114,9 +111,7 @@ class Dotplot {
             .join('circle');
 
         this.circleSelection
-            .on('mouseover', function(event, d ) {
-                console.log('in highlight selected:', event, d, this)
-        
+            .on('mouseover', function(event, d ) {        
                 // Get x and y position of circle
                 const cx = parseFloat(d3.select(this).attr('cx'));
                 const cy = parseFloat(d3.select(this).attr('cy'));
@@ -281,8 +276,6 @@ class Dotplot {
                     })
                     .attr('class', 'movie-dot')
                     .data();
-
-                    console.log(value);
                 } else {
                     this.circleSelection
                         .attr('class', 'movie-dot')
@@ -305,7 +298,6 @@ class Dotplot {
     }
 
     updateSelectedCircle() {
-        console.log('updating styling of selected circle');
         
         // remove styling on previously selected movie
         this.circleSelection.filter(d => d.id === this.selectedMovie.id)
