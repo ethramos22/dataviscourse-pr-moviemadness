@@ -183,9 +183,9 @@ class Dotplot {
             })
             .on('click', (_, d) => {
                 this.globalMovieData.selectedMovie = d;
-                this.updateSelectedCircle();
+                this.removeCircleSelectionStyling();
+                this.addCircleSelectionStyling();
                 globalMovieData.moviePoster.drawPoster();
-                // this.globalMovieData.movieTable.updateSelectedRow();
             })
             .transition().duration(300)
             .attr('cx', d => this.xScale(d[this.xAxisData.key]))
