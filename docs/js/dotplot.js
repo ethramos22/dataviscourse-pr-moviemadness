@@ -185,8 +185,7 @@ class Dotplot {
                 this.globalMovieData.selectedMovie = d;
                 this.updateSelectedCircle();
                 globalMovieData.moviePoster.drawPoster();
-                console.log('calling update selected row from circle selection on click');
-                this.globalMovieData.movieTable.updateSelectedRow();
+                // this.globalMovieData.movieTable.updateSelectedRow();
             })
             .transition().duration(300)
             .attr('cx', d => this.xScale(d[this.xAxisData.key]))
@@ -194,8 +193,7 @@ class Dotplot {
             .attr('r', 5)
             .attr('class', 'movie-dot');
             
-        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
-            .attr('id', 'selected-movie');
+        this.addCircleSelectionStyling();
     }
 
     drawLabelsAndTitles() {
@@ -313,16 +311,17 @@ class Dotplot {
         d3.select('#brush-layer')
             .call(this.brush.move, null);
 
-        this.updateSelectedCircle();
+        this.removeCircleSelectionStyling();
         this.drawChart();
     }
 
-    updateSelectedCircle() {
+    removeCircleSelectionStyling() {
         // remove styling on previously selected movie
         this.circleSelection.filter(d => d.id === this.selectedMovie.id)
             .attr('id', null);
+    }
 
-        // set styling on new selected movie
+    addCircleSelectionStyling() {
         this.selectedMovie = this.globalMovieData.selectedMovie;
         this.circleSelection.filter(d => d.id === this.selectedMovie.id)
             .attr('id', 'selected-movie');

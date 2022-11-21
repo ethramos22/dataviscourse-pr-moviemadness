@@ -124,8 +124,9 @@ class MovieTable {
         // Draw revenue
         let revenueSelection = svgSelection.filter(d => d.viz === 'revenue');
         this.drawRevenueBars(revenueSelection);
-        
 
+        //Highlight selected
+        this.addRowSelectionStyling();
     }
 
     drawRevenueBars(revenueSelection) {
@@ -209,6 +210,9 @@ class MovieTable {
     attachSortHandlers() {
         d3.select('#movie-list-table').selectAll('th')
             .on('click', (event) => {
+                // Remove styling from currently highlighted row
+                this.removeRowSelectionStyling();
+
                 const headerName = event.target.textContent.split('$')[0];
                 let info = this.headerInfo[headerName];
                 // If it's already been sorted reverse it, set it to 'descending' and return
@@ -249,22 +253,29 @@ class MovieTable {
     selectMovie(_, d) {
         this.globalMovieData.selectedMovie = d;
         
-        console.log('calling update selected row from select Movie');
-        this.updateSelectedRow();
-        this.globalMovieData.dotplot.updateSelectedCircle();
+        this.removeRowSelectionStyling();
+        this.addRowSelectionStyling();
+
+        this.globalMovieData.dotplot.removeCircleSelectionStyling();
+        this.globalMovieData.dotplot.addCircleSelectionStyling();
+
         this.globalMovieData.moviePoster.drawPoster();
 
     }
 
-    updateSelectedRow() {
-        // remove styling on previously selected movie
-        this.rowSelection.filter(d => d.id === this.selectedMovie.id)
-            .attr('id', null);
-
+    addRowSelectionStyling() {
         // set styling on new selected movie
         this.selectedMovie = this.globalMovieData.selectedMovie;
+
         this.rowSelection.filter(d => d.id === this.selectedMovie.id)
             .attr('id', 'selected-row');
+    }
+
+    removeRowSelectionStyling() {
+        // remove styling on previously selected movie
+         this.rowSelection.filter(d => d.id === this.selectedMovie.id)
+             .attr('id', null);
+
     }
 
     rowToCellDataTransform(movie) {
@@ -312,8 +323,7 @@ class MovieTable {
             value.sorted = false;
             value.ascending = false;
         }
-        console.log('calling update selected row from updateMovieList');
-        this.updateSelectedRow();
+        this.removeRowSelectionStyling();
         this.drawMovieList();
     }
 }
