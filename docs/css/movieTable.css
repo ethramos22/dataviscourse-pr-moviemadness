@@ -58,6 +58,6 @@
     background: #31353c;
 }
 
-#movie-list-table tbody #selected {
+#movie-list-table tbody #selected-row {
     background: #2f3135;
 }

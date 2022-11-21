@@ -14,7 +14,7 @@ class MovieTable {
         console.log('Start Constructor of Movie Table', this.globalMovieData);
 
         this.movieData = this.globalMovieData.displayedMovies;
-
+        this.selectedMovie = this.globalMovieData.selectedMovie;
         this.vizHeight = 60;
         this.vizWidth = 70;
         this.radius = 14;
@@ -96,24 +96,13 @@ class MovieTable {
 
     drawMovieList() {
         let _this = this;
-        let rowSelection = d3.select('#movie-list-body')
+        this.rowSelection = d3.select('#movie-list-body')
             .selectAll('tr')
             .data(this.movieData)
             .join('tr')
-            .on('click', function(_, d) {
-                _this.globalMovieData.selectedMovie = d;
-                _this.globalMovieData.dotplot.updateSelectedCircle();
-                _this.globalMovieData.moviePoster.drawPoster();
+            .on('click', (_, d) => this.selectMovie(_, d));
 
-                d3.select('#movie-list-body')
-                    .selectAll('tr')
-                    .attr('id', null);
-
-                d3.select(this)
-                    .attr('id', 'selected');
-            });
-
-        let cellSelection = rowSelection.selectAll('td')
+        let cellSelection = this.rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
             .join('td');
 
@@ -257,6 +246,27 @@ class MovieTable {
 
     }
 
+    selectMovie(_, d) {
+        this.globalMovieData.selectedMovie = d;
+        
+        console.log('calling update selected row from select Movie');
+        this.updateSelectedRow();
+        this.globalMovieData.dotplot.updateSelectedCircle();
+        this.globalMovieData.moviePoster.drawPoster();
+
+    }
+
+    updateSelectedRow() {
+        // remove styling on previously selected movie
+        this.rowSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', null);
+
+        // set styling on new selected movie
+        this.selectedMovie = this.globalMovieData.selectedMovie;
+        this.rowSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', 'selected-row');
+    }
+
     rowToCellDataTransform(movie) {
         // Need to return array with 5 objects on it, so that we draw 5 columns
         // Each object needs to contain the data relevant to the column, as well as the type of content that it is (ie. text or viz)
@@ -302,6 +312,8 @@ class MovieTable {
             value.sorted = false;
             value.ascending = false;
         }
+        console.log('calling update selected row from updateMovieList');
+        this.updateSelectedRow();
         this.drawMovieList();
     }
 }

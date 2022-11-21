@@ -185,6 +185,8 @@ class Dotplot {
                 this.globalMovieData.selectedMovie = d;
                 this.updateSelectedCircle();
                 globalMovieData.moviePoster.drawPoster();
+                console.log('calling update selected row from circle selection on click');
+                this.globalMovieData.movieTable.updateSelectedRow();
             })
             .transition().duration(300)
             .attr('cx', d => this.xScale(d[this.xAxisData.key]))
@@ -316,7 +318,6 @@ class Dotplot {
     }
 
     updateSelectedCircle() {
-        
         // remove styling on previously selected movie
         this.circleSelection.filter(d => d.id === this.selectedMovie.id)
             .attr('id', null);
