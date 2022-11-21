@@ -311,6 +311,7 @@ class Dotplot {
         d3.select('#brush-layer')
             .call(this.brush.move, null);
 
+        this.updateSelectedCircle();
         this.drawChart();
     }
 

@@ -57,3 +57,7 @@
     cursor: pointer;
     background: #31353c;
 }
+
+#movie-list-table tbody #selected {
+    background: #2f3135;
+}
