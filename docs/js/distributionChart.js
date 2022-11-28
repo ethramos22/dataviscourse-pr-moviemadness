@@ -44,6 +44,7 @@ class DistributionChart {
 
     drawChart() {
         const MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
+        this.drawLabelsAndTitles();
         // TODO: Fix when movies have multiple genres
         const currentDisplay = this.globalMovieData.displayedMovies
         const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
@@ -110,5 +111,29 @@ class DistributionChart {
             .attr("dy", ".35em")
             .attr("transform", "rotate(55)")
             .style("text-anchor", "start");
+    }
+
+    drawLabelsAndTitles() {
+
+        // Y axis label
+        d3.select('#barchart-labelY').append('text')
+            .text("Movie Count")
+            .attr("fill", 'lightgrey')
+            .attr('transform', `translate(20, ${this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
+
+        // X axis lable
+        d3.select('#barchart-labelX').append('text')
+            .text('Genre')
+            .attr('fill', 'lightgrey')
+            .attr('x', this.CHART_WIDTH/2 + 10)
+            .attr('y', this.CHART_HEIGHT + 40);
+
+        // Title
+        d3.select('#barchart-title').append('text')
+            .text('Genre Distribution')
+            .attr('x', this.CHART_WIDTH/2 - 25)
+            .attr('y', 15)
+            .attr('fill', 'lightgrey')
+            .attr('font-size', 18);
     }
 }
