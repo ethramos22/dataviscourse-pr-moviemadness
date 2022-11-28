@@ -4,11 +4,10 @@ class Dotplot {
     // Tooltip and highlight on hover for each dot. Tooltip displays name, and the values for x and y axis.
     // Selected movie in the table/detail card appears as a differnt color on the dotplot for easier locating
     // Brush selection updates the list of movies and the movie distribution chart
-
+    // Clicking a dot on the dotplot selects that movie, highlights it in the list, and displays it on the detail card
 
     // TODO:
     // Add 'exclude revenue outliers" button, that caps revenue at 1 billion
-    // Add 'on click' for movies, to set the selected movie
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
