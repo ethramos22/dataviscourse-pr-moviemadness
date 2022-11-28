@@ -296,7 +296,7 @@ class Dotplot {
                     this.globalMovieData.displayedMovies = this.movieData;
                 }
                 this.globalMovieData.movieTable.updateMovieList();
-                this.globalMovieData.distributionChart.drawChart();
+                //this.globalMovieData.distributionChart.drawChart();
             })
         d3.select('#brush-layer')
             .call(this.brush);

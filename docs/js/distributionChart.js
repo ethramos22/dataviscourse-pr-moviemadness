@@ -6,7 +6,7 @@ class DistributionChart {
     constructor(globalMovieData) {
         console.log('Start Constructor of Distribution Chart', this.globalMovieData);
         this.globalMovieData = globalMovieData;
-        
+        this.clicked = false;
         this.CHART_WIDTH = 500;
         this.CHART_HEIGHT = 375;
         this.MARGIN = {top: 25, right: 10, bottom: 75, left: 75}
@@ -40,16 +40,15 @@ class DistributionChart {
             .attr('id', 'movie-amount');
         tooltip.append('div')
             .attr('id', 'movies');
-        tooltip.append('div')
-            .attr('id', 'percentage');
     }
 
     drawChart() {
         const MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
+        this.drawLabelsAndTitles();
+        let _this = this;
         // TODO: Fix when movies have multiple genres
         const currentDisplay = this.globalMovieData.displayedMovies
         const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
-        console.log('groupedData', groupedData);
         let data = groupedData; 
         const tooltip = d3.select('#tooltip-barchart');
         // Scales
@@ -65,29 +64,43 @@ class DistributionChart {
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
             // Outline Bar
-            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
+            d3.select(this).attr('fill', 'rgb(214, 148, 148)');
             // Edit Tooltip
+            let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
-                .text(`${datum[1].length} out of ${currentDisplay.length} movies`);
-            console.log(datum);
+                .text(`${percentage} of movies`);
             tooltip.select('#movies')
                 .text(datum[1].map(d => d.title).join(' '));
             // Set position
-            const x = xScale(datum.x0)
-                + (xScale(datum.x1) - xScale(datum.x0)) / 2
-                + MARGIN.left;
-            const y = yScale(datum)
-                + MARGIN.top;
-            tooltip.style("transform", `translate(`
-                + `calc( -50% + ${x}px),`
-                + `calc(-100% + ${y}px)`
-                + `)`);
+            const x = xScale(datum[0]) - MARGIN.left;
+            const y = yScale(datum[1].length) - 2*MARGIN.bottom;
+            tooltip.style('top', y + 'px')
+            .style('left', x+'px');
         }
 
         function onMouseLeave(e) {
             tooltip.style('visibility', 'hidden');
-            d3.select(e.path[0]).attr('fill', 'lightgrey');
+            if (!_this.clicked)
+                d3.select(this).attr('fill', 'lightgrey');
+            _this.clicked = false;
         }
+
+        function onMouseClick(e, datum) {
+            if (_this.clicked) 
+                _this.globalMovieData.displayedMovies = currentDisplay;
+            else
+                _this.globalMovieData.displayedMovies = datum[1];
+            _this.clicked = true;
+            let bars = d3.select('#bars').selectAll('rect');
+            console.log(bars);
+            bars.attr('fill', 'lightgrey');
+            
+            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
+            // Update charts
+            _this.globalMovieData.dotplot.updateChart();
+            _this.globalMovieData.movieTable.updateMovieList();
+        }
+
         // X Axis
         let xAxis = d3.select('#x-axis')
             .attr('transform', `translate(0,${this.CHART_HEIGHT - MARGIN.bottom})`)
@@ -104,6 +117,7 @@ class DistributionChart {
         bars.join('rect')
             .on('mouseenter', onMouseEnter)
             .on('mouseleave', onMouseLeave)
+            .on('click', onMouseClick)
             .transition().duration(this.ANIMATION_DUATION)
             .attr('x', d => xScale(d[0]))
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + MARGIN.top)
@@ -117,5 +131,28 @@ class DistributionChart {
             .attr("dy", ".35em")
             .attr("transform", "rotate(55)")
             .style("text-anchor", "start");
+    }
+
+    drawLabelsAndTitles() {
+        // Y axis label
+        d3.select('#barchart-labelY').append('text')
+            .text("Movie Count")
+            .attr("fill", 'lightgrey')
+            .attr('transform', `translate(20, ${this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
+
+        // X axis lable
+        d3.select('#barchart-labelX').append('text')
+            .text('Genre')
+            .attr('fill', 'lightgrey')
+            .attr('x', this.CHART_WIDTH/2 + 10)
+            .attr('y', this.CHART_HEIGHT + 40);
+
+        // Title
+        d3.select('#barchart-title').append('text')
+            .text('Genre Distribution')
+            .attr('x', this.CHART_WIDTH/2 - 25)
+            .attr('y', 15)
+            .attr('fill', 'lightgrey')
+            .attr('font-size', 18);
     }
 }
