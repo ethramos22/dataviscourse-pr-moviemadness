@@ -6,7 +6,7 @@ class DistributionChart {
     constructor(globalMovieData) {
         console.log('Start Constructor of Distribution Chart', this.globalMovieData);
         this.globalMovieData = globalMovieData;
-        
+        this.clicked = false;
         this.CHART_WIDTH = 500;
         this.CHART_HEIGHT = 375;
         this.MARGIN = {top: 25, right: 10, bottom: 75, left: 75}
@@ -45,10 +45,10 @@ class DistributionChart {
     drawChart() {
         const MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
         this.drawLabelsAndTitles();
+        let _this = this;
         // TODO: Fix when movies have multiple genres
         const currentDisplay = this.globalMovieData.displayedMovies
         const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
-        console.log('groupedData', groupedData);
         let data = groupedData; 
         const tooltip = d3.select('#tooltip-barchart');
         // Scales
@@ -64,7 +64,7 @@ class DistributionChart {
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
             // Outline Bar
-            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
+            d3.select(this).attr('fill', 'rgb(214, 148, 148)');
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
@@ -80,8 +80,27 @@ class DistributionChart {
 
         function onMouseLeave(e) {
             tooltip.style('visibility', 'hidden');
-            d3.select(e.path[0]).attr('fill', 'lightgrey');
+            if (!_this.clicked)
+                d3.select(this).attr('fill', 'lightgrey');
+            _this.clicked = false;
         }
+
+        function onMouseClick(e, datum) {
+            if (_this.clicked) 
+                _this.globalMovieData.displayedMovies = currentDisplay;
+            else
+                _this.globalMovieData.displayedMovies = datum[1];
+            _this.clicked = true;
+            let bars = d3.select('#bars').selectAll('rect');
+            console.log(bars);
+            bars.attr('fill', 'lightgrey');
+            
+            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
+            // Update charts
+            _this.globalMovieData.dotplot.updateChart();
+            _this.globalMovieData.movieTable.updateMovieList();
+        }
+
         // X Axis
         let xAxis = d3.select('#x-axis')
             .attr('transform', `translate(0,${this.CHART_HEIGHT - MARGIN.bottom})`)
@@ -98,6 +117,7 @@ class DistributionChart {
         bars.join('rect')
             .on('mouseenter', onMouseEnter)
             .on('mouseleave', onMouseLeave)
+            .on('click', onMouseClick)
             .transition().duration(this.ANIMATION_DUATION)
             .attr('x', d => xScale(d[0]))
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + MARGIN.top)
@@ -114,7 +134,6 @@ class DistributionChart {
     }
 
     drawLabelsAndTitles() {
-
         // Y axis label
         d3.select('#barchart-labelY').append('text')
             .text("Movie Count")
