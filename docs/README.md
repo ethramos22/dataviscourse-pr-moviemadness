@@ -20,7 +20,7 @@ The movie list displays a few data points about each movie, most notably:
 - The rating circle - whose outer ring circumference and color scale to the rating value
 - The revenue bar - whose rectangles scale to revenue between $1 million and $1 billion. Movies with revenue outside the range are marked with an asterik and offer more detail when hovered over.
 
-When a row is selected, the detail card and dotplot are updated to display the selected movie.
+Movies can be sorted by each column value. Also, when a row is selected, the detail card and dotplot are updated to display the selected movie.
 
 // INSERT PICTURE OF MOVIE LIST
 
