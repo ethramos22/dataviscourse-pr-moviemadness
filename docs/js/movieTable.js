@@ -1,13 +1,20 @@
-// This is the table we'll use to display the list of movies and some details about each (popular, topRated, nowPlaying)
-
 class MovieTable {
+    // FUNCTIONALITY
+    // Shows overview details about each movie (rating, language, revenue, genres)
+    // Has a vizualization representing rating - circumference of rating circle corresponds to rating, so does color
+    // Revenue displays a bar chart from $1,000,000 to $1,000,000,000 and gives an * for outliers. 
+    // Clicking on movie highlights it in the dotplot and in the table, also displaying it on the movie detail card
+    // Movies can be sorted by all the columns
+
+
+    // TODO:
+    // Add tooltip hover for movies that have outlier revenue values ($1,000,000 < in revenue > $1,000,000,000)
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         console.log('Start Constructor of Movie Table', this.globalMovieData);
 
         this.movieData = this.globalMovieData.displayedMovies;
-        console.log('All movies', this.movieData);
-
+        this.selectedMovie = this.globalMovieData.selectedMovie;
         this.vizHeight = 60;
         this.vizWidth = 70;
         this.radius = 14;
@@ -88,13 +95,14 @@ class MovieTable {
     }
 
     drawMovieList() {
-        let rowSelection = d3.select('#movie-list-body')
+        let _this = this;
+        this.rowSelection = d3.select('#movie-list-body')
             .selectAll('tr')
             .data(this.movieData)
             .join('tr')
             .on('click', (_, d) => this.selectMovie(_, d));
 
-        let cellSelection = rowSelection.selectAll('td')
+        let cellSelection = this.rowSelection.selectAll('td')
             .data(this.rowToCellDataTransform)
             .join('td');
 
@@ -116,8 +124,9 @@ class MovieTable {
         // Draw revenue
         let revenueSelection = svgSelection.filter(d => d.viz === 'revenue');
         this.drawRevenueBars(revenueSelection);
-        
 
+        //Highlight selected
+        this.addRowSelectionStyling();
     }
 
     drawRevenueBars(revenueSelection) {
@@ -201,28 +210,22 @@ class MovieTable {
     attachSortHandlers() {
         d3.select('#movie-list-table').selectAll('th')
             .on('click', (event) => {
-                console.log();
-                console.log('HEADER NAME:', event.target.textContent.replace(/[^a-zA-Z]+/g, ''));
-                console.log('HEADER NAME:', event);
-                console.log('HEADER NAME SPLIT:', event.target.textContent.split('$')[0])
-
+                // Remove styling from currently highlighted row
+                this.removeRowSelectionStyling();
 
                 const headerName = event.target.textContent.split('$')[0];
                 let info = this.headerInfo[headerName];
                 // If it's already been sorted reverse it, set it to 'descending' and return
                 if(info.sorted) {
-                    console.log("we've already sorted by", headerName, "so we're going to reverse the list, and set ascending to opposite of what it was");
                     info.ascending = !info.ascending;
                     this.movieData.reverse();
 
                 } else {
-                    console.log(headerName, "hasn't been sorted yet. Sorting, and setting sorted and asending to true")
                     // If sorted is false, reset all other sort data and sort it. Then set sorted to true and ascending to true
                     for(let [_, value] of Object.entries(this.headerInfo)) {
                         value.sorted = false;
                         value.ascending = false;
                     }
-                    console.log('headerinfo', this.headerInfo)
 
                     if(info.type === 'text')
                         // Alphabetical
@@ -249,7 +252,30 @@ class MovieTable {
 
     selectMovie(_, d) {
         this.globalMovieData.selectedMovie = d;
+        
+        this.removeRowSelectionStyling();
+        this.addRowSelectionStyling();
+
+        this.globalMovieData.dotplot.removeCircleSelectionStyling();
+        this.globalMovieData.dotplot.addCircleSelectionStyling();
+
         this.globalMovieData.moviePoster.drawPoster();
+
+    }
+
+    addRowSelectionStyling() {
+        // set styling on new selected movie
+        this.selectedMovie = this.globalMovieData.selectedMovie;
+
+        this.rowSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', 'selected-row');
+    }
+
+    removeRowSelectionStyling() {
+        // remove styling on previously selected movie
+         this.rowSelection.filter(d => d.id === this.selectedMovie.id)
+             .attr('id', null);
+
     }
 
     rowToCellDataTransform(movie) {
@@ -291,6 +317,13 @@ class MovieTable {
 
     updateMovieList() {
         this.movieData = this.globalMovieData.displayedMovies;
+        
+        // reset header info
+        for(let [_, value] of Object.entries(this.headerInfo)) {
+            value.sorted = false;
+            value.ascending = false;
+        }
+        this.removeRowSelectionStyling();
         this.drawMovieList();
     }
 }

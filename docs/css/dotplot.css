@@ -1,0 +1,29 @@
+.movie-dot {
+    stroke: black;
+    fill: red;
+    opacity: 0.5;
+}
+
+.movie-dot:hover {
+    opacity: 1;
+}
+
+#selected-movie {
+    stroke: black;
+    fill: white;
+    opacity: 0.5;
+}
+
+#selected-movie:hover {
+    opacity: 1;
+}
+.unbrushed {
+    stroke: black;
+    fill: grey;
+    opacity: 0.5;
+}
+
+.tooltip-label {
+    fill: white;
+    font-size: 12px;
+}

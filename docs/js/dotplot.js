@@ -1,7 +1,18 @@
 class Dotplot {
+    // FUNCTIONALITY
+    // Ability to change Axis - Labels, axis values, and title change as well
+    // Tooltip and highlight on hover for each dot. Tooltip displays name, and the values for x and y axis.
+    // Selected movie in the table/detail card appears as a differnt color on the dotplot for easier locating
+    // Brush selection updates the list of movies and the movie distribution chart
+
+
+    // TODO:
+    // Add 'exclude revenue outliers" button, that caps revenue at 1 billion
+    // Add 'on click' for movies, to set the selected movie
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
+        this.selectedMovie = this.globalMovieData.selectedMovie;
 
         this.MARGIN = {top: 25, right: 10, bottom: 60, left: 75}
         this.CHART_WIDTH = 500;
@@ -11,7 +22,7 @@ class Dotplot {
         this.xAxisData = {
             key: 'budget',
             text: 'Budget'
-        };
+        }; 
         this.yAxisData = {
             key: 'revenue',
             text: 'Revenue'
@@ -28,13 +39,26 @@ class Dotplot {
             .domain(d3.extent(this.movieData.map(d => d.revenue)))
             .range([this.CHART_HEIGHT - this.MARGIN.bottom, this.MARGIN.top])
 
-        // position axis
-        d3.select('#bvrev-x-axis')
+        // Position axis
+        d3.select('#dotplot-x-axis')
             .attr('transform', `translate(0, ${this.CHART_HEIGHT - this.MARGIN.bottom})`)
-        d3.select('#bvrev-y-axis')
+        d3.select('#dotplot-y-axis')
             .attr('transform', `translate(${this.MARGIN.left}, 0)`)
 
+        // Dismiss brush on click
+        d3.select('#dotplot')
+            .on('click', () => {
+                d3.select('#brush-layer')
+                    .call(this.brush.move, null);
+            })
+
+        // Draw Chart
         this.drawChart();
+        
+        // Add Brush Layer
+        this.addBrushLayer();
+
+        // Attach Button Handlers
         this.attachSelectHandlers();
     }
 
@@ -45,13 +69,11 @@ class Dotplot {
         this.drawAxis();
 
         //TODO: Draw circles
-        this.drawCircles();
+        this.drawCircles();   
     }
 
     drawAxis() {
         // Change domain to be specific to displayed data
-        console.log('new x domain is for', this.xAxisData.key, 'and it is ', d3.extent(this.movieData.map(d => d[this.xAxisData.key])));
-
         this.xScale
             .domain(d3.extent(this.movieData.map(d => d[this.xAxisData.key])));
 
@@ -62,12 +84,11 @@ class Dotplot {
         let xAxis = d3.axisBottom()
             .scale(this.xScale)
             .tickFormat(d => {
-                // console.log('logging in tick', this.xAxisData);
                 if(this.xAxisData.key === 'runtime'|| this.xAxisData.key == 'vote_average')
                     return d;
                 return d/1000000;
             });
-        d3.select('#bvrev-x-axis').call(xAxis);
+        d3.select('#dotplot-x-axis').call(xAxis);
 
         // draw yAxis
         let yAxis = d3.axisLeft()
@@ -78,10 +99,10 @@ class Dotplot {
                 return d/1000000;
             });
 
-        d3.select('#bvrev-y-axis').call(yAxis);
+        d3.select('#dotplot-y-axis').call(yAxis);
 
         //TODO: FORMAT AXIS AND DRAW LABELS
-        d3.select('#bvrev-x-axis').selectAll('.tick text')
+        d3.select('#dotplot-x-axis').selectAll('.tick text')
             .attr("y", 0)
             .attr("x", 9)
             .attr("dy", ".35em")
@@ -92,24 +113,93 @@ class Dotplot {
     }
 
     drawCircles() {
-        let circleSelection = d3.select('#bvrev-content')
+        let _this = this;
+
+        this.circleSelection = d3.select('#dotplot-content')
             .selectAll('circle')
             .data(this.movieData)
-            .join('circle')
+            .join('circle');
+
+        this.circleSelection
+            .on('mouseover', function(event, d ) {        
+                // Get x and y position of circle
+                const cx = parseFloat(d3.select(this).attr('cx'));
+                const cy = parseFloat(d3.select(this).attr('cy'));
+                // Adjust x and y position of tooltip based on position of circle
+                let tooltip = d3.select('#dotplot-tooltip');
+                let tooltipEnter = tooltip.selectAll('text')
+                    .data([d])
+                    .enter();
+
+                tooltipEnter.append('text')
+                    .text(d => d.title)
+                    .attr('x', cx)
+                    .attr('y', d => cy > 300 ? cy - 50 : cy + 30)
+                    .attr('class', 'tooltip-label')
+                    .attr('text-anchor', d => cx < 250 ? 'start' : 'end');
+
+                // y axis info
+                tooltipEnter.append('text')
+                    .text(d => {
+                        let label = _this.yAxisData.text + ': ';
+
+                        if(_this.yAxisData.key === 'runtime')
+                            return label + d[_this.yAxisData.key] + ' minutes'
+
+                        if(_this.yAxisData.key == 'vote_average')
+                            return label + d[_this.yAxisData.key]
+
+
+                        return label + d3.format("$,")(d[_this.yAxisData.key]);
+                    })
+                    .attr('x', cx)
+                    .attr('y', d => cy > 300 ? cy - 35 : cy + 45)
+                    .attr('class', 'tooltip-label')
+                    .attr('text-anchor', d => cx < 250 ? 'start' : 'end');
+
+                // X axis info
+                tooltipEnter.append('text')
+                    .text(d => {
+                        let label = _this.xAxisData.text + ': ';
+
+                        if(_this.xAxisData.key === 'runtime')
+                            return label + d[_this.xAxisData.key] + ' minutes'
+
+                        if(_this.xAxisData.key == 'vote_average')
+                            return label + d[_this.xAxisData.key]
+
+
+                        return label + d3.format("$,")(d[_this.xAxisData.key]);
+                    })
+                    .attr('x', cx)
+                    .attr('y', d => cy > 300 ? cy - 20 : cy + 60)
+                    .attr('class', 'tooltip-label')
+                    .attr('text-anchor', d => cx < 250 ? 'start' : 'end');
+            })
+            .on('mouseout', (event, d) => {
+                d3.select('#dotplot-tooltip')
+                    .selectAll('text')
+                    .remove();
+            })
+            .on('click', (_, d) => {
+                this.globalMovieData.selectedMovie = d;
+                this.removeCircleSelectionStyling();
+                this.addCircleSelectionStyling();
+                globalMovieData.moviePoster.drawPoster();
+            })
             .transition().duration(300)
             .attr('cx', d => this.xScale(d[this.xAxisData.key]))
             .attr('cy', d => this.yScale(d[this.yAxisData.key]))
-            .attr('r', 3)
-            .attr('stroke', 'black')
-            .attr('fill', 'red');
+            .attr('r', 5)
+            .attr('class', 'movie-dot');
+            
+        this.addCircleSelectionStyling();
     }
 
     drawLabelsAndTitles() {
 
-        // change .data binding to be information about what the label says
-
         // Y axis label
-        d3.select('#dot-plot-labelY').selectAll('text')
+        d3.select('#dotplot-labelY').selectAll('text')
             .data([this.yAxisData])
             .join('text')
             .text(d => {
@@ -125,7 +215,7 @@ class Dotplot {
             .attr('transform', `translate(20, ${this.yAxisData.key === 'vote_average' ? this.CHART_HEIGHT/2 :this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
 
         // X axis label
-        d3.select('#dot-plot-labelX').selectAll('text')
+        d3.select('#dotplot-labelX').selectAll('text')
             .data([this.xAxisData])
             .join('text')       
             .text(d => {
@@ -140,12 +230,12 @@ class Dotplot {
             .attr('fill', 'white');
         
         // Chart title
-        d3.select('#dot-plot-title').selectAll('text')
+        d3.select('#dotplot-title').selectAll('text')
             .data([this.movieData])
             .join('text')       
             .text(d => this.chartTitle)
             .attr('x', this.CHART_WIDTH/2 - 25)
-            .attr('y', 30)
+            .attr('y', 15)
             .attr('fill', 'white')
             .attr('font-size', 18);
     }
@@ -178,11 +268,62 @@ class Dotplot {
             })
     }
 
+    addBrushLayer() {
+        const extent = [[this.MARGIN.left - 15, this.MARGIN.top - 15], [this.CHART_WIDTH + 15, this.CHART_HEIGHT - this.MARGIN.bottom + 15]];
+        
+        this.brush = d3.brush()
+            .extent(extent)
+            .on('brush end', ({selection}) => {
+                let value = [];
+                if(selection) {
+                    this.circleSelection
+                        .attr("class", "unbrushed")
+
+                    const [[x0, y0], [x1, y1]] = selection;
+
+                    value = this.circleSelection.filter(d => {
+                        const x = this.xScale(d[this.xAxisData.key])
+                        const y = this.yScale(d[this.yAxisData.key])
+                        return x0 <= x && x < x1 && y0 <= y && y < y1;
+                    })
+                        .attr('class', 'movie-dot')
+                        .data();
+
+                    this.globalMovieData.displayedMovies = value;
+                } else {
+                    this.circleSelection
+                        .attr('class', 'movie-dot')
+
+                    this.globalMovieData.displayedMovies = this.movieData;
+                }
+                this.globalMovieData.movieTable.updateMovieList();
+                this.globalMovieData.distributionChart.drawChart();
+            })
+        d3.select('#brush-layer')
+            .call(this.brush);
+    }
+
     updateChart() {
         // set movie data
         this.movieData = this.globalMovieData.displayedMovies;
         this.chartTitle = this.yAxisData.text + ' vs ' + this.xAxisData.text;
+
+        d3.select('#brush-layer')
+            .call(this.brush.move, null);
+
+        this.removeCircleSelectionStyling();
         this.drawChart();
     }
 
+    removeCircleSelectionStyling() {
+        // remove styling on previously selected movie
+        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', null);
+    }
+
+    addCircleSelectionStyling() {
+        this.selectedMovie = this.globalMovieData.selectedMovie;
+        this.circleSelection.filter(d => d.id === this.selectedMovie.id)
+            .attr('id', 'selected-movie');
+    }
 }

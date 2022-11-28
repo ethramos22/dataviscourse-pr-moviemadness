@@ -23,7 +23,6 @@ const globalMovieData = {
     dotplot: null,
 };
 
-// have list of displayedMovies
 
 // ***** APPLICATION MOUNTING *****
 loadData().then((loadedData) => {
@@ -36,7 +35,7 @@ loadData().then((loadedData) => {
     
     // Combine all movies, then filter out duplicates by initializing a Set
     const allMovies = globalMovieData.popularMovies.concat(globalMovieData.topRatedMovies, globalMovieData.nowPlayingMovies);
-    globalMovieData.displayedMovies = [...new Set(allMovies)];
+    globalMovieData.displayedMovies = [...new Map(allMovies.map((movie) => [movie.id, movie])).values()];
     
     // Start poster as first movie on list
     globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
@@ -61,13 +60,10 @@ loadData().then((loadedData) => {
         // If all is selected, group all categories up
         if(value === "all") {
             const allMovies = globalMovieData.popularMovies.concat(globalMovieData.topRatedMovies, globalMovieData.nowPlayingMovies);
-            // console.log('Setting displayed movies to "all"', allMovies);
-            globalMovieData.displayedMovies = [...new Set(allMovies)];
+            globalMovieData.displayedMovies = [...new Map(allMovies.map((movie) => [movie.id, movie])).values()];
         } else {
-            // console.log('Setting displayed movies to', globalMovieData[value]);
             globalMovieData.displayedMovies = globalMovieData[value];
         }
-        // console.log('calling updateMovieList');
         globalMovieData.selectedMovie = globalMovieData.displayedMovies[0];
         globalMovieData.movieTable.updateMovieList();
         globalMovieData.moviePoster.drawPoster();
