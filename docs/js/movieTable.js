@@ -111,19 +111,28 @@ class MovieTable {
         this.drawText(textSelection);
 
         let vizSelection = cellSelection.filter(d => d.type === 'viz');
-        let svgSelection = vizSelection.selectAll('svg')
+
+        let ratingSelection = vizSelection.filter(d => d.viz === 'rating');
+        let revenueSelection = vizSelection.filter(d => d.viz === 'revenue');
+
+
+        let ratingSvgSelection = ratingSelection.selectAll('svg')
             .data(d => [d])
             .join('svg')
             .attr('width', this.vizWidth)
             .attr('height', this.vizHeight);
 
-        // Draw rating circles
-        let ratingSelection = svgSelection.filter(d => d.viz === 'rating');
-        this.drawRatingCircles(ratingSelection);
+        let revenueSvgSelection = revenueSelection.selectAll('svg')
+            .data(d => [d])
+            .join('svg')
+            .attr('width', this.vizWidth)
+            .attr('height', this.vizHeight)
+            .attr('overflow', 'visible');
+
+        this.drawRatingCircles(ratingSvgSelection);
 
         // Draw revenue
-        let revenueSelection = svgSelection.filter(d => d.viz === 'revenue');
-        this.drawRevenueBars(revenueSelection);
+        this.drawRevenueBars(revenueSvgSelection);
 
         //Highlight selected
         this.addRowSelectionStyling();
@@ -247,7 +256,6 @@ class MovieTable {
 
                 this.drawMovieList();
             });
-
     }
 
     selectMovie(_, d) {
