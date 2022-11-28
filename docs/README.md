@@ -49,7 +49,7 @@ The dataset was retrieved from [TMDB v3](https://developers.themoviedb.org/3) us
 
 ### Data Format
 The data consists of an array of movie object, that contain the following fields.
-```json
+```javascript
 {
         "adult": boolean,
         "backdrop_path": "string",
