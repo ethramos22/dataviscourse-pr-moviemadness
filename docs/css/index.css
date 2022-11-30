@@ -2,16 +2,19 @@ body {
     background-color: #212529;
 }
 
+a{
+    color: inherit;
+}
+
 #content-container {
     height: 1000px;
     width: 1400px;
-    
 }
 
 /* Top of page styling */
 
-#page-title {
-    color: whitesmoke;
+.page-title {
+    color: white;
 }
 
 #header {
@@ -23,7 +26,6 @@ body {
     height: 5%;
     width: 1400px;
 }
-
 
 #viz-content {
     height: 90%;
