@@ -35,7 +35,7 @@ class DistributionChart {
     drawChart() {
         let _this = this;
         const currentDisplay = this.globalMovieData.displayedMovies
-        const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
+        const groupedData = d3.group(currentDisplay, d => d.genres.length === 0 ? 'None' : d.genres[0].name)
         let data = groupedData; 
         const tooltip = d3.select('#tooltip-barchart');
         // Scales
@@ -112,7 +112,8 @@ class DistributionChart {
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', xScale.bandwidth())
             .attr('height', d => yScale(0) - yScale(d[1].length))
-            .attr('class', 'bar');
+            .attr('class', 'bar')
+            .attr('id', null);
 
             // Tick rotate: https://bl.ocks.org/mbostock/4403522
         xAxis.selectAll('.tick text')
