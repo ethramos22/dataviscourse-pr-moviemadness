@@ -66,7 +66,7 @@ body {
 /* Button and card styling */
 .card {
     flex-wrap: wrap;
-    color: #858788;
+    color: #adadad;
     padding: 10px;
     border-radius: 15px;
     background: #17191c;
@@ -84,7 +84,7 @@ body {
     text-decoration: none;
     background-color: #2d3035;
     border: 1px solid #2d3035;
-    color: #858788;
+    color: #adadad;
 }
 
 #selector-x {

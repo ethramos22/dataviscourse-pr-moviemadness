@@ -154,8 +154,8 @@ class MovieTable {
                 else
                     return this.revenueScale(this.revenueRange[1]);
             })
-            .attr('y', 5)
-            .attr('fill', 'lightgrey');
+            .attr('y', 4)
+            .attr('class', 'revenue-bar');
 
         revenueSelection.selectAll('text')
             .data(d => [d])
@@ -168,7 +168,7 @@ class MovieTable {
             })
             .attr('x', 2)
             .attr('y', this.vizHeight/1.75)
-            .attr('fill', 'red');
+            .attr('class', 'revenue-text');
     }
 
     drawRatingCircles(ratingSelection) {

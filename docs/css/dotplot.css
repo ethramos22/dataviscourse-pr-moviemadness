@@ -1,7 +1,7 @@
 .movie-dot {
     stroke: black;
-    fill: #858788;
-    opacity: 0.8;
+    fill: #adadad;
+    opacity: 0.6;
 }
 
 .movie-dot:hover {
@@ -20,7 +20,7 @@
 }
 .unbrushed {
     stroke: black;
-    fill: #858788;
+    fill: #adadad;
     opacity: 0.3;
 }
 
