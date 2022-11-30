@@ -1,17 +1,18 @@
 .movie-dot {
     stroke: black;
-    fill: red;
-    opacity: 0.5;
+    fill: #858788;
+    opacity: 0.8;
 }
 
 .movie-dot:hover {
-    opacity: 1;
+    fill: white;
+    opacity: 0.7;
 }
 
 #selected-movie {
     stroke: black;
     fill: white;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 #selected-movie:hover {
@@ -19,8 +20,8 @@
 }
 .unbrushed {
     stroke: black;
-    fill: grey;
-    opacity: 0.5;
+    fill: #858788;
+    opacity: 0.3;
 }
 
 .tooltip-label {

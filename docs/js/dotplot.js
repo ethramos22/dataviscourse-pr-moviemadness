@@ -6,8 +6,6 @@ class Dotplot {
     // Brush selection updates the list of movies and the movie distribution chart
     // Clicking a dot on the dotplot selects that movie, highlights it in the list, and displays it on the detail card
 
-    // TODO:
-    // Add 'exclude revenue outliers" button, that caps revenue at 1 billion
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
         this.movieData = this.globalMovieData.displayedMovies;
@@ -64,14 +62,15 @@ class Dotplot {
 
     drawChart() {
 
-        // draw axis
+        // Draw axis
         this.drawAxis();
 
-        //TODO: Draw circles
+        // Draw circles
         this.drawCircles();   
     }
 
     drawAxis() {
+        
         // Change domain to be specific to displayed data
         this.xScale
             .domain(d3.extent(this.movieData.map(d => d[this.xAxisData.key])));
@@ -79,7 +78,7 @@ class Dotplot {
         this.yScale
             .domain(d3.extent(this.movieData.map(d => d[this.yAxisData.key])))
 
-        // draw xAxis
+        // Draw xAxis
         let xAxis = d3.axisBottom()
             .scale(this.xScale)
             .tickFormat(d => {
@@ -89,7 +88,7 @@ class Dotplot {
             });
         d3.select('#dotplot-x-axis').call(xAxis);
 
-        // draw yAxis
+        // Draw yAxis
         let yAxis = d3.axisLeft()
             .scale(this.yScale)
             .tickFormat(d => {
@@ -100,7 +99,7 @@ class Dotplot {
 
         d3.select('#dotplot-y-axis').call(yAxis);
 
-        //TODO: FORMAT AXIS AND DRAW LABELS
+        // FORMAT AXIS AND DRAW LABELS
         d3.select('#dotplot-x-axis').selectAll('.tick text')
             .attr("y", 0)
             .attr("x", 9)
