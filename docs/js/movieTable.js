@@ -21,6 +21,7 @@ class MovieTable {
         this.fontSize = 10;
         this.revenueRange = [1000000, 1000000000]; // Revenue range from 1million to 1billion
 
+        // Info for sorting by column
         this.headerInfo = {
             'Movie Name': {
                 sorted: false,
@@ -129,12 +130,13 @@ class MovieTable {
             .attr('height', this.vizHeight)
             .attr('overflow', 'visible');
 
+        // Draw rating circles
         this.drawRatingCircles(ratingSvgSelection);
 
         // Draw revenue
         this.drawRevenueBars(revenueSvgSelection);
 
-        //Highlight selected
+        // Highlight selected
         this.addRowSelectionStyling();
     }
 
@@ -287,9 +289,6 @@ class MovieTable {
     }
 
     rowToCellDataTransform(movie) {
-        // Need to return array with 5 objects on it, so that we draw 5 columns
-        // Each object needs to contain the data relevant to the column, as well as the type of content that it is (ie. text or viz)
-
         const movieName = {
             value: movie.title,
             type: 'text'
@@ -301,7 +300,6 @@ class MovieTable {
             type: 'text'
         };
 
-        // Rating is 'vote_average' * 100
         const rating = {
             value: `${movie.vote_average}`,
             type: 'viz',
@@ -312,7 +310,6 @@ class MovieTable {
         const language = {
             value: languageNames.of(movie.original_language),
             type: 'text'
-
         };
 
         const revenue = {
