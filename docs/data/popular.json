@@ -1,77 +1,6 @@
 [
     {
         "adult": false,
-        "backdrop_path": "/y5Z0WesTjvn59jP6yo459eUsbli.jpg",
-        "belongs_to_collection": {
-            "id": 727761,
-            "name": "Terrifier Collection",
-            "poster_path": "/fTDmbVPqUfeIMKM1ThLHSquwMsm.jpg",
-            "backdrop_path": "/xGl7uzt0JX8u2WCIKK4e9Sk5Rat.jpg"
-        },
-        "budget": 250000,
-        "genres": [
-            {
-                "id": 27,
-                "name": "Horror"
-            },
-            {
-                "id": 53,
-                "name": "Thriller"
-            }
-        ],
-        "homepage": "http://www.terrifier2themovie.com/",
-        "id": 663712,
-        "imdb_id": "tt10403420",
-        "original_language": "en",
-        "original_title": "Terrifier 2",
-        "overview": "After being resurrected by a sinister entity, Art the Clown returns to Miles County where he must hunt down and destroy a teenage girl and her younger brother on Halloween night.  As the body count rises, the siblings fight to stay alive while uncovering the true nature of Art's evil intent.",
-        "popularity": 7866.782,
-        "poster_path": "/b6IRp6Pl2Fsq37r9jFhGoLtaqHm.jpg",
-        "production_companies": [
-            {
-                "id": 15157,
-                "logo_path": null,
-                "name": "Bloody Disgusting",
-                "origin_country": "US"
-            },
-            {
-                "id": 84591,
-                "logo_path": null,
-                "name": "Dark Age Cinema",
-                "origin_country": ""
-            },
-            {
-                "id": 114220,
-                "logo_path": null,
-                "name": "Fuzz on the Lens Productions",
-                "origin_country": ""
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2022-10-06",
-        "revenue": 5325078,
-        "runtime": 138,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            }
-        ],
-        "status": "Released",
-        "tagline": "Who's Laughing Now?",
-        "title": "Terrifier 2",
-        "video": false,
-        "vote_average": 7.091,
-        "vote_count": 457
-    },
-    {
-        "adult": false,
         "backdrop_path": "/bQXAqRx2Fgc46uCVWgoPz5L5Dtr.jpg",
         "belongs_to_collection": null,
         "budget": 200000000,
@@ -95,8 +24,8 @@
         "original_language": "en",
         "original_title": "Black Adam",
         "overview": "Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods\u2014and imprisoned just as quickly\u2014Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.",
-        "popularity": 4428.609,
-        "poster_path": "/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg",
+        "popularity": 13251.998,
+        "poster_path": "/pFlaoHTZeyNkG83vxsAJiGzfSsa.jpg",
         "production_companies": [
             {
                 "id": 12,
@@ -130,7 +59,7 @@
             }
         ],
         "release_date": "2022-10-19",
-        "revenue": 319000000,
+        "revenue": 368000000,
         "runtime": 125,
         "spoken_languages": [
             {
@@ -143,8 +72,1560 @@
         "tagline": "The world needed a hero. It got Black Adam.",
         "title": "Black Adam",
         "video": false,
-        "vote_average": 6.846,
-        "vote_count": 927
+        "vote_average": 7.287,
+        "vote_count": 2175
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/kmzppWh7ljL6K9fXW72bPN3gKwu.jpg",
+        "belongs_to_collection": {
+            "id": 1041695,
+            "name": "R.I.P.D. Collection",
+            "poster_path": "/3T5sF3dyECdfXNSXcq3RsDhk6yu.jpg",
+            "backdrop_path": "/qeEJNtRhT1YqLZtMSEOEtJkKvyd.jpg"
+        },
+        "budget": 130,
+        "genres": [
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            }
+        ],
+        "homepage": "",
+        "id": 1013860,
+        "imdb_id": "tt21094994",
+        "original_language": "en",
+        "original_title": "R.I.P.D. 2: Rise of the Damned",
+        "overview": "When Sheriff Roy Pulsipher finds himself in the afterlife, he joins a special police force and returns to Earth to save humanity from the undead.",
+        "popularity": 4612.792,
+        "poster_path": "/g4yJTzMtOBUTAR2Qnmj8TYIcFVq.jpg",
+        "production_companies": [
+            {
+                "id": 17009,
+                "logo_path": "/ssowAxOrrqsSR2CKeiytOXwLoCW.png",
+                "name": "Universal 1440 Entertainment",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-15",
+        "revenue": 78324220,
+        "runtime": 102,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Meet the new law of the Afterlife.",
+        "title": "R.I.P.D. 2: Rise of the Damned",
+        "video": false,
+        "vote_average": 6.777,
+        "vote_count": 175
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/au4HUSWDRadIcl9CqySlw1kJMfo.jpg",
+        "belongs_to_collection": null,
+        "budget": 20000000,
+        "genres": [
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 829799,
+        "imdb_id": "tt14656632",
+        "original_language": "en",
+        "original_title": "Paradise City",
+        "overview": "Renegade bounty hunter Ryan Swan must carve his way through the Hawaiian crime world to wreak vengeance on the kingpin who murdered his father.",
+        "popularity": 4443.476,
+        "poster_path": "/uGuHHS9SWv7MrFhCH6zoGGd7DA8.jpg",
+        "production_companies": [
+            {
+                "id": 55446,
+                "logo_path": null,
+                "name": "Arcana Studio",
+                "origin_country": "CA"
+            },
+            {
+                "id": 68628,
+                "logo_path": null,
+                "name": "308 Enterprises",
+                "origin_country": "CA"
+            },
+            {
+                "id": 75355,
+                "logo_path": "/avj80RsunqwDbOS6oLp4plRE5UQ.png",
+                "name": "Yale Productions",
+                "origin_country": "US"
+            },
+            {
+                "id": 76992,
+                "logo_path": "/mw3j3P8SUQJKLSJQrLKuSDO9Xr6.png",
+                "name": "Saban Films",
+                "origin_country": "US"
+            },
+            {
+                "id": 121204,
+                "logo_path": "/vbtvY4IxgUZk713rkmoTO4MHIac.png",
+                "name": "BondIt Media Capital",
+                "origin_country": "US"
+            },
+            {
+                "id": 130900,
+                "logo_path": null,
+                "name": "Buffalo 8 Productions",
+                "origin_country": "US"
+            },
+            {
+                "id": 170350,
+                "logo_path": null,
+                "name": "Grandave Capital",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-11",
+        "revenue": 0,
+        "runtime": 93,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Paradise City",
+        "video": false,
+        "vote_average": 6.25,
+        "vote_count": 28
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/8Tr79lfoCkOYRg8SYwWit4OoQLi.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            }
+        ],
+        "homepage": "",
+        "id": 872177,
+        "imdb_id": "tt15391770",
+        "original_language": "en",
+        "original_title": "Corrective Measures",
+        "overview": "Set in San Tiburon, the world's most dangerous maximum-security penitentiary and home to the world's most treacherous superpowered criminals, where tensions among the inmates and staff heighten, leading to anarchy that engulfs the prison and order is turned upside down.",
+        "popularity": 3761.98,
+        "poster_path": "/aHFq9NMhavOL0jtQvmHQ1c5e0ya.jpg",
+        "production_companies": [
+            {
+                "id": 25140,
+                "logo_path": "/6SeV4YCwyIDktJlvrVwiEDSLovF.png",
+                "name": "The Exchange",
+                "origin_country": "US"
+            },
+            {
+                "id": 153734,
+                "logo_path": "/3sbw7QhB5oLcLinTNZ0qvzkxB5y.png",
+                "name": "Tubi TV",
+                "origin_country": "US"
+            },
+            {
+                "id": 160551,
+                "logo_path": null,
+                "name": "Arcana Productions",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-04-29",
+        "revenue": 0,
+        "runtime": 106,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Anarchy in the world's most dangerous prison.",
+        "title": "Corrective Measures",
+        "video": false,
+        "vote_average": 4.933,
+        "vote_count": 30
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/90ZZIoWQLLEXSVm0ik3eEQBinul.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 988233,
+        "imdb_id": "tt6969338",
+        "original_language": "en",
+        "original_title": "Hex",
+        "overview": "Following a mysterious disappearance on a jump, a group of skydivers experience paranormal occurrences that leave them fighting for their lives.",
+        "popularity": 3674.808,
+        "poster_path": "/xFJHb43ZAnnuiDztxZYsmyopweb.jpg",
+        "production_companies": [
+            {
+                "id": 177201,
+                "logo_path": null,
+                "name": "Hex Movie",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-01",
+        "revenue": 0,
+        "runtime": 88,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Jump. Pull. Pray. Die.",
+        "title": "Hex",
+        "video": false,
+        "vote_average": 4.333,
+        "vote_count": 6
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/7zQJYV02yehWrQN6NjKsBorqUUS.jpg",
+        "belongs_to_collection": null,
+        "budget": 50000000,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 36,
+                "name": "History"
+            }
+        ],
+        "homepage": "https://www.thewomanking.movie/",
+        "id": 724495,
+        "imdb_id": "tt8093700",
+        "original_language": "en",
+        "original_title": "The Woman King",
+        "overview": "The story of the Agojie, the all-female unit of warriors who protected the African Kingdom of Dahomey in the 1800s with skills and a fierceness unlike anything the world has ever seen, and General Nanisca as she trains the next generation of recruits and readies them for battle against an enemy determined to destroy their way of life.",
+        "popularity": 3125.753,
+        "poster_path": "/438QXt1E3WJWb3PqNniK0tAE5c1.jpg",
+        "production_companies": [
+            {
+                "id": 559,
+                "logo_path": "/jqWioYeGSyTLuHth0141bTGvu6H.png",
+                "name": "TriStar Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 8147,
+                "logo_path": "/q6HOAdSNgCbeOqwoMVRc6REgbXF.png",
+                "name": "Entertainment One",
+                "origin_country": "CA"
+            },
+            {
+                "id": 64469,
+                "logo_path": "/1hhdZwxGJDvFDArF8VDiqtdorSq.png",
+                "name": "JuVee Productions",
+                "origin_country": "US"
+            },
+            {
+                "id": 137188,
+                "logo_path": null,
+                "name": "Jack Blue Productions",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "CA",
+                "name": "Canada"
+            },
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-15",
+        "revenue": 91000000,
+        "runtime": 135,
+        "spoken_languages": [
+            {
+                "english_name": "Portuguese",
+                "iso_639_1": "pt",
+                "name": "Portugu\u00eas"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Her reign begins.",
+        "title": "The Woman King",
+        "video": false,
+        "vote_average": 7.892,
+        "vote_count": 524
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/c6BEspznv2528qaOGzvqtpktn1J.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://www.emilythecriminal.com/",
+        "id": 862965,
+        "imdb_id": "tt15255876",
+        "original_language": "en",
+        "original_title": "Emily the Criminal",
+        "overview": "Emily, who is saddled with student debt and locked out of the job market due to a minor criminal record, gets involved in a credit card scam that pulls her into the criminal underworld of Los Angeles, ultimately leading to deadly consequences.",
+        "popularity": 2730.838,
+        "poster_path": "/iZvzMpREGiqDQ5eYbx8z70qPgst.jpg",
+        "production_companies": [
+            {
+                "id": 28286,
+                "logo_path": "/m4zzuwJbTrqw5qZHoXpySkC87jE.png",
+                "name": "Low Spark Films",
+                "origin_country": "US"
+            },
+            {
+                "id": 168717,
+                "logo_path": "/xX3DM1Tsc5tQt5rvfFJG0tH9JZk.png",
+                "name": "Evil Hag Productions",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-08-12",
+        "revenue": 0,
+        "runtime": 97,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Emily the Criminal",
+        "video": false,
+        "vote_average": 6.912,
+        "vote_count": 210
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/707thQazLJiYLBhCrZlRoV05NNL.jpg",
+        "belongs_to_collection": {
+            "id": 1002775,
+            "name": "Lost Bullet Collection",
+            "poster_path": "/bpuHCKkfJTENrruIkzAU7arP0A7.jpg",
+            "backdrop_path": "/2YunFsMDvXxOelJo4nxZ61yHT8b.jpg"
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://www.netflix.com/title/81509213",
+        "id": 948276,
+        "imdb_id": "tt14465706",
+        "original_language": "fr",
+        "original_title": "Balle perdue 2",
+        "overview": "Having cleared his name, genius mechanic Lino has only one goal in mind: getting revenge on the corrupt cops who killed his brother and his mentor.",
+        "popularity": 2466.472,
+        "poster_path": "/uAeZI1JJbLPq7Bu5dziH7emHeu7.jpg",
+        "production_companies": [
+            {
+                "id": 3040,
+                "logo_path": "/25t2aPa5uNerf9Pq5cLUsYhs8ZA.png",
+                "name": "Versus Production",
+                "origin_country": "BE"
+            },
+            {
+                "id": 67043,
+                "logo_path": "/lcpIJu30UucUTE5SCKYD1qFdDHr.png",
+                "name": "Nolita",
+                "origin_country": "FR"
+            },
+            {
+                "id": 134188,
+                "logo_path": "/ueed3yKbzBRB4hBbpbPa3AxiwPk.png",
+                "name": "Inoxy Films",
+                "origin_country": "FR"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "BE",
+                "name": "Belgium"
+            },
+            {
+                "iso_3166_1": "FR",
+                "name": "France"
+            }
+        ],
+        "release_date": "2022-11-10",
+        "revenue": 0,
+        "runtime": 98,
+        "spoken_languages": [
+            {
+                "english_name": "French",
+                "iso_639_1": "fr",
+                "name": "Fran\u00e7ais"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Lost Bullet 2",
+        "video": false,
+        "vote_average": 6.769,
+        "vote_count": 130
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/sP1ShE4BGLkHSRqG9ZeGHg6C76t.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            }
+        ],
+        "homepage": "",
+        "id": 934641,
+        "imdb_id": "tt11833408",
+        "original_language": "en",
+        "original_title": "The Minute You Wake Up Dead",
+        "overview": "A stockbroker in a small southern town gets embroiled in an insurance scam with a next-door neighbor that leads to multiple murders when a host of other people want in on the plot. Sheriff Thurmond Fowler, the by-the-book town sheriff for over four decades, works earnestly to try and unravel the town\u2019s mystery and winds up getting more than he bargained for.",
+        "popularity": 2244.631,
+        "poster_path": "/pUPwTbnAqfm95BZjNBnMMf39ChT.jpg",
+        "production_companies": [
+            {
+                "id": 2100,
+                "logo_path": null,
+                "name": "Andrew Stevens Entertainment",
+                "origin_country": ""
+            },
+            {
+                "id": 185588,
+                "logo_path": null,
+                "name": "Eyevox Entertainment",
+                "origin_country": ""
+            },
+            {
+                "id": 185589,
+                "logo_path": null,
+                "name": "Milestone Studios",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-04",
+        "revenue": 0,
+        "runtime": 90,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Don't trust a soul.",
+        "title": "The Minute You Wake Up Dead",
+        "video": false,
+        "vote_average": 4.9,
+        "vote_count": 19
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/c1bz69r0v065TGFA5nqBiKzPDys.jpg",
+        "belongs_to_collection": null,
+        "budget": 50000000,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 10402,
+                "name": "Music"
+            }
+        ],
+        "homepage": "https://www.lylelylecrocodile.movie/",
+        "id": 830784,
+        "imdb_id": "tt14668630",
+        "original_language": "en",
+        "original_title": "Lyle, Lyle, Crocodile",
+        "overview": "When the Primm family moves to New York City, their young son Josh struggles to adapt to his new school and new friends. All of that changes when he discovers Lyle \u2014 a singing crocodile who loves baths, caviar and great music \u2014 living in the attic of his new home. But when Lyle\u2019s existence is threatened by evil neighbor Mr. Grumps, the Primms must band together to show the world that family can come from the most unexpected places.",
+        "popularity": 2159.911,
+        "poster_path": "/irIS5Tn3TXjNi1R9BpWvGAN4CZ1.jpg",
+        "production_companies": [
+            {
+                "id": 5,
+                "logo_path": "/lieeAioEBVsgsoDT9HICrdt5iRa.png",
+                "name": "Columbia Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 10400,
+                "logo_path": null,
+                "name": "Eagle Pictures",
+                "origin_country": "IT"
+            },
+            {
+                "id": 22213,
+                "logo_path": "/qx9K6bFWJupwde0xQDwOvXkOaL8.png",
+                "name": "TSG Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 91797,
+                "logo_path": null,
+                "name": "Hutch Parker Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 167932,
+                "logo_path": null,
+                "name": "Speck Gordon",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "IT",
+                "name": "Italy"
+            },
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-10-07",
+        "revenue": 79761937,
+        "runtime": 106,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "He knows every scale.",
+        "title": "Lyle, Lyle, Crocodile",
+        "video": false,
+        "vote_average": 7.71,
+        "vote_count": 88
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/kpUre8wWSXn3D5RhrMttBZa6w1v.jpg",
+        "belongs_to_collection": {
+            "id": 531799,
+            "name": "Enchanted Collection",
+            "poster_path": "/bgsrdjmwZOBbJ63FHNvRJeyd9P0.jpg",
+            "backdrop_path": "/4FGS7pFVoYEVPzT6PIZxtR6ouM8.jpg"
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            }
+        ],
+        "homepage": "https://www.disneyplus.com/movies/disenchanted/5rnVhiRFkaqL",
+        "id": 338958,
+        "imdb_id": "tt1596342",
+        "original_language": "en",
+        "original_title": "Disenchanted",
+        "overview": "Disillusioned with life in the city, feeling out of place in suburbia, and frustrated that her happily ever after hasn\u2019t been so easy to find, Giselle turns to the magic of Andalasia for help. Accidentally transforming the entire town into a real-life fairy tale and placing her family\u2019s future happiness in jeopardy, she must race against time to reverse the spell and determine what happily ever after truly means to her and her family.",
+        "popularity": 2142.715,
+        "poster_path": "/4x3pt6hoLblBeHebUa4OyiVXFiM.jpg",
+        "production_companies": [
+            {
+                "id": 2,
+                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
+                "name": "Walt Disney Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 1894,
+                "logo_path": null,
+                "name": "Josephson Entertainment",
+                "origin_country": ""
+            },
+            {
+                "id": 8909,
+                "logo_path": null,
+                "name": "Right Coast",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-16",
+        "revenue": 0,
+        "runtime": 120,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Happily never after.",
+        "title": "Disenchanted",
+        "video": false,
+        "vote_average": 7.344,
+        "vote_count": 425
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/eyiSLRh44SKKWIJ6bxWq8z1sscB.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            }
+        ],
+        "homepage": "https://fandpmovie.com/",
+        "id": 899294,
+        "imdb_id": "tt4459134",
+        "original_language": "en",
+        "original_title": "Frank and Penelope",
+        "overview": "A tale of love and violence when a man on his emotional last legs finds a savior seductively dancing in a run-down strip club. And a life most certainly headed off a cliff suddenly becomes redirected - as everything is now worth dying for.",
+        "popularity": 2128.548,
+        "poster_path": "/5NpXoAi3nEQkEgLO09nmotPfyNa.jpg",
+        "production_companies": [],
+        "production_countries": [],
+        "release_date": "2022-06-03",
+        "revenue": 0,
+        "runtime": 112,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Prey for love.",
+        "title": "Frank and Penelope",
+        "video": false,
+        "vote_average": 7.538,
+        "vote_count": 39
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/sCOHkah9RbFeZfFnfBrcykKCMNa.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            }
+        ],
+        "homepage": "",
+        "id": 846778,
+        "imdb_id": "tt14967618",
+        "original_language": "en",
+        "original_title": "Margaux",
+        "overview": "As a group of seniors celebrate their final college days at a smart house, the house's highly advanced AI system, Margaux, begins to take on a deadly presence of her own. A carefree weekend of partying turns into a dystopian nightmare as they realize Margaux's plans to eliminate her tenants one way or another. Time begins to run out as the group desperately tries to survive and outsmart the smart home.",
+        "popularity": 2108.801,
+        "poster_path": "/uNzgeMetu9l4q9NDw7gtiUFwPOJ.jpg",
+        "production_companies": [
+            {
+                "id": 2090,
+                "logo_path": "/jYlUttNqcN5u1pzMQrh5AEhZ27t.png",
+                "name": "Motion Picture Corporation of America",
+                "origin_country": "US"
+            },
+            {
+                "id": 6345,
+                "logo_path": "/7SriqZDgcJB67Mf3L2G9uum85Hl.png",
+                "name": "Lighthouse Pictures",
+                "origin_country": "CA"
+            },
+            {
+                "id": 64216,
+                "logo_path": "/Eg9VjIFt743LPYaK8Ag0fuhWGo.png",
+                "name": "Brad Krevoy Television",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "CA",
+                "name": "Canada"
+            },
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-09",
+        "revenue": 0,
+        "runtime": 105,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Welcome home.",
+        "title": "Margaux",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 43
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/vTDsdu7RoaMQhvyL6073spQMjQW.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 979924,
+        "imdb_id": "tt14824590",
+        "original_language": "en",
+        "original_title": "On the Line",
+        "overview": "A provocative and edgy radio host must play a dangerous game of cat and mouse with a mysterious caller who's kidnapped his family and is threatening to blow up the whole station.",
+        "popularity": 2077.916,
+        "poster_path": "/a14BbSHvLgzCdbDD6tAL8OBVKL1.jpg",
+        "production_companies": [
+            {
+                "id": 20312,
+                "logo_path": "/75Gdh55cjlVepuOiec2mk1eByGe.png",
+                "name": "Three Point Capital",
+                "origin_country": "US"
+            },
+            {
+                "id": 121204,
+                "logo_path": "/vbtvY4IxgUZk713rkmoTO4MHIac.png",
+                "name": "BondIt Media Capital",
+                "origin_country": "US"
+            },
+            {
+                "id": 137373,
+                "logo_path": "/4OzujMDSLnAm7I0BCPL1D6RIoJ4.png",
+                "name": "CaliWood Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 141881,
+                "logo_path": "/xVJGpTY14iZDDL0aEKHmNjnCjYi.png",
+                "name": "R-Lines Productions",
+                "origin_country": "FR"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-10-31",
+        "revenue": 0,
+        "runtime": 104,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "A dangerous game. Played live.",
+        "title": "On the Line",
+        "video": false,
+        "vote_average": 6.51,
+        "vote_count": 154
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg",
+        "belongs_to_collection": {
+            "id": 529892,
+            "name": "Black Panther Collection",
+            "poster_path": "/uVnN6KnfDuHiC8rsVsSc7kk0WRD.jpg",
+            "backdrop_path": "/yzVxUMYGKjK3GgmVI2BhmbuL9UY.jpg"
+        },
+        "budget": 250000000,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            }
+        ],
+        "homepage": "https://wakandaforevertickets.com",
+        "id": 505642,
+        "imdb_id": "tt9114286",
+        "original_language": "en",
+        "original_title": "Black Panther: Wakanda Forever",
+        "overview": "Queen Ramonda, Shuri, M\u2019Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T\u2019Challa\u2019s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+        "popularity": 1960.335,
+        "poster_path": "/ps2oKfhY6DL3alynlSqY97gHSsg.jpg",
+        "production_companies": [
+            {
+                "id": 420,
+                "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+                "name": "Marvel Studios",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-09",
+        "revenue": 675000000,
+        "runtime": 162,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            },
+            {
+                "english_name": "French",
+                "iso_639_1": "fr",
+                "name": "Fran\u00e7ais"
+            },
+            {
+                "english_name": "Haitian; Haitian Creole",
+                "iso_639_1": "ht",
+                "name": ""
+            },
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            },
+            {
+                "english_name": "Xhosa",
+                "iso_639_1": "xh",
+                "name": ""
+            }
+        ],
+        "status": "Released",
+        "tagline": "Forever.",
+        "title": "Black Panther: Wakanda Forever",
+        "video": false,
+        "vote_average": 7.533,
+        "vote_count": 1096
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/bZ6hEHRoOB5wGkRm9P8AchduODu.jpg",
+        "belongs_to_collection": null,
+        "budget": 1000000,
+        "genres": [
+            {
+                "id": 18,
+                "name": "Drama"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 10752,
+                "name": "War"
+            }
+        ],
+        "homepage": "",
+        "id": 966220,
+        "imdb_id": "tt19465630",
+        "original_language": "uk",
+        "original_title": "\u0421\u043d\u0430\u0439\u043f\u0435\u0440. \u0411\u0456\u043b\u0438\u0439 \u0432\u043e\u0440\u043e\u043d",
+        "overview": "Mykola is an eccentric pacifist who wants to be useful to humanity. When the war begins at Donbass, Mykola\u2019s naive world is collapsing as the militants kill his pregnant wife and burn his home to the ground. Recovered, he makes a cardinal decision and gets enlisted in a sniper company. Having met his wife\u2019s killers, he emotionally breaks down and arranges \u201csniper terror\u201d for the enemy. He\u2019s saved from a senseless death by his instructor who himself gets mortally wounded. The death of a friend leaves a \u201cscar\u201d and Mykola is ready to sacrifice his life.",
+        "popularity": 1734.441,
+        "poster_path": "/lZOODJzwuQo0etJJyBBZJOSdZcW.jpg",
+        "production_companies": [
+            {
+                "id": 173973,
+                "logo_path": null,
+                "name": "UM Group",
+                "origin_country": "UA"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "UA",
+                "name": "Ukraine"
+            }
+        ],
+        "release_date": "2022-05-03",
+        "revenue": 0,
+        "runtime": 120,
+        "spoken_languages": [
+            {
+                "english_name": "Ukrainian",
+                "iso_639_1": "uk",
+                "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0438\u0439"
+            }
+        ],
+        "status": "Released",
+        "tagline": "On the battlefield, one bullet can change everything.",
+        "title": "Sniper: The White Raven",
+        "video": false,
+        "vote_average": 7.543,
+        "vote_count": 138
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/aQOWnw3HydsCQZ10O0wvxFOaWc3.jpg",
+        "belongs_to_collection": null,
+        "budget": 23000000,
+        "genres": [
+            {
+                "id": 36,
+                "name": "History"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            }
+        ],
+        "homepage": "https://theavenue.film/movies/medieval",
+        "id": 551271,
+        "imdb_id": "tt8883486",
+        "original_language": "en",
+        "original_title": "Medieval",
+        "overview": "The story of 14th century Czech icon and warlord Jan Zizka who defeated armies of the Teutonic Order and the Holy Roman Empire.",
+        "popularity": 1702.796,
+        "poster_path": "/4njdAkiBdC5LnFApeXSkFQ78GdT.jpg",
+        "production_companies": [
+            {
+                "id": 39488,
+                "logo_path": null,
+                "name": "Three Brothers Production",
+                "origin_country": "CZ"
+            },
+            {
+                "id": 55956,
+                "logo_path": null,
+                "name": "JBJ Film",
+                "origin_country": "CZ"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "CZ",
+                "name": "Czech Republic"
+            }
+        ],
+        "release_date": "2022-09-08",
+        "revenue": 4311284,
+        "runtime": 126,
+        "spoken_languages": [
+            {
+                "english_name": "Czech",
+                "iso_639_1": "cs",
+                "name": "\u010cesk\u00fd"
+            },
+            {
+                "english_name": "German",
+                "iso_639_1": "de",
+                "name": "Deutsch"
+            },
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "For honor. For justice. For freedom.",
+        "title": "Medieval",
+        "video": false,
+        "vote_average": 7.212,
+        "vote_count": 198
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/olPXihyFeeNvnaD6IOBltgIV1FU.jpg",
+        "belongs_to_collection": null,
+        "budget": 17000000,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://www.smile.movie/",
+        "id": 882598,
+        "imdb_id": "tt15474916",
+        "original_language": "en",
+        "original_title": "Smile",
+        "overview": "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
+        "popularity": 1628.679,
+        "poster_path": "/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
+        "production_companies": [
+            {
+                "id": 4,
+                "logo_path": "/gz66EfNoYPqHTYI4q9UEN4CbHRc.png",
+                "name": "Paramount",
+                "origin_country": "US"
+            },
+            {
+                "id": 12292,
+                "logo_path": "/4GQTeqos2luopEtp3OgMQYusQ5c.png",
+                "name": "Temple Hill Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 96540,
+                "logo_path": "/AgYjTNeIKOh0yvegPLSjq8EOsif.png",
+                "name": "Paramount Players",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-23",
+        "revenue": 214000000,
+        "runtime": 115,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Once you see it, it\u2019s too late.",
+        "title": "Smile",
+        "video": false,
+        "vote_average": 6.801,
+        "vote_count": 970
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/17sIiv4LGapYnyvdpKxA1vozBqY.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 10402,
+                "name": "Music"
+            },
+            {
+                "id": 16,
+                "name": "Animation"
+            }
+        ],
+        "homepage": "",
+        "id": 939210,
+        "imdb_id": "tt15038118",
+        "original_language": "en",
+        "original_title": "Blue's Big City Adventure",
+        "overview": "When Josh gets the opportunity of a lifetime to audition for Rainbow Puppy\u2019s Broadway musical, Josh and Blue skidoo to NYC for the very first time where they meet new friends and discover the magic of music, dance, and following one\u2019s dreams.",
+        "popularity": 1250.338,
+        "poster_path": "/gFyB6XHUrvd3FvgN7NQbS0gjYv7.jpg",
+        "production_companies": [
+            {
+                "id": 4,
+                "logo_path": "/gz66EfNoYPqHTYI4q9UEN4CbHRc.png",
+                "name": "Paramount",
+                "origin_country": "US"
+            },
+            {
+                "id": 2348,
+                "logo_path": "/m31fQvZJuUvAgxoqTiCGYFBfZYe.png",
+                "name": "Nickelodeon Movies",
+                "origin_country": "US"
+            },
+            {
+                "id": 24955,
+                "logo_path": "/bX3cYCRWdddXTgIcDEfNiVa8U4j.png",
+                "name": "Paramount Animation",
+                "origin_country": "US"
+            },
+            {
+                "id": 39033,
+                "logo_path": "/iVDEwAZnPNw90hdeyBvcAcDYoBi.png",
+                "name": "Brown Bag Films",
+                "origin_country": "IE"
+            },
+            {
+                "id": 53562,
+                "logo_path": "/6DPply0cR2I17OzmwORLm5kKZ36.png",
+                "name": "9 Story Media Group",
+                "origin_country": "CA"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-18",
+        "revenue": 0,
+        "runtime": 74,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "All They Need is You.",
+        "title": "Blue's Big City Adventure",
+        "video": false,
+        "vote_average": 7.5,
+        "vote_count": 40
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/o3mothJXDR9vLlZHpwyfFCycCNx.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            }
+        ],
+        "homepage": "https://www.netflix.com/title/81220825",
+        "id": 668461,
+        "imdb_id": "tt13320662",
+        "original_language": "en",
+        "original_title": "Slumberland",
+        "overview": "A young girl discovers a secret map to the dreamworld of Slumberland, and with the help of an eccentric outlaw, she traverses dreams and flees nightmares, with the hope that she will be able to see her late father again.",
+        "popularity": 1232.307,
+        "poster_path": "/f18kgonrgr8YvEuvshExS4XBGL8.jpg",
+        "production_companies": [
+            {
+                "id": 7076,
+                "logo_path": "/8BFxn9NUWSgp0ndih569Gm62xiC.png",
+                "name": "Chernin Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 161357,
+                "logo_path": null,
+                "name": "about:blank",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-09",
+        "revenue": 0,
+        "runtime": 117,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Every adventure begins with a dream.",
+        "title": "Slumberland",
+        "video": false,
+        "vote_average": 7.873,
+        "vote_count": 288
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/3r3tZgKTw1554hcFoUfydLHE38w.jpg",
+        "belongs_to_collection": null,
+        "budget": 14000000,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            }
+        ],
+        "homepage": "https://www.hulu.com/movie/hellraiser-eb138082-5c40-4a8f-aa30-3fc66ef615fd",
+        "id": 338947,
+        "imdb_id": "tt0887261",
+        "original_language": "en",
+        "original_title": "Hellraiser",
+        "overview": "A young woman struggling with addiction comes into possession of an ancient puzzle box, unaware that its purpose is to summon the Cenobites, a group of sadistic supernatural beings from another dimension.",
+        "popularity": 1100.11,
+        "poster_path": "/f9ZAIUxTTk23vo1BC9Ur1Rx5c2E.jpg",
+        "production_companies": [
+            {
+                "id": 423,
+                "logo_path": "/uvA6e2O31qaonsbYd8tjvgqmNXh.png",
+                "name": "Phantom Four",
+                "origin_country": "US"
+            },
+            {
+                "id": 143790,
+                "logo_path": null,
+                "name": "Spyglass Media Group",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-28",
+        "revenue": 0,
+        "runtime": 121,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Unlock your fears.",
+        "title": "Hellraiser",
+        "video": false,
+        "vote_average": 6.542,
+        "vote_count": 330
+    },
+    {
+        "adult": false,
+        "backdrop_path": null,
+        "belongs_to_collection": {
+            "id": 736466,
+            "name": "Nice Sister-In-Law Series",
+            "poster_path": null,
+            "backdrop_path": null
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 10749,
+                "name": "Romance"
+            }
+        ],
+        "homepage": "",
+        "id": 485470,
+        "imdb_id": null,
+        "original_language": "ko",
+        "original_title": "\ucc29\ud55c \ud615\uc2182",
+        "overview": "If you give it once, a good brother-in-law who gives everything generously will come!  At the house of her girlfriend Jin-kyung, who lives with pumice stone, her brother and his wife suddenly visit and the four of them live together. At first, Kyung-seok, who was burdened by his girlfriend's brother, began to keep his eyes on his wife, Yeon-su. A bold brother-in-law who walks around in no-bra and panties without hesitation even at his sister-in-law's house. Besides, from a certain moment, he starts to send a hand of temptation to Pyeong-seok first...",
+        "popularity": 1085.14,
+        "poster_path": "/3pEs4hmeHvTAsmx09whEaPDOQpq.jpg",
+        "production_companies": [],
+        "production_countries": [
+            {
+                "iso_3166_1": "KR",
+                "name": "South Korea"
+            }
+        ],
+        "release_date": "2017-10-08",
+        "revenue": 0,
+        "runtime": 72,
+        "spoken_languages": [
+            {
+                "english_name": "Korean",
+                "iso_639_1": "ko",
+                "name": "\ud55c\uad6d\uc5b4/\uc870\uc120\ub9d0"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Nice Sister-In-Law 2",
+        "video": false,
+        "vote_average": 5.0,
+        "vote_count": 1
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/rjlG7C5GZfXutoVoE3BJaYGUhk4.jpg",
+        "belongs_to_collection": {
+            "id": 829314,
+            "name": "Enola Holmes Collection",
+            "poster_path": "/9QfsXZTS7gDJwkSmmBPlml3P8ca.jpg",
+            "backdrop_path": "/HScQCcEd3yucY3XYRCnkRzl7Gp.jpg"
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            }
+        ],
+        "homepage": "https://www.netflix.com/title/81406219",
+        "id": 829280,
+        "imdb_id": "tt14641788",
+        "original_language": "en",
+        "original_title": "Enola Holmes 2",
+        "overview": "Now a detective-for-hire like her infamous brother, Enola Holmes takes on her first official case to find a missing girl, as the sparks of a dangerous conspiracy ignite a mystery that requires the help of friends \u2014 and Sherlock himself \u2014 to unravel.",
+        "popularity": 1068.107,
+        "poster_path": "/tegBpjM5ODoYoM1NjaiHVLEA0QM.jpg",
+        "production_companies": [
+            {
+                "id": 923,
+                "logo_path": "/5UQsZrfbfG2dYJbx8DxfoTr2Bvu.png",
+                "name": "Legendary Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 121424,
+                "logo_path": null,
+                "name": "PCMA Productions",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            },
+            {
+                "iso_3166_1": "GB",
+                "name": "United Kingdom"
+            }
+        ],
+        "release_date": "2022-11-04",
+        "revenue": 0,
+        "runtime": 129,
+        "spoken_languages": [
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            },
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "The sequel is afoot!",
+        "title": "Enola Holmes 2",
+        "video": false,
+        "vote_average": 7.743,
+        "vote_count": 1180
     },
     {
         "adult": false,
@@ -152,7 +1633,7 @@
         "belongs_to_collection": {
             "id": 732461,
             "name": "47 Ronin Collection",
-            "poster_path": "/qg0ppX6dZBAcyiKQanNdLloTFo5.jpg",
+            "poster_path": "/3naP1umIlkNKQBqP3SxF8q0E4pG.jpg",
             "backdrop_path": "/qPu2XyOSTN05bxoHRoMm6v8Ayy6.jpg"
         },
         "budget": 0,
@@ -172,7 +1653,7 @@
         "original_language": "en",
         "original_title": "Blade of the 47 Ronin",
         "overview": "In this sequel to \"47 Ronin,\" a new class of warriors emerges among the Samurai clans to keep a sought-after sword from falling into the wrong hands.",
-        "popularity": 3821.739,
+        "popularity": 1007.721,
         "poster_path": "/kjFDIlUCJkcpFxYKtE6OsGcAfQQ.jpg",
         "production_companies": [
             {
@@ -202,43 +1683,42 @@
         "tagline": "",
         "title": "Blade of the 47 Ronin",
         "video": false,
-        "vote_average": 6.602,
-        "vote_count": 49
+        "vote_average": 6.9,
+        "vote_count": 84
     },
     {
         "adult": false,
-        "backdrop_path": "/naNXYdBzTEb1KwOdi1RbBkM9Zv1.jpg",
-        "belongs_to_collection": {
-            "id": 727761,
-            "name": "Terrifier Collection",
-            "poster_path": "/fTDmbVPqUfeIMKM1ThLHSquwMsm.jpg",
-            "backdrop_path": "/xGl7uzt0JX8u2WCIKK4e9Sk5Rat.jpg"
-        },
-        "budget": 100000,
+        "backdrop_path": "/sqVxhRkPwOo6jogWZjE99V1HRE1.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
         "genres": [
             {
-                "id": 27,
-                "name": "Horror"
+                "id": 16,
+                "name": "Animation"
             },
             {
-                "id": 53,
-                "name": "Thriller"
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
             }
         ],
-        "homepage": "",
-        "id": 420634,
-        "imdb_id": "tt4281724",
+        "homepage": "https://www.netflix.com/title/80228012",
+        "id": 1037858,
+        "imdb_id": "tt22774688",
         "original_language": "en",
-        "original_title": "Terrifier",
-        "overview": "On Halloween night, a young woman finds herself as the obsession of a sadistic murderer known as Art the Clown.",
-        "popularity": 3031.419,
-        "poster_path": "/6PQqC4SbY910VvyVad6mvsboILU.jpg",
+        "original_title": "The Soccer Football Movie",
+        "overview": "When mysterious green slime monsters start popping out of soccer balls, all-star athletes Zlatan Ibrahimovi\u0107 and Megan Rapinoe must team up with their four biggest fans to stop evil scientist \"Weird Al\" Yankovic from stealing their talent.",
+        "popularity": 983.421,
+        "poster_path": "/sWoYDNPNZs5MtzPbirXV73tIHrA.jpg",
         "production_companies": [
             {
-                "id": 84591,
-                "logo_path": null,
-                "name": "Dark Age Cinema",
-                "origin_country": ""
+                "id": 67327,
+                "logo_path": "/xm66FBzan9XpWv4LGaIaPGVCqGv.png",
+                "name": "Splash Entertainment",
+                "origin_country": "US"
             }
         ],
         "production_countries": [
@@ -247,9 +1727,9 @@
                 "name": "United States of America"
             }
         ],
-        "release_date": "2016-10-15",
+        "release_date": "2022-11-09",
         "revenue": 0,
-        "runtime": 84,
+        "runtime": 74,
         "spoken_languages": [
             {
                 "english_name": "English",
@@ -258,69 +1738,179 @@
             }
         ],
         "status": "Released",
-        "tagline": "There is nothing more frightening than a clown after midnight.",
-        "title": "Terrifier",
+        "tagline": "",
+        "title": "The Soccer Football Movie",
         "video": false,
-        "vote_average": 6.561,
-        "vote_count": 897
+        "vote_average": 6.7,
+        "vote_count": 43
     },
     {
         "adult": false,
-        "backdrop_path": "/b2FxWOxe9K7ZZ1uaPOze2RJ1ajq.jpg",
+        "backdrop_path": "/sO2lS83zsLTw7BqNmyoO09AT76U.jpg",
         "belongs_to_collection": null,
         "budget": 0,
         "genres": [
             {
-                "id": 27,
-                "name": "Horror"
-            },
-            {
-                "id": 28,
-                "name": "Action"
+                "id": 10751,
+                "name": "Family"
             },
             {
                 "id": 35,
                 "name": "Comedy"
+            },
+            {
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
             }
         ],
-        "homepage": "",
-        "id": 675054,
-        "imdb_id": "tt10171796",
-        "original_language": "es",
-        "original_title": "MexZombies",
-        "overview": "A group of teenagers must face a zombie apocalypse, and help reestablish order.",
-        "popularity": 2784.235,
-        "poster_path": "/pTxw4GFE3ZfzJfvuUsPyD5njAuI.jpg",
+        "homepage": "https://www.warnerbros.com/movies/tom-and-jerry-snowmans-land",
+        "id": 1018403,
+        "imdb_id": "tt21958986",
+        "original_language": "en",
+        "original_title": "Tom and Jerry Snowman's Land",
+        "overview": "It\u2019s time to chase that holiday spirit with Tom and Jerry! With magic in the air, Jerry and his nephew, Tuffy, make a snow mouse that miraculously comes to life! To keep their new friend, Larry the snow mouse from melting, Tuffy and Jerry must race him to the fabled Snowman\u2019s Village. In hot pursuit, Tom and devious Dr. Doublevay have their own plans for Larry\u2019s magic.",
+        "popularity": 967.315,
+        "poster_path": "/effgnqJMX2lXvXhKlJt7Pm1TkcU.jpg",
         "production_companies": [
             {
-                "id": 84651,
-                "logo_path": null,
-                "name": "Draco Films",
-                "origin_country": ""
+                "id": 2785,
+                "logo_path": "/l5zW8jjmQOCx2dFmvnmbYmqoBmL.png",
+                "name": "Warner Bros. Animation",
+                "origin_country": "US"
+            },
+            {
+                "id": 8922,
+                "logo_path": "/yZWehAyjfKi4KvKeg1bkJ1bm5H8.png",
+                "name": "Turner Entertainment",
+                "origin_country": "US"
             }
         ],
         "production_countries": [
             {
-                "iso_3166_1": "MX",
-                "name": "Mexico"
+                "iso_3166_1": "US",
+                "name": "United States of America"
             }
         ],
-        "release_date": "2022-10-26",
+        "release_date": "2022-09-06",
         "revenue": 0,
-        "runtime": 93,
+        "runtime": 76,
         "spoken_languages": [
             {
-                "english_name": "Spanish",
-                "iso_639_1": "es",
-                "name": "Espa\u00f1ol"
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Ready...Set...Snow.",
+        "title": "Tom and Jerry Snowman's Land",
+        "video": false,
+        "vote_average": 8.0,
+        "vote_count": 13
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/tUBN1paMQ1tmVA5Sjy1ZjPWVsiF.jpg",
+        "belongs_to_collection": {
+            "id": 492969,
+            "name": "The Adventures of Tad Jones",
+            "poster_path": "/kpILOMR8xSzivfw3gbSywILJkQW.jpg",
+            "backdrop_path": "/cvPaYCTXWjf7J2OdxWdGJF5wlFD.jpg"
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            }
+        ],
+        "homepage": "",
+        "id": 676701,
+        "imdb_id": "tt14941698",
+        "original_language": "es",
+        "original_title": "Tadeo Jones 3: La Tabla Esmeralda",
+        "overview": "Tad would love for his archeologist colleagues to accept him as one of their own, but he always messes everything up. Tad accidentally destroys a sarcophagus and unleashes an ancient spell endangering the lives of his friends: Mummy, Jeff and Belzoni. With everyone against him and only helped by Sara, he sets off on an adventure that will take him from Mexico to Chicago and from Paris to Egypt, in order to put an end to the curse of the Mummy.",
+        "popularity": 955.81,
+        "poster_path": "/jvIVl8zdNSOAJImw1elQEzxStMN.jpg",
+        "production_companies": [
+            {
+                "id": 4,
+                "logo_path": "/gz66EfNoYPqHTYI4q9UEN4CbHRc.png",
+                "name": "Paramount",
+                "origin_country": "US"
+            },
+            {
+                "id": 1182,
+                "logo_path": "/bkgwJWvqqLuzsXV2Qv3Mg3wfcNZ.png",
+                "name": "Telecinco Cinema",
+                "origin_country": "ES"
+            },
+            {
+                "id": 2875,
+                "logo_path": "/3fNapBvM3EHlyL9TxdP5qEOUNeN.png",
+                "name": "Ikiru Films",
+                "origin_country": "ES"
+            },
+            {
+                "id": 37209,
+                "logo_path": null,
+                "name": "4 Cats Pictures",
+                "origin_country": "ES"
+            },
+            {
+                "id": 104632,
+                "logo_path": "/gxKYWKH1s5fYJogAorKdG1DZTvr.png",
+                "name": "Lightbox Animation Studios",
+                "origin_country": "ES"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "ES",
+                "name": "Spain"
+            }
+        ],
+        "release_date": "2022-08-24",
+        "revenue": 0,
+        "runtime": 89,
+        "spoken_languages": [
+            {
+                "english_name": "Danish",
+                "iso_639_1": "da",
+                "name": "Dansk"
+            },
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
             }
         ],
         "status": "Released",
         "tagline": "",
-        "title": "MexZombies",
+        "title": "Tad the Lost Explorer and the Curse of the Mummy",
         "video": false,
-        "vote_average": 7.365,
-        "vote_count": 52
+        "vote_average": 7.9,
+        "vote_count": 119
     },
     {
         "adult": false,
@@ -339,7 +1929,7 @@
         "original_language": "en",
         "original_title": "Fall",
         "overview": "For best friends Becky and Hunter, life is all about conquering fears and pushing limits. But after they climb 2,000 feet to the top of a remote, abandoned radio tower, they find themselves stranded with no way down. Now Becky and Hunter\u2019s expert climbing skills will be put to the ultimate test as they desperately fight to survive the elements, a lack of supplies, and vertigo-inducing heights",
-        "popularity": 2350.808,
+        "popularity": 905.799,
         "poster_path": "/spCAxD99U1A6jsiePFoqdEcY0dG.jpg",
         "production_companies": [
             {
@@ -370,7 +1960,7 @@
                 "id": 179831,
                 "logo_path": null,
                 "name": "Capstone Studios",
-                "origin_country": ""
+                "origin_country": "US"
             }
         ],
         "production_countries": [
@@ -397,331 +1987,12 @@
         "tagline": "Fear reaches new heights.",
         "title": "Fall",
         "video": false,
-        "vote_average": 7.3,
-        "vote_count": 1656
+        "vote_average": 7.295,
+        "vote_count": 1804
     },
     {
         "adult": false,
-        "backdrop_path": "/tIX6j3NzadlwGcJ52nuWdmtOQkg.jpg",
-        "belongs_to_collection": {
-            "id": 94899,
-            "name": "Jeepers Creepers Collection",
-            "poster_path": "/2qyn3GJXqLP54fbWazRGvsnkmAA.jpg",
-            "backdrop_path": "/mzFtvzOdmuDYoQQuOzulsJkAUQB.jpg"
-        },
-        "budget": 20000000,
-        "genres": [
-            {
-                "id": 27,
-                "name": "Horror"
-            },
-            {
-                "id": 53,
-                "name": "Thriller"
-            },
-            {
-                "id": 9648,
-                "name": "Mystery"
-            }
-        ],
-        "homepage": "https://www.jeeperscreepersreborn.com/",
-        "id": 717728,
-        "imdb_id": "tt14121726",
-        "original_language": "en",
-        "original_title": "Jeepers Creepers: Reborn",
-        "overview": "Forced to travel with her boyfriend to a horror festival, Laine begins to experience disturbing visions associated with the urban legend of The Creeper. As the festival arrives and the blood-soaked entertainment builds to a frenzy, she becomes the center of it while something unearthly has been summoned.",
-        "popularity": 2184.802,
-        "poster_path": "/aGBuiirBIQ7o64FmJxO53eYDuro.jpg",
-        "production_companies": [
-            {
-                "id": 6353,
-                "logo_path": "/7Fs0fMLWrPUaM3H0PK4hbnuEE1g.png",
-                "name": "Screen Media Films",
-                "origin_country": "US"
-            },
-            {
-                "id": 68738,
-                "logo_path": null,
-                "name": "Black Hangar Studios",
-                "origin_country": "GB"
-            },
-            {
-                "id": 149897,
-                "logo_path": null,
-                "name": "Orwo Studios (US)",
-                "origin_country": ""
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "FI",
-                "name": "Finland"
-            },
-            {
-                "iso_3166_1": "GB",
-                "name": "United Kingdom"
-            },
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2022-09-15",
-        "revenue": 2892594,
-        "runtime": 88,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            }
-        ],
-        "status": "Released",
-        "tagline": "Evil rides again.",
-        "title": "Jeepers Creepers: Reborn",
-        "video": false,
-        "vote_average": 5.726,
-        "vote_count": 431
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/5GA3vV1aWWHTSDO5eno8V5zDo8r.jpg",
-        "belongs_to_collection": {
-            "id": 760193,
-            "name": "Orphan Collection",
-            "poster_path": "/q8icPVro0MYLTXbttS1KMpdQntP.jpg",
-            "backdrop_path": "/nsslKmD5WIYhJ0fO5MDeE6ZjIKp.jpg"
-        },
-        "budget": 0,
-        "genres": [
-            {
-                "id": 27,
-                "name": "Horror"
-            },
-            {
-                "id": 53,
-                "name": "Thriller"
-            }
-        ],
-        "homepage": "",
-        "id": 760161,
-        "imdb_id": "tt11851548",
-        "original_language": "en",
-        "original_title": "Orphan: First Kill",
-        "overview": "After escaping from an Estonian psychiatric facility, Leena Klammer travels to America by impersonating Esther, the missing daughter of a wealthy family. But when her mask starts to slip, she is put against a mother who will protect her family from the murderous \u201cchild\u201d at any cost.",
-        "popularity": 2009.304,
-        "poster_path": "/pHkKbIRoCe7zIFvqan9LFSaQAde.jpg",
-        "production_companies": [
-            {
-                "id": 1786,
-                "logo_path": "/joLFuCWg9e2lweYnFQtRPJKSLlI.png",
-                "name": "Dark Castle Entertainment",
-                "origin_country": "US"
-            },
-            {
-                "id": 8147,
-                "logo_path": "/q6HOAdSNgCbeOqwoMVRc6REgbXF.png",
-                "name": "Entertainment One",
-                "origin_country": "CA"
-            },
-            {
-                "id": 63576,
-                "logo_path": "/4qMMMs4smEdD2fjoLLSSleRjG9J.png",
-                "name": "Eagle Vision",
-                "origin_country": "CA"
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "CA",
-                "name": "Canada"
-            },
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2022-07-27",
-        "revenue": 9572765,
-        "runtime": 99,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            },
-            {
-                "english_name": "Estonian",
-                "iso_639_1": "et",
-                "name": "Eesti"
-            }
-        ],
-        "status": "Released",
-        "tagline": "There's always been something wrong with Esther.",
-        "title": "Orphan: First Kill",
-        "video": false,
-        "vote_average": 6.809,
-        "vote_count": 1243
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/bJa3RcFKgtVKJqTJCSSuBQeP9c8.jpg",
-        "belongs_to_collection": null,
-        "budget": 0,
-        "genres": [
-            {
-                "id": 27,
-                "name": "Horror"
-            }
-        ],
-        "homepage": "",
-        "id": 86328,
-        "imdb_id": "tt2018130",
-        "original_language": "en",
-        "original_title": "Terrifier",
-        "overview": "After witnessing a brutal murder on Halloween night, a young woman becomes the next target of a maniacal entity.",
-        "popularity": 1969.59,
-        "poster_path": "/gb6rq2nD0jRrN0dCzigg2MxXNsB.jpg",
-        "production_companies": [],
-        "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2011-08-09",
-        "revenue": 0,
-        "runtime": 20,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            }
-        ],
-        "status": "Released",
-        "tagline": "",
-        "title": "Terrifier",
-        "video": false,
-        "vote_average": 6.488,
-        "vote_count": 43
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/iS9U3VHpPEjTWnwmW56CrBlpgLj.jpg",
-        "belongs_to_collection": {
-            "id": 751156,
-            "name": "Hocus Pocus Collection",
-            "poster_path": "/1w8K4Dt3WOyCPpe94HY0rA9UXUj.jpg",
-            "backdrop_path": "/ep3u73OsN6PSxed9TFJnWqjwrdO.jpg"
-        },
-        "budget": 30000000,
-        "genres": [
-            {
-                "id": 14,
-                "name": "Fantasy"
-            },
-            {
-                "id": 35,
-                "name": "Comedy"
-            },
-            {
-                "id": 10751,
-                "name": "Family"
-            }
-        ],
-        "homepage": "https://www.disneyplus.com/movies/hocus-pocus-2/4Q5cWHlnVCun",
-        "id": 642885,
-        "imdb_id": "tt11909878",
-        "original_language": "en",
-        "original_title": "Hocus Pocus 2",
-        "overview": "29 years since the Black Flame Candle was last lit, the 17th-century Sanderson sisters are resurrected, and they are looking for revenge. Now it's up to three high school students to stop the ravenous witches from wreaking a new kind of havoc on Salem before dawn on All Hallow's Eve.",
-        "popularity": 1959.906,
-        "poster_path": "/7ze7YNmUaX81ufctGqt0AgHxRtL.jpg",
-        "production_companies": [
-            {
-                "id": 2,
-                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-                "name": "Walt Disney Pictures",
-                "origin_country": "US"
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2022-09-27",
-        "revenue": 0,
-        "runtime": 107,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            }
-        ],
-        "status": "Released",
-        "tagline": "Back and more glorious than ever.",
-        "title": "Hocus Pocus 2",
-        "video": false,
-        "vote_average": 7.595,
-        "vote_count": 1042
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/etP5jwlwvkNhwe7jnI2AyA6ZKrR.jpg",
-        "belongs_to_collection": null,
-        "budget": 0,
-        "genres": [
-            {
-                "id": 878,
-                "name": "Science Fiction"
-            }
-        ],
-        "homepage": "",
-        "id": 575322,
-        "imdb_id": "tt5656994",
-        "original_language": "en",
-        "original_title": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439 \u0440\u0430\u0437\u0443\u043c",
-        "overview": "After depleting Earth's resources for centuries, humankind's survival requires an exodus to outer space. An international expedition is quickly formed to find a suitable new planet, but when plans go awry, the crew is suddenly stranded without power on a strange planet, where something unimaginable lies in wait.",
-        "popularity": 1881.821,
-        "poster_path": "/rFljUdOozFEv6HDHIFpFvcYW0ec.jpg",
-        "production_companies": [
-            {
-                "id": 84554,
-                "logo_path": null,
-                "name": "Kinodanz",
-                "origin_country": "RU"
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "RU",
-                "name": "Russia"
-            }
-        ],
-        "release_date": "2022-01-06",
-        "revenue": 0,
-        "runtime": 98,
-        "spoken_languages": [
-            {
-                "english_name": "Russian",
-                "iso_639_1": "ru",
-                "name": "P\u0443\u0441\u0441\u043a\u0438\u0439"
-            }
-        ],
-        "status": "Released",
-        "tagline": "Love over space",
-        "title": "Project Gemini",
-        "video": false,
-        "vote_average": 5.608,
-        "vote_count": 153
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/mqsPyyeDCBAghXyjbw4TfEYwljw.jpg",
+        "backdrop_path": "/y4XBYLldCLuNLVeObTndfAaUrc3.jpg",
         "belongs_to_collection": null,
         "budget": 0,
         "genres": [
@@ -730,16 +2001,76 @@
                 "name": "Action"
             },
             {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 896485,
+        "imdb_id": "tt15713012",
+        "original_language": "fr",
+        "original_title": "Overdose",
+        "overview": "Captain Sara Bellaiche, from Toulouse Judiciary Police branch, is investigating a go-fast linked to the murder of two teenagers, an investigation led by Richard Cross, from the Paris Criminal Brigade. Forced to collaborate in order to find the murderer and stop the bloody go-fast, Sara and Richard are both thrown in a breathless race against the clock on the roads of Spain and France.",
+        "popularity": 864.751,
+        "poster_path": "/9RvM4wawLRlX608FgZr9kL8CLmy.jpg",
+        "production_companies": [
+            {
+                "id": 9,
+                "logo_path": "/nda3dTUYdDrJ6rZqBpYvY865aDv.png",
+                "name": "Gaumont",
+                "origin_country": "FR"
+            },
+            {
+                "id": 20580,
+                "logo_path": "/oRR9EXVoKP9szDkVKlze5HVJS7g.png",
+                "name": "Amazon Studios",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "FR",
+                "name": "France"
+            }
+        ],
+        "release_date": "2022-11-04",
+        "revenue": 0,
+        "runtime": 119,
+        "spoken_languages": [
+            {
+                "english_name": "French",
+                "iso_639_1": "fr",
+                "name": "Fran\u00e7ais"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Overdose",
+        "video": false,
+        "vote_average": 6.445,
+        "vote_count": 91
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/mqsPyyeDCBAghXyjbw4TfEYwljw.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 10752,
+                "name": "War"
+            },
+            {
                 "id": 18,
                 "name": "Drama"
             },
             {
-                "id": 36,
-                "name": "History"
-            },
-            {
-                "id": 10752,
-                "name": "War"
+                "id": 28,
+                "name": "Action"
             }
         ],
         "homepage": "https://www.netflix.com/title/81260280",
@@ -748,7 +2079,7 @@
         "original_language": "de",
         "original_title": "Im Westen nichts Neues",
         "overview": "Paul Baumer and his friends Albert and Muller, egged on by romantic dreams of heroism, voluntarily enlist in the German army. Full of excitement and patriotic fervour, the boys enthusiastically march into a war they believe in. But once on the Western Front, they discover the soul-destroying horror of World War I.",
-        "popularity": 1690.998,
+        "popularity": 848.27,
         "poster_path": "/hYqOjJ7Gh1fbqXrxlIao1g8ZehF.jpg",
         "production_companies": [
             {
@@ -804,18 +2135,582 @@
         "tagline": "",
         "title": "All Quiet on the Western Front",
         "video": false,
-        "vote_average": 7.909,
-        "vote_count": 547
+        "vote_average": 7.799,
+        "vote_count": 962
     },
     {
         "adult": false,
-        "backdrop_path": "/5hoS3nEkGGXUfmnu39yw1k52JX5.jpg",
+        "backdrop_path": "/cRdA9xjHBbobw4LJFsQ3j1CgpVq.jpg",
         "belongs_to_collection": {
-            "id": 1010712,
-            "name": "Fullmetal Alchemist (Live-Action) Collection",
-            "poster_path": "/hBE8kLe9lDTHp9eNFNg00mqpWgw.jpg",
-            "backdrop_path": "/owpoCXFYNkciT7ZQ76PjVqJCptE.jpg"
+            "id": 727761,
+            "name": "Terrifier Collection",
+            "poster_path": "/fTDmbVPqUfeIMKM1ThLHSquwMsm.jpg",
+            "backdrop_path": "/rADvCVtvgy0s6MoAzB9OwKieRss.jpg"
         },
+        "budget": 250000,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "http://www.terrifier2themovie.com/",
+        "id": 663712,
+        "imdb_id": "tt10403420",
+        "original_language": "en",
+        "original_title": "Terrifier 2",
+        "overview": "After being resurrected by a sinister entity, Art the Clown returns to Miles County where he must hunt down and destroy a teenage girl and her younger brother on Halloween night.  As the body count rises, the siblings fight to stay alive while uncovering the true nature of Art's evil intent.",
+        "popularity": 842.452,
+        "poster_path": "/8gLhu8UFPZfH2Hv11JhTZkb9CVl.jpg",
+        "production_companies": [
+            {
+                "id": 15157,
+                "logo_path": null,
+                "name": "Bloody Disgusting",
+                "origin_country": "US"
+            },
+            {
+                "id": 84591,
+                "logo_path": null,
+                "name": "Dark Age Cinema",
+                "origin_country": ""
+            },
+            {
+                "id": 114220,
+                "logo_path": null,
+                "name": "Fuzz on the Lens Productions",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-10-06",
+        "revenue": 10155347,
+        "runtime": 138,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Who's laughing now?",
+        "title": "Terrifier 2",
+        "video": false,
+        "vote_average": 6.959,
+        "vote_count": 689
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/fMymfWwgTfXh9RkBCFuaZrdn8Of.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            }
+        ],
+        "homepage": "",
+        "id": 760204,
+        "imdb_id": "tt13468602",
+        "original_language": "vi",
+        "original_title": "The Lair",
+        "overview": "Royal Air Force pilot Lt. Kate Sinclair is on her final flight mission when her jet is shot down over one of the most dangerous rebel strongholds in Afghanistan. She finds refuge in an abandoned underground bunker where deadly man-made creatures known as Ravagers \u2014 half-human, half-alien, and hungry for human flesh \u2014 are awakened.",
+        "popularity": 774.8,
+        "poster_path": "/ifRFLx83Xk1DcwAS3OScgI6HmWO.jpg",
+        "production_companies": [
+            {
+                "id": 290,
+                "logo_path": "/Q8mw2AOQQc8Qg0uNwLWq86DVZv.png",
+                "name": "Ingenious Media",
+                "origin_country": "GB"
+            },
+            {
+                "id": 76991,
+                "logo_path": "/pQjdvbv4y9yuIDSHDEHc9ijJKaS.png",
+                "name": "Highland Film Group",
+                "origin_country": "US"
+            },
+            {
+                "id": 83604,
+                "logo_path": "/hjXrpUJnzS6SrwzPmDRkI4ZiLMM.png",
+                "name": "Rather Good Films",
+                "origin_country": "GB"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "HU",
+                "name": "Hungary"
+            },
+            {
+                "iso_3166_1": "GB",
+                "name": "United Kingdom"
+            }
+        ],
+        "release_date": "2022-10-28",
+        "revenue": 0,
+        "runtime": 93,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Unlocked. Unleashed.",
+        "title": "The Lair",
+        "video": false,
+        "vote_average": 6.172,
+        "vote_count": 32
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/h2VmRSlnuH8RCPa7loYZK350q6J.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 929562,
+        "imdb_id": "tt13924926",
+        "original_language": "en",
+        "original_title": "In the Forest",
+        "overview": "Helen and her daughter Emily reluctantly accompany Helen\u2019s father Stan on a family camping trip, driving deep into the forest for a real outdoors experience, only to have angry landowner Howard arrive and force them to leave. When their RV gets stuck, Helen decides to seek help but discovers a disturbing secret on the man\u2019s property. She must then fight to protect her family and make it out of the forest alive before being hunted down.",
+        "popularity": 748.582,
+        "poster_path": "/pWKTaGN9WMcKHKAir9POsKm4vEo.jpg",
+        "production_companies": [
+            {
+                "id": 88606,
+                "logo_path": "/3w49QoRwptUujWxSjcR3iEr1XSU.png",
+                "name": "Vertical Entertainment",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-01-28",
+        "revenue": 0,
+        "runtime": 83,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "In the Forest",
+        "video": false,
+        "vote_average": 6.727,
+        "vote_count": 11
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/hNzrnsH9FMMfITu2xQqaf70CRv5.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 856245,
+        "imdb_id": "tt14042038",
+        "original_language": "es",
+        "original_title": "Matar a la Bestia",
+        "overview": "Emilia arrives at her Aunt In\u00e9s' hostel located on the Argentina-Brazil border, looking for her missing brother. In this lush jungle a dangerous beast which takes the form of different animals seems to be roaming around.",
+        "popularity": 699.293,
+        "poster_path": "/hAdkgE8lHelIQWpgrHk4wjEnbxQ.jpg",
+        "production_companies": [
+            {
+                "id": 47082,
+                "logo_path": null,
+                "name": "Oro Films",
+                "origin_country": "MX"
+            },
+            {
+                "id": 117883,
+                "logo_path": null,
+                "name": "Estudio Giz",
+                "origin_country": ""
+            },
+            {
+                "id": 125322,
+                "logo_path": null,
+                "name": "Caudillo Cine",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "AR",
+                "name": "Argentina"
+            },
+            {
+                "iso_3166_1": "BR",
+                "name": "Brazil"
+            },
+            {
+                "iso_3166_1": "CL",
+                "name": "Chile"
+            }
+        ],
+        "release_date": "2022-04-28",
+        "revenue": 0,
+        "runtime": 89,
+        "spoken_languages": [
+            {
+                "english_name": "Portuguese",
+                "iso_639_1": "pt",
+                "name": "Portugu\u00eas"
+            },
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "To Kill the Beast",
+        "video": false,
+        "vote_average": 5.567,
+        "vote_count": 30
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/729a5iDNxr5l2Zbc8lcwndlJavN.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            }
+        ],
+        "homepage": "",
+        "id": 844396,
+        "imdb_id": "tt7339862",
+        "original_language": "en",
+        "original_title": "The Friendship Game",
+        "overview": "A group of teens in a small town come across a strange object that tests their loyalties to each other with increasingly destructive consequences the deeper into the game they go.",
+        "popularity": 698.809,
+        "poster_path": "/qXaJkaVTNMhrOylFi6xrWnBQGE8.jpg",
+        "production_companies": [
+            {
+                "id": 20319,
+                "logo_path": "/weCmPzIfz1pGupRVFngpLYX2lJE.png",
+                "name": "Social Construct",
+                "origin_country": "US"
+            },
+            {
+                "id": 61011,
+                "logo_path": "/kDPeollsOtUtGqqEF4P29NwEjf5.png",
+                "name": "Scythia Films",
+                "origin_country": "CA"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "CA",
+                "name": "Canada"
+            }
+        ],
+        "release_date": "2022-11-11",
+        "revenue": 0,
+        "runtime": 87,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Win together or die alone",
+        "title": "The Friendship Game",
+        "video": false,
+        "vote_average": 5.2,
+        "vote_count": 9
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/tIX6j3NzadlwGcJ52nuWdmtOQkg.jpg",
+        "belongs_to_collection": {
+            "id": 94899,
+            "name": "Jeepers Creepers Collection",
+            "poster_path": "/2qyn3GJXqLP54fbWazRGvsnkmAA.jpg",
+            "backdrop_path": "/mzFtvzOdmuDYoQQuOzulsJkAUQB.jpg"
+        },
+        "budget": 20000000,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            }
+        ],
+        "homepage": "https://www.jeeperscreepersreborn.com/",
+        "id": 717728,
+        "imdb_id": "tt14121726",
+        "original_language": "en",
+        "original_title": "Jeepers Creepers: Reborn",
+        "overview": "Forced to travel with her boyfriend to a horror festival, Laine begins to experience disturbing visions associated with the urban legend of The Creeper. As the festival arrives and the blood-soaked entertainment builds to a frenzy, she becomes the center of it while something unearthly has been summoned.",
+        "popularity": 671.957,
+        "poster_path": "/qVVegwPsW6n9unBtLWq1rzOutka.jpg",
+        "production_companies": [
+            {
+                "id": 6353,
+                "logo_path": "/7Fs0fMLWrPUaM3H0PK4hbnuEE1g.png",
+                "name": "Screen Media Films",
+                "origin_country": "US"
+            },
+            {
+                "id": 68738,
+                "logo_path": null,
+                "name": "Black Hangar Studios",
+                "origin_country": "GB"
+            },
+            {
+                "id": 149897,
+                "logo_path": null,
+                "name": "Orwo Studios (US)",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "FI",
+                "name": "Finland"
+            },
+            {
+                "iso_3166_1": "GB",
+                "name": "United Kingdom"
+            },
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-15",
+        "revenue": 2892594,
+        "runtime": 88,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Evil's Back. For More.",
+        "title": "Jeepers Creepers: Reborn",
+        "video": false,
+        "vote_average": 5.759,
+        "vote_count": 503
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/sUuzl04qNIYsnwCLQpZ2RSvXA1V.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://pegasus.is/portfolio-posts/cop-secret",
+        "id": 792775,
+        "imdb_id": "tt13882736",
+        "original_language": "is",
+        "original_title": "Leynil\u00f6gga",
+        "overview": "When B\u00fassi, Iceland's toughest cop, is forced to work with a new partner to solve a series of bank robberies, the pressure to close the case as soon as possible proves too much for him.",
+        "popularity": 656.05,
+        "poster_path": "/jnWyZsaCl3Ke6u6ReSmBRO8S1rX.jpg",
+        "production_companies": [
+            {
+                "id": 12496,
+                "logo_path": "/tk6stgFevcJ2iWyd0IaEfVStNqL.png",
+                "name": "Pegasus Pictures",
+                "origin_country": "IS"
+            },
+            {
+                "id": 174920,
+                "logo_path": null,
+                "name": "St\u00f6\u00f0 2",
+                "origin_country": "IS"
+            },
+            {
+                "id": 179454,
+                "logo_path": null,
+                "name": "SamFilm",
+                "origin_country": "IS"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "IS",
+                "name": "Iceland"
+            }
+        ],
+        "release_date": "2022-05-23",
+        "revenue": 0,
+        "runtime": 100,
+        "spoken_languages": [
+            {
+                "english_name": "Mandarin",
+                "iso_639_1": "zh",
+                "name": "\u666e\u901a\u8bdd"
+            },
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            },
+            {
+                "english_name": "German",
+                "iso_639_1": "de",
+                "name": "Deutsch"
+            },
+            {
+                "english_name": "Icelandic",
+                "iso_639_1": "is",
+                "name": "\u00cdslenska"
+            },
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            }
+        ],
+        "status": "Released",
+        "tagline": "To solve this crime, they'll need to break all the rules",
+        "title": "Cop Secret",
+        "video": false,
+        "vote_average": 6.1,
+        "vote_count": 24
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/b2FxWOxe9K7ZZ1uaPOze2RJ1ajq.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            }
+        ],
+        "homepage": "",
+        "id": 675054,
+        "imdb_id": "tt10171796",
+        "original_language": "es",
+        "original_title": "MexZombies",
+        "overview": "A group of teenagers must face a zombie apocalypse, and help reestablish order.",
+        "popularity": 655.242,
+        "poster_path": "/pTxw4GFE3ZfzJfvuUsPyD5njAuI.jpg",
+        "production_companies": [
+            {
+                "id": 84651,
+                "logo_path": null,
+                "name": "Draco Films",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "MX",
+                "name": "Mexico"
+            }
+        ],
+        "release_date": "2022-10-26",
+        "revenue": 0,
+        "runtime": 93,
+        "spoken_languages": [
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "MexZombies",
+        "video": false,
+        "vote_average": 7.247,
+        "vote_count": 91
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/mjV9gpXO2R2SOYI4ChJZiu6F1OE.jpg",
+        "belongs_to_collection": null,
         "budget": 0,
         "genres": [
             {
@@ -827,47 +2722,353 @@
                 "name": "Adventure"
             },
             {
-                "id": 14,
-                "name": "Fantasy"
+                "id": 53,
+                "name": "Thriller"
             }
         ],
-        "homepage": "https://www.netflix.com/title/81266981",
-        "id": 960704,
-        "imdb_id": "tt18671660",
-        "original_language": "ja",
-        "original_title": "\u92fc\u306e\u932c\u91d1\u8853\u5e2b \u5b8c\u7d50\u7de8 \u6700\u5f8c\u306e\u932c\u6210",
-        "overview": "The Elric brothers\u2019 long and winding journey comes to a close in this epic finale, where they must face off against an unworldly, nationwide threat.",
-        "popularity": 1682.088,
-        "poster_path": "/AeyiuQUUs78bPkz18FY3AzNFF8b.jpg",
+        "homepage": "",
+        "id": 759507,
+        "imdb_id": "tt8363392",
+        "original_language": "en",
+        "original_title": "Blackout",
+        "overview": "A man wakes in a hospital with no memory, and quickly finds himself on the run in a locked down hospital with the Cartel on his tail.",
+        "popularity": 631.118,
+        "poster_path": "/xDgnmbdWS59NtTPdzujdZGuPUPZ.jpg",
         "production_companies": [
             {
-                "id": 3627,
-                "logo_path": "/i1eW4O13B28b4JHpIL5C9rRiiur.png",
-                "name": "Warner Bros. Japan",
-                "origin_country": "JP"
-            },
-            {
-                "id": 7394,
+                "id": 2373,
                 "logo_path": null,
-                "name": "Oxybot",
-                "origin_country": ""
+                "name": "Patriot Pictures",
+                "origin_country": "US"
             },
             {
-                "id": 10038,
-                "logo_path": "/nCueXKwYIEXrZ5ofqSJBO1YcmRr.png",
-                "name": "Square Enix",
-                "origin_country": "JP"
+                "id": 111572,
+                "logo_path": null,
+                "name": "Itaca Films",
+                "origin_country": "US"
+            },
+            {
+                "id": 162995,
+                "logo_path": null,
+                "name": "Lost Winds Entertainment",
+                "origin_country": ""
             }
         ],
         "production_countries": [
             {
-                "iso_3166_1": "JP",
-                "name": "Japan"
+                "iso_3166_1": "US",
+                "name": "United States of America"
             }
         ],
-        "release_date": "2022-06-24",
+        "release_date": "2022-10-12",
         "revenue": 0,
-        "runtime": 143,
+        "runtime": 81,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Blackout",
+        "video": false,
+        "vote_average": 5.444,
+        "vote_count": 90
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/GFq9kYUnpRCnlbIbjPzNA96e0j.jpg",
+        "belongs_to_collection": null,
+        "budget": 35000000,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://searchlightpictures.com/the-menu",
+        "id": 593643,
+        "imdb_id": "tt9764362",
+        "original_language": "en",
+        "original_title": "The Menu",
+        "overview": "A couple travels to a coastal island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+        "popularity": 624.649,
+        "poster_path": "/v31MsWhF9WFh7Qooq6xSBbmJxoG.jpg",
+        "production_companies": [
+            {
+                "id": 4740,
+                "logo_path": "/20IuOPEwlHRXnn0MTOsEmw0wcql.png",
+                "name": "Gary Sanchez Productions",
+                "origin_country": "US"
+            },
+            {
+                "id": 22213,
+                "logo_path": "/qx9K6bFWJupwde0xQDwOvXkOaL8.png",
+                "name": "TSG Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 125055,
+                "logo_path": "/8iY66HqRqdQdwOjoS3sNvokcH9r.png",
+                "name": "Hyperobject Industries",
+                "origin_country": "US"
+            },
+            {
+                "id": 127929,
+                "logo_path": "/fCB4AVYvxxDvqumgYqsN6ehyN3G.png",
+                "name": "Searchlight Pictures",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-17",
+        "revenue": 33000000,
+        "runtime": 107,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            },
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Painstakingly prepared. Brilliantly executed.",
+        "title": "The Menu",
+        "video": false,
+        "vote_average": 7.353,
+        "vote_count": 273
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/akYTfFvYkFGJReFxXM841NidlAa.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 80,
+                "name": "Crime"
+            },
+            {
+                "id": 18,
+                "name": "Drama"
+            }
+        ],
+        "homepage": "https://www.netflix.com/title/81483371",
+        "id": 1033107,
+        "imdb_id": "tt22437050",
+        "original_language": "en",
+        "original_title": "Wild Is the Wind",
+        "overview": "When two corrupt police officers investigate the brutal murder of a young girl, tensions come to a head in their small, racially-segregated town.",
+        "popularity": 623.265,
+        "poster_path": "/rITxQBtnMpneZf8QzH1dqONQocx.jpg",
+        "production_companies": [],
+        "production_countries": [
+            {
+                "iso_3166_1": "ZA",
+                "name": "South Africa"
+            }
+        ],
+        "release_date": "2022-10-28",
+        "revenue": 0,
+        "runtime": 123,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Wild Is the Wind",
+        "video": false,
+        "vote_average": 6.027,
+        "vote_count": 37
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/198vrF8k7mfQ4FjDJsBmdQcaiyq.jpg",
+        "belongs_to_collection": {
+            "id": 87096,
+            "name": "Avatar Collection",
+            "poster_path": "/gC3tW9a45RGOzzSh6wv91pFnmFr.jpg",
+            "backdrop_path": "/6qkJLRCZp9Y3ovXti5tSuhH0DpO.jpg"
+        },
+        "budget": 400000000,
+        "genres": [
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            }
+        ],
+        "homepage": "https://www.avatar.com/movies/avatar-the-way-of-water",
+        "id": 76600,
+        "imdb_id": "tt1630029",
+        "original_language": "en",
+        "original_title": "Avatar: The Way of Water",
+        "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
+        "popularity": 622.981,
+        "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+        "production_companies": [
+            {
+                "id": 574,
+                "logo_path": "/iB6GjNVHs5hOqcEYt2rcjBqIjki.png",
+                "name": "Lightstorm Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 127928,
+                "logo_path": "/cxMxGzAgMMBhTXkcpYYCxWCOY90.png",
+                "name": "20th Century Studios",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-12-14",
+        "revenue": 0,
+        "runtime": 192,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Post Production",
+        "tagline": "Return to Pandora.",
+        "title": "Avatar: The Way of Water",
+        "video": false,
+        "vote_average": 0.0,
+        "vote_count": 0
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/bHzcF1oPzMxKaW8AVP8wBPOZH2E.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 9648,
+                "name": "Mystery"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "",
+        "id": 881487,
+        "imdb_id": "tt15558152",
+        "original_language": "en",
+        "original_title": "The Visitor",
+        "overview": "After a series of tragedies including the death of his father-in-law, Robert and his wife Maia leave their home in London to move back to her childhood home. But when Robert discovers an old portrait in the attic of a man who is his spitting image, he goes down a rabbit hole to discover the identity of this mysterious doppelganger known only as the visitor. It isn\u2019t long until he realizes \u2013 where the visitor goes, death follows.",
+        "popularity": 613.507,
+        "poster_path": "/1FchVTEnjQw6m5NnQBa8QwjUv6T.jpg",
+        "production_companies": [
+            {
+                "id": 6805,
+                "logo_path": "/4774MDXAu1vsapNyTv1LK3S5Ww1.png",
+                "name": "Epix",
+                "origin_country": "US"
+            },
+            {
+                "id": 68884,
+                "logo_path": "/1BYexT6Vikz4ulCcYKGPmOi6Jm0.png",
+                "name": "Blumhouse Television",
+                "origin_country": "US"
+            },
+            {
+                "id": 89115,
+                "logo_path": "/zQwTHJVIruUlGsa7zIdfXuSm9GG.png",
+                "name": "Divide / Conquer",
+                "origin_country": "US"
+            },
+            {
+                "id": 96571,
+                "logo_path": null,
+                "name": "Bradley Pilz Productions",
+                "origin_country": ""
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-10-07",
+        "revenue": 0,
+        "runtime": 86,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Where he goes, death follows.",
+        "title": "The Visitor",
+        "video": false,
+        "vote_average": 6.42,
+        "vote_count": 25
+    },
+    {
+        "adult": false,
+        "backdrop_path": null,
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [],
+        "homepage": "https://gineiden-anime.com/",
+        "id": 1030419,
+        "imdb_id": null,
+        "original_language": "ja",
+        "original_title": "\u9280\u6cb3\u82f1\u96c4\u4f1d\u8aac Die Neue These \u7b56\u8b00 1",
+        "overview": "",
+        "popularity": 597.726,
+        "poster_path": "/brrgSFtcymZWaXl5a23GJRWdOSY.jpg",
+        "production_companies": [],
+        "production_countries": [],
+        "release_date": "2022-09-30",
+        "revenue": 0,
+        "runtime": 0,
         "spoken_languages": [
             {
                 "english_name": "Japanese",
@@ -877,14 +3078,658 @@
         ],
         "status": "Released",
         "tagline": "",
-        "title": "Fullmetal Alchemist: The Final Alchemy",
+        "title": "Legend of the Galactic Heroes: Die Neue These - Intrigue 1",
         "video": false,
-        "vote_average": 6.292,
-        "vote_count": 113
+        "vote_average": 6.333,
+        "vote_count": 3
     },
     {
         "adult": false,
-        "backdrop_path": "/zt6sKnx9dEiRCb7oVMlfmmMGJMO.jpg",
+        "backdrop_path": "/etP5jwlwvkNhwe7jnI2AyA6ZKrR.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            }
+        ],
+        "homepage": "",
+        "id": 575322,
+        "imdb_id": "tt5656994",
+        "original_language": "en",
+        "original_title": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439 \u0440\u0430\u0437\u0443\u043c",
+        "overview": "After depleting Earth's resources for centuries, humankind's survival requires an exodus to outer space. An international expedition is quickly formed to find a suitable new planet, but when plans go awry, the crew is suddenly stranded without power on a strange planet, where something unimaginable lies in wait.",
+        "popularity": 595.429,
+        "poster_path": "/rFljUdOozFEv6HDHIFpFvcYW0ec.jpg",
+        "production_companies": [
+            {
+                "id": 84554,
+                "logo_path": null,
+                "name": "Kinodanz",
+                "origin_country": "RU"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "RU",
+                "name": "Russia"
+            }
+        ],
+        "release_date": "2022-01-06",
+        "revenue": 0,
+        "runtime": 98,
+        "spoken_languages": [
+            {
+                "english_name": "Russian",
+                "iso_639_1": "ru",
+                "name": "P\u0443\u0441\u0441\u043a\u0438\u0439"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Love over space",
+        "title": "Project Gemini",
+        "video": false,
+        "vote_average": 5.678,
+        "vote_count": 174
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/83Vt9Io9xSFKfKDdgxqKZgdqjuZ.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            },
+            {
+                "id": 80,
+                "name": "Crime"
+            }
+        ],
+        "homepage": "",
+        "id": 972313,
+        "imdb_id": "tt1551614",
+        "original_language": "en",
+        "original_title": "Blowback",
+        "overview": "When a master thief is sabotaged during a bank heist and left for dead, he seeks revenge on his former crew one target at a time. Now, with the cops and the mob closing in, he's in the race of his life to reclaim an untold fortune in cryptocurrency from those who double-crossed him.",
+        "popularity": 587.397,
+        "poster_path": "/fHQHC32dhom8u0OxC2hs2gYQh0M.jpg",
+        "production_companies": [
+            {
+                "id": 35625,
+                "logo_path": null,
+                "name": "Premiere Entertainment Group",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-06-17",
+        "revenue": 0,
+        "runtime": 93,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Be careful who you betray.",
+        "title": "Blowback",
+        "video": false,
+        "vote_average": 5.3,
+        "vote_count": 18
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/yo0qfH2dQGGMxkfivdkz5zxVatD.jpg",
+        "belongs_to_collection": null,
+        "budget": 10000000,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            },
+            {
+                "id": 53,
+                "name": "Thriller"
+            }
+        ],
+        "homepage": "https://www.theinvitation.movie",
+        "id": 830788,
+        "imdb_id": "tt12873562",
+        "original_language": "en",
+        "original_title": "The Invitation",
+        "overview": "After the death of her mother, Evie is approached by an unknown cousin who invites her to a lavish wedding in the English countryside. Soon, she realizes a gothic conspiracy is afoot and must fight for survival as she uncovers twisted secrets in her family\u2019s history.",
+        "popularity": 567.691,
+        "poster_path": "/jcTq6gIskCsHlKDvCKKouEfiU66.jpg",
+        "production_companies": [
+            {
+                "id": 2735,
+                "logo_path": null,
+                "name": "Mid Atlantic Films",
+                "origin_country": "HU"
+            },
+            {
+                "id": 3287,
+                "logo_path": "/bz6GbCQQXGNE56LTW9dwgksW0Iw.png",
+                "name": "Screen Gems",
+                "origin_country": "US"
+            },
+            {
+                "id": 22213,
+                "logo_path": "/qx9K6bFWJupwde0xQDwOvXkOaL8.png",
+                "name": "TSG Entertainment",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-08-24",
+        "revenue": 30000000,
+        "runtime": 105,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            },
+            {
+                "english_name": "German",
+                "iso_639_1": "de",
+                "name": "Deutsch"
+            }
+        ],
+        "status": "Released",
+        "tagline": "You are cordially invited to a nightmare generations in the making.",
+        "title": "The Invitation",
+        "video": false,
+        "vote_average": 6.439,
+        "vote_count": 337
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/apBUC70udhxoLzXo7DqclQ6gcXo.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            }
+        ],
+        "homepage": "https://www.netflix.com/title/80231433",
+        "id": 511817,
+        "imdb_id": "tt5181830",
+        "original_language": "en",
+        "original_title": "Wendell & Wild",
+        "overview": "Two demon brothers enlist the aid of Kat Elliot \u2014 a tough teen with a load of guilt \u2014 to summon them to the Land of the Living. But what Kat demands in return leads to a brilliantly bizarre and comedic adventure like no other.",
+        "popularity": 549.844,
+        "poster_path": "/5dsX6UAHqkQz1kiV8bs8SvjyVNa.jpg",
+        "production_companies": [
+            {
+                "id": 3672,
+                "logo_path": "/5VWXJgYYrJZUE0hixvBdVfGSfmo.png",
+                "name": "Gotham Group",
+                "origin_country": "US"
+            },
+            {
+                "id": 88934,
+                "logo_path": "/5Be96V9WXa7jJInSDPqDOqMBA0o.png",
+                "name": "Monkeypaw Productions",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-10-21",
+        "revenue": 0,
+        "runtime": 107,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "Wendell & Wild",
+        "video": false,
+        "vote_average": 6.838,
+        "vote_count": 148
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
+        "belongs_to_collection": {
+            "id": 131296,
+            "name": "Thor Collection",
+            "poster_path": "/yw7gr7DhHHVTLlO8Se8uH17TDMA.jpg",
+            "backdrop_path": "/3KL8UNKFWgIKXzLHjwY0uwgjzYl.jpg"
+        },
+        "budget": 250000000,
+        "genres": [
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            }
+        ],
+        "homepage": "https://www.marvel.com/movies/thor-love-and-thunder",
+        "id": 616037,
+        "imdb_id": "tt10648342",
+        "original_language": "en",
+        "original_title": "Thor: Love and Thunder",
+        "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher\u2019s vengeance and stop him before it\u2019s too late.",
+        "popularity": 547.444,
+        "poster_path": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
+        "production_companies": [
+            {
+                "id": 420,
+                "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+                "name": "Marvel Studios",
+                "origin_country": "US"
+            },
+            {
+                "id": 176762,
+                "logo_path": null,
+                "name": "Kevin Feige Productions",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-07-06",
+        "revenue": 760000000,
+        "runtime": 119,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "The one is not the only.",
+        "title": "Thor: Love and Thunder",
+        "video": false,
+        "vote_average": 6.701,
+        "vote_count": 4790
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/fHDvGGPFry65ou79WLi6JsjCZrM.jpg",
+        "belongs_to_collection": null,
+        "budget": 75000000,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            }
+        ],
+        "homepage": "https://tv.apple.com/movie/umc.cmc.3lp7wqowerzdbej98tveildi3",
+        "id": 632856,
+        "imdb_id": "tt10999120",
+        "original_language": "en",
+        "original_title": "Spirited",
+        "overview": "Each Christmas Eve, the Ghost of Christmas Present selects one dark soul to be reformed by a visit from three spirits. But this season, he picked the wrong Scrooge. Clint Briggs turns the tables on his ghostly host until Present finds himself reexamining his own past, present and future.",
+        "popularity": 542.759,
+        "poster_path": "/h3zAzTMs5EP3cKusOxFNGSFE1WI.jpg",
+        "production_companies": [
+            {
+                "id": 14801,
+                "logo_path": "/bnlD5KJ5oSzBYbEpDkwi6w8SoBO.png",
+                "name": "Apple",
+                "origin_country": "US"
+            },
+            {
+                "id": 77152,
+                "logo_path": "/dKwI9lYFR9tHRHnut7P52gIl3Sb.png",
+                "name": "Gloria Sanchez Productions",
+                "origin_country": "US"
+            },
+            {
+                "id": 104228,
+                "logo_path": null,
+                "name": "Maximum Effort",
+                "origin_country": "US"
+            },
+            {
+                "id": 182915,
+                "logo_path": null,
+                "name": "Two Grown Men",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-10",
+        "revenue": 0,
+        "runtime": 127,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Start your holidays on a high note.",
+        "title": "Spirited",
+        "video": false,
+        "vote_average": 7.318,
+        "vote_count": 159
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/rfnmMYuZ6EKOBvQLp2wqP21v7sI.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            },
+            {
+                "id": 12,
+                "name": "Adventure"
+            }
+        ],
+        "homepage": "https://www.disneyplus.com/movies/the-guardians-of-the-galaxy-holiday-special/5HUc4iuAVplq",
+        "id": 774752,
+        "imdb_id": "tt13623136",
+        "original_language": "en",
+        "original_title": "The Guardians of the Galaxy Holiday Special",
+        "overview": "On a mission to make Christmas unforgettable for Quill, the Guardians head to Earth in search of the perfect present.",
+        "popularity": 539.588,
+        "poster_path": "/8dqXyslZ2hv49Oiob9UjlGSHSTR.jpg",
+        "production_companies": [
+            {
+                "id": 420,
+                "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+                "name": "Marvel Studios",
+                "origin_country": "US"
+            },
+            {
+                "id": 94218,
+                "logo_path": null,
+                "name": "Troll Court Entertainment",
+                "origin_country": "US"
+            },
+            {
+                "id": 176762,
+                "logo_path": null,
+                "name": "Kevin Feige Productions",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-11-25",
+        "revenue": 0,
+        "runtime": 45,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "The perfect present is a galaxy away.",
+        "title": "The Guardians of the Galaxy Holiday Special",
+        "video": false,
+        "vote_average": 7.486,
+        "vote_count": 406
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/jauI01vUIkPA0xVsamGj0Gs1nNL.jpg",
+        "belongs_to_collection": {
+            "id": 328,
+            "name": "Jurassic Park Collection",
+            "poster_path": "/jcUXVtJ6s0NG0EaxllQCAUtqdr0.jpg",
+            "backdrop_path": "/njFixYzIxX8jsn6KMSEtAzi4avi.jpg"
+        },
+        "budget": 165000000,
+        "genres": [
+            {
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 28,
+                "name": "Action"
+            },
+            {
+                "id": 878,
+                "name": "Science Fiction"
+            }
+        ],
+        "homepage": "https://www.jurassicworld.com",
+        "id": 507086,
+        "imdb_id": "tt8041270",
+        "original_language": "en",
+        "original_title": "Jurassic World Dominion",
+        "overview": "Four years after the destruction of Isla Nublar, Biosyn operatives attempt to track down Maisie Lockwood, while Dr Ellie Sattler investigates a genetically engineered swarm of giant insects.",
+        "popularity": 539.116,
+        "poster_path": "/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg",
+        "production_companies": [
+            {
+                "id": 33,
+                "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+                "name": "Universal Pictures",
+                "origin_country": "US"
+            },
+            {
+                "id": 56,
+                "logo_path": "/cEaxANEisCqeEoRvODv2dO1I0iI.png",
+                "name": "Amblin Entertainment",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-06-01",
+        "revenue": 1001000000,
+        "runtime": 147,
+        "spoken_languages": [
+            {
+                "english_name": "French",
+                "iso_639_1": "fr",
+                "name": "Fran\u00e7ais"
+            },
+            {
+                "english_name": "Maltese",
+                "iso_639_1": "mt",
+                "name": "Malti"
+            },
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "The epic conclusion of the Jurassic era.",
+        "title": "Jurassic World Dominion",
+        "video": false,
+        "vote_average": 6.984,
+        "vote_count": 3917
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/vcqqpzVyMiShaneJmAGbJ6i7bo1.jpg",
+        "belongs_to_collection": {
+            "id": 1015410,
+            "name": "Under Wraps Collection",
+            "poster_path": "/cofZA3BCipv2d5qh7KqklltcvMp.jpg",
+            "backdrop_path": "/9FwycuNgaXaDmXHv8HV0CUy6Tsh.jpg"
+        },
+        "budget": 0,
+        "genres": [
+            {
+                "id": 10751,
+                "name": "Family"
+            },
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 10770,
+                "name": "TV Movie"
+            }
+        ],
+        "homepage": "",
+        "id": 936061,
+        "imdb_id": "tt18070050",
+        "original_language": "en",
+        "original_title": "Under Wraps 2",
+        "overview": "As Marshall, Gilbert and Amy are preparing for her father\u2019s Spooktacular Halloween-themed wedding to his fianc\u00e9 Carl, plans go awry when they discover that their mummy friend Harold and his beloved Rose may be in danger.",
+        "popularity": 525.931,
+        "poster_path": "/y37QvulwOJ1uv0onnDB4ocWEQZn.jpg",
+        "production_companies": [
+            {
+                "id": 1063,
+                "logo_path": "/fpVBhNnopOZwGuF0gg99oBHp1ht.png",
+                "name": "Brightlight Pictures",
+                "origin_country": "CA"
+            },
+            {
+                "id": 6679,
+                "logo_path": "/doO7VwcEUnidNW0iUJkIF2oZ8Yq.png",
+                "name": "MarVista Entertainment",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "CA",
+                "name": "Canada"
+            },
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-25",
+        "revenue": 0,
+        "runtime": 83,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "More mummies, more problems.",
+        "title": "Under Wraps 2",
+        "video": false,
+        "vote_average": 6.5,
+        "vote_count": 30
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/eW5VFfqn6IHHpGAZQGrH8bFSfXh.jpg",
+        "belongs_to_collection": null,
+        "budget": 0,
+        "genres": [
+            {
+                "id": 27,
+                "name": "Horror"
+            }
+        ],
+        "homepage": "",
+        "id": 928391,
+        "imdb_id": "tt14083716",
+        "original_language": "en",
+        "original_title": "The Red Book Ritual",
+        "overview": "Three friends decide to play The Red Book game. What they don't know is that in the house evil is waiting to be released. A long time ago a witch died as part of a satanic ritual. Every question they ask, they get closer and closer to her. The book will reveal the answers to all your questions\u2026 but what if your host is an evil entity with a thirst for blood?",
+        "popularity": 525.777,
+        "poster_path": "/bO2KJsAnBFFYhH9hCZCq31wXvIX.jpg",
+        "production_companies": [],
+        "production_countries": [],
+        "release_date": "2022-09-12",
+        "revenue": 0,
+        "runtime": 83,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            }
+        ],
+        "status": "Released",
+        "tagline": "Every page is a new way to die.",
+        "title": "The Red Book Ritual",
+        "video": false,
+        "vote_average": 6.5,
+        "vote_count": 8
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/527Kxta1PjtovdFbsBe3vxO6Zfw.jpg",
         "belongs_to_collection": null,
         "budget": 90000000,
         "genres": [
@@ -907,7 +3752,7 @@
         "original_language": "en",
         "original_title": "Bullet Train",
         "overview": "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe\u2014all with connected, yet conflicting, objectives\u2014on the world's fastest train.",
-        "popularity": 1641.214,
+        "popularity": 519.435,
         "poster_path": "/tVxDe01Zy3kZqaZRNiXFGDICdZk.jpg",
         "production_companies": [
             {
@@ -918,7 +3763,7 @@
             },
             {
                 "id": 121470,
-                "logo_path": null,
+                "logo_path": "/zvJFu1C6gB80A98n6IGXBvMtgVl.png",
                 "name": "87North Productions",
                 "origin_country": "US"
             }
@@ -958,283 +3803,124 @@
         "tagline": "The end of the line is just the beginning.",
         "title": "Bullet Train",
         "video": false,
-        "vote_average": 7.517,
-        "vote_count": 2213
+        "vote_average": 7.5,
+        "vote_count": 2475
     },
     {
         "adult": false,
-        "backdrop_path": "/mMA2YNddowV8MZtxpbn0a7Yilum.jpg",
-        "belongs_to_collection": {
-            "id": 930409,
-            "name": "The Battle at Lake Changjin Collection",
-            "poster_path": "/j9OrzPaEN7y0TtGAEFmhrsAwfy7.jpg",
-            "backdrop_path": "/gqLvUxBYFiKaVrjhh8i9fzrfXe7.jpg"
-        },
-        "budget": 200000000,
-        "genres": [
-            {
-                "id": 10752,
-                "name": "War"
-            },
-            {
-                "id": 36,
-                "name": "History"
-            },
-            {
-                "id": 28,
-                "name": "Action"
-            },
-            {
-                "id": 18,
-                "name": "Drama"
-            }
-        ],
-        "homepage": "",
-        "id": 928123,
-        "imdb_id": "tt16194408",
-        "original_language": "zh",
-        "original_title": "\u957f\u6d25\u6e56\u4e4b\u6c34\u95e8\u6865",
-        "overview": "In the follow-up to \"The Battle At Lake Changjin\", brothers Wu Qianli and Wu Wanli undertake a new task for the People's Volunteer Army, defending a bridge part of the American troops' escape route from the advancing Chinese.",
-        "popularity": 1612.433,
-        "poster_path": "/ugiL6wIhl1OfPyv1gqLkTe45jLl.jpg",
-        "production_companies": [
-            {
-                "id": 30148,
-                "logo_path": "/zerhOenUD6CkH8SMgZUhrDkOs4w.png",
-                "name": "Bona Film Group",
-                "origin_country": "CN"
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "CN",
-                "name": "China"
-            }
-        ],
-        "release_date": "2022-02-01",
-        "revenue": 626203271,
-        "runtime": 149,
-        "spoken_languages": [
-            {
-                "english_name": "Mandarin",
-                "iso_639_1": "zh",
-                "name": "\u666e\u901a\u8bdd"
-            }
-        ],
-        "status": "Released",
-        "tagline": "",
-        "title": "The Battle at Lake Changjin: Water Gate Bridge",
-        "video": false,
-        "vote_average": 6.391,
-        "vote_count": 23
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/nnUQqlVZeEGuCRx8SaoCU4XVHJN.jpg",
+        "backdrop_path": "/jBIMZ0AlUYuFNsKbd4L6FojWMoy.jpg",
         "belongs_to_collection": null,
         "budget": 0,
         "genres": [
             {
-                "id": 14,
-                "name": "Fantasy"
+                "id": 16,
+                "name": "Animation"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10749,
+                "name": "Romance"
+            }
+        ],
+        "homepage": "https://www.thequintessentialquintuplets-movie.com",
+        "id": 820067,
+        "imdb_id": "tt15721650",
+        "original_language": "ja",
+        "original_title": "\u6620\u753b \u4e94\u7b49\u5206\u306e\u82b1\u5ac1",
+        "overview": "When five lovely young girls who hate studying hire part-time tutor Futaro, he guides not only their education but also their hearts. Time spent has brought them all closer, with feelings growing within the girls and Futaro. As they finish their third year of high school and their last school festival approaches, they set their sights on what\u2019s next. Is there a future with one of them and Futaro?",
+        "popularity": 518.207,
+        "poster_path": "/sg7klpt1xwK1IJirBI9EHaqQwJ5.jpg",
+        "production_companies": [
+            {
+                "id": 4262,
+                "logo_path": "/K1m4DWOObFOKCJp6XGOskEKymE.png",
+                "name": "Tezuka Productions",
+                "origin_country": "JP"
+            },
+            {
+                "id": 9148,
+                "logo_path": "/rtW3NadfF4kR5mTW00ahiFxw6k7.png",
+                "name": "Pony Canyon",
+                "origin_country": "JP"
+            },
+            {
+                "id": 92437,
+                "logo_path": null,
+                "name": "DAX Production",
+                "origin_country": "JP"
+            },
+            {
+                "id": 157471,
+                "logo_path": "/sWoNzrlMtRH8p3zKayLfOaTNmiG.png",
+                "name": "Nichion",
+                "origin_country": "JP"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "JP",
+                "name": "Japan"
+            }
+        ],
+        "release_date": "2022-05-20",
+        "revenue": 0,
+        "runtime": 136,
+        "spoken_languages": [
+            {
+                "english_name": "Japanese",
+                "iso_639_1": "ja",
+                "name": "\u65e5\u672c\u8a9e"
+            }
+        ],
+        "status": "Released",
+        "tagline": "",
+        "title": "The Quintessential Quintuplets Movie",
+        "video": false,
+        "vote_average": 9.032,
+        "vote_count": 111
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/14QbnygCuTO0vl7CAFmPf1fgZfV.jpg",
+        "belongs_to_collection": {
+            "id": 531241,
+            "name": "Spider-Man (Avengers) Collection",
+            "poster_path": "/plxMngMDZ3r2OSPn84UlyNHkmwi.jpg",
+            "backdrop_path": "/AvnqpRwlEaYNVL6wzC4RN94EdSd.jpg"
+        },
+        "budget": 200000000,
+        "genres": [
+            {
+                "id": 28,
+                "name": "Action"
             },
             {
                 "id": 12,
                 "name": "Adventure"
             },
             {
-                "id": 10751,
-                "name": "Family"
+                "id": 878,
+                "name": "Science Fiction"
             }
         ],
-        "homepage": "https://www.disneyplus.com/movies/pinocchio/5fzcpc295rQn",
-        "id": 532639,
-        "imdb_id": "tt4593060",
+        "homepage": "https://www.spidermannowayhome.movie",
+        "id": 634649,
+        "imdb_id": "tt10872600",
         "original_language": "en",
-        "original_title": "Pinocchio",
-        "overview": "A wooden puppet embarks on a thrilling adventure to become a real boy.",
-        "popularity": 1605.793,
-        "poster_path": "/g8sclIV4gj1TZqUpnL82hKOTK3B.jpg",
+        "original_title": "Spider-Man: No Way Home",
+        "overview": "Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man.",
+        "popularity": 515.776,
+        "poster_path": "/uJYYizSuA9Y3DCs0qS4qWvHfZg4.jpg",
         "production_companies": [
             {
-                "id": 2,
-                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-                "name": "Walt Disney Pictures",
+                "id": 5,
+                "logo_path": "/lieeAioEBVsgsoDT9HICrdt5iRa.png",
+                "name": "Columbia Pictures",
                 "origin_country": "US"
             },
-            {
-                "id": 1473,
-                "logo_path": null,
-                "name": "Depth of Field",
-                "origin_country": "US"
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "US",
-                "name": "United States of America"
-            }
-        ],
-        "release_date": "2022-09-07",
-        "revenue": 0,
-        "runtime": 105,
-        "spoken_languages": [
-            {
-                "english_name": "English",
-                "iso_639_1": "en",
-                "name": "English"
-            }
-        ],
-        "status": "Released",
-        "tagline": "The timeless classic.",
-        "title": "Pinocchio",
-        "video": false,
-        "vote_average": 6.682,
-        "vote_count": 1027
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/2iGUavwv86Hubv3V5Iq4qEQXDfE.jpg",
-        "belongs_to_collection": null,
-        "budget": 2400000,
-        "genres": [
-            {
-                "id": 18,
-                "name": "Drama"
-            },
-            {
-                "id": 53,
-                "name": "Thriller"
-            },
-            {
-                "id": 27,
-                "name": "Horror"
-            }
-        ],
-        "homepage": "https://morenafilms.com/portfolio/cerdita/",
-        "id": 848058,
-        "imdb_id": "tt10399608",
-        "original_language": "es",
-        "original_title": "Cerdita",
-        "overview": "A bullied overweight teenager sees a glimpse of hope when her tormentors are brutally abducted by a mesmerizing stranger.",
-        "popularity": 1551.583,
-        "poster_path": "/8EIQAvJjXdbNDMmBtHtgGqbc09V.jpg",
-        "production_companies": [
-            {
-                "id": 850,
-                "logo_path": "/aF7qajGJGtMpdrtvssM9g90YanX.png",
-                "name": "Eurimages",
-                "origin_country": "FR"
-            },
-            {
-                "id": 981,
-                "logo_path": "/pkrdO9ykplO4Zc8edikoSX5APUN.png",
-                "name": "TVE",
-                "origin_country": "ES"
-            },
-            {
-                "id": 5381,
-                "logo_path": "/m6vSpFeYtFoW1lNv5mpLHzH4eLL.png",
-                "name": "Backup Media",
-                "origin_country": "FR"
-            },
-            {
-                "id": 10031,
-                "logo_path": "/cUOviFxM9l3dYuNeg89giHUaqkd.png",
-                "name": "Morena Films",
-                "origin_country": "ES"
-            },
-            {
-                "id": 28016,
-                "logo_path": null,
-                "name": "Ecam",
-                "origin_country": "ES"
-            },
-            {
-                "id": 67412,
-                "logo_path": "/vgVqq5hunVs8GN5Je9d9rG7Q2NU.png",
-                "name": "Movistar+",
-                "origin_country": "ES"
-            },
-            {
-                "id": 78967,
-                "logo_path": "/rYw6AZjNyxvoOQy8gcvAOJUmXlk.png",
-                "name": "Ind\u00e9films",
-                "origin_country": "FR"
-            },
-            {
-                "id": 132212,
-                "logo_path": "/gJyCdjDjUqK2cSoaoyLTm9nnjmc.png",
-                "name": "Creative Europe Media Programme Of The European Union",
-                "origin_country": "BE"
-            },
-            {
-                "id": 156831,
-                "logo_path": null,
-                "name": "Cerdita AIE",
-                "origin_country": ""
-            }
-        ],
-        "production_countries": [
-            {
-                "iso_3166_1": "FR",
-                "name": "France"
-            },
-            {
-                "iso_3166_1": "ES",
-                "name": "Spain"
-            }
-        ],
-        "release_date": "2022-10-07",
-        "revenue": 380512,
-        "runtime": 100,
-        "spoken_languages": [
-            {
-                "english_name": "Spanish",
-                "iso_639_1": "es",
-                "name": "Espa\u00f1ol"
-            }
-        ],
-        "status": "Released",
-        "tagline": "Adolescence can be brutal.",
-        "title": "Piggy",
-        "video": false,
-        "vote_average": 6.7,
-        "vote_count": 171
-    },
-    {
-        "adult": false,
-        "backdrop_path": "/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg",
-        "belongs_to_collection": {
-            "id": 131296,
-            "name": "Thor Collection",
-            "poster_path": "/yw7gr7DhHHVTLlO8Se8uH17TDMA.jpg",
-            "backdrop_path": "/3KL8UNKFWgIKXzLHjwY0uwgjzYl.jpg"
-        },
-        "budget": 250000000,
-        "genres": [
-            {
-                "id": 14,
-                "name": "Fantasy"
-            },
-            {
-                "id": 28,
-                "name": "Action"
-            },
-            {
-                "id": 35,
-                "name": "Comedy"
-            }
-        ],
-        "homepage": "https://www.marvel.com/movies/thor-love-and-thunder",
-        "id": 616037,
-        "imdb_id": "tt10648342",
-        "original_language": "en",
-        "original_title": "Thor: Love and Thunder",
-        "overview": "After his retirement is interrupted by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods, Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover the mystery of the God Butcher\u2019s vengeance and stop him before it\u2019s too late.",
-        "popularity": 1538.425,
-        "poster_path": "/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg",
-        "production_companies": [
             {
                 "id": 420,
                 "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
@@ -1242,9 +3928,9 @@
                 "origin_country": "US"
             },
             {
-                "id": 176762,
-                "logo_path": null,
-                "name": "Kevin Feige Productions",
+                "id": 84041,
+                "logo_path": "/nw4kyc29QRpNtFbdsBHkRSFavvt.png",
+                "name": "Pascal Pictures",
                 "origin_country": "US"
             }
         ],
@@ -1254,9 +3940,77 @@
                 "name": "United States of America"
             }
         ],
-        "release_date": "2022-07-06",
-        "revenue": 760000000,
-        "runtime": 119,
+        "release_date": "2021-12-15",
+        "revenue": 1916050941,
+        "runtime": 148,
+        "spoken_languages": [
+            {
+                "english_name": "English",
+                "iso_639_1": "en",
+                "name": "English"
+            },
+            {
+                "english_name": "Tagalog",
+                "iso_639_1": "tl",
+                "name": ""
+            }
+        ],
+        "status": "Released",
+        "tagline": "The Multiverse unleashed.",
+        "title": "Spider-Man: No Way Home",
+        "video": false,
+        "vote_average": 8.025,
+        "vote_count": 15947
+    },
+    {
+        "adult": false,
+        "backdrop_path": "/ml8YBTJq7UkALfI022FWscCQuQW.jpg",
+        "belongs_to_collection": {
+            "id": 751156,
+            "name": "Hocus Pocus Collection",
+            "poster_path": "/1w8K4Dt3WOyCPpe94HY0rA9UXUj.jpg",
+            "backdrop_path": "/ep3u73OsN6PSxed9TFJnWqjwrdO.jpg"
+        },
+        "budget": 30000000,
+        "genres": [
+            {
+                "id": 14,
+                "name": "Fantasy"
+            },
+            {
+                "id": 35,
+                "name": "Comedy"
+            },
+            {
+                "id": 10751,
+                "name": "Family"
+            }
+        ],
+        "homepage": "https://www.disneyplus.com/movies/hocus-pocus-2/4Q5cWHlnVCun",
+        "id": 642885,
+        "imdb_id": "tt11909878",
+        "original_language": "en",
+        "original_title": "Hocus Pocus 2",
+        "overview": "29 years since the Black Flame Candle was last lit, the 17th-century Sanderson sisters are resurrected, and they are looking for revenge. Now it's up to three high school students to stop the ravenous witches from wreaking a new kind of havoc on Salem before dawn on All Hallow's Eve.",
+        "popularity": 507.4,
+        "poster_path": "/7ze7YNmUaX81ufctGqt0AgHxRtL.jpg",
+        "production_companies": [
+            {
+                "id": 2,
+                "logo_path": "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
+                "name": "Walt Disney Pictures",
+                "origin_country": "US"
+            }
+        ],
+        "production_countries": [
+            {
+                "iso_3166_1": "US",
+                "name": "United States of America"
+            }
+        ],
+        "release_date": "2022-09-27",
+        "revenue": 0,
+        "runtime": 107,
         "spoken_languages": [
             {
                 "english_name": "English",
@@ -1265,15 +4019,15 @@
             }
         ],
         "status": "Released",
-        "tagline": "The one is not the only.",
-        "title": "Thor: Love and Thunder",
+        "tagline": "Back and more glorious than ever.",
+        "title": "Hocus Pocus 2",
         "video": false,
-        "vote_average": 6.726,
-        "vote_count": 4538
+        "vote_average": 7.549,
+        "vote_count": 1162
     },
     {
         "adult": false,
-        "backdrop_path": "/ttkibtcAjoilW1PbTIFy9U9YOdB.jpg",
+        "backdrop_path": "/pz7bGOUNJXyPKJ2GcJN6nhwBnCs.jpg",
         "belongs_to_collection": null,
         "budget": 0,
         "genres": [
@@ -1282,36 +4036,40 @@
                 "name": "Thriller"
             },
             {
-                "id": 28,
-                "name": "Action"
+                "id": 12,
+                "name": "Adventure"
+            },
+            {
+                "id": 27,
+                "name": "Horror"
             }
         ],
-        "homepage": "",
-        "id": 916719,
-        "imdb_id": "tt15438542",
+        "homepage": "https://www.beastmovie.com",
+        "id": 760741,
+        "imdb_id": "tt13223398",
         "original_language": "en",
-        "original_title": "Code Name Banshee",
-        "overview": "Caleb, a former government assassin in hiding, who resurfaces when his prot\u00e9g\u00e9, the equally deadly killer known as Banshee, discovers a bounty has been placed on Caleb's head.",
-        "popularity": 1531.732,
-        "poster_path": "/g29dShv0wHJUvif2KPq039imds5.jpg",
+        "original_title": "Beast",
+        "overview": "A recently widowed man and his two teenage daughters travel to a game reserve in South Africa. However, their journey of healing soon turns into a fight for survival when a bloodthirsty lion starts to stalk them.",
+        "popularity": 507.236,
+        "poster_path": "/xIGr7UHsKf0URWmyyd5qFMAq4d8.jpg",
         "production_companies": [
             {
-                "id": 75355,
-                "logo_path": "/avj80RsunqwDbOS6oLp4plRE5UQ.png",
-                "name": "Yale Productions",
+                "id": 33,
+                "logo_path": "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+                "name": "Universal Pictures",
                 "origin_country": "US"
             },
             {
-                "id": 121204,
-                "logo_path": "/vbtvY4IxgUZk713rkmoTO4MHIac.png",
-                "name": "BondIt Media Capital",
+                "id": 49968,
+                "logo_path": "/gz2hSoMkvMJdTMgCLFGRJErPwXY.png",
+                "name": "Will Packer Productions",
                 "origin_country": "US"
             },
             {
-                "id": 130900,
-                "logo_path": null,
-                "name": "Buffalo 8 Productions",
-                "origin_country": "US"
+                "id": 62693,
+                "logo_path": "/i8mR4YqKiyDvxwmpSqzly9tQ31f.png",
+                "name": "RVK Studios",
+                "origin_country": "IS"
             }
         ],
         "production_countries": [
@@ -1320,72 +4078,65 @@
                 "name": "United States of America"
             }
         ],
-        "release_date": "2022-07-01",
-        "revenue": 0,
+        "release_date": "2022-08-11",
+        "revenue": 56000000,
         "runtime": 93,
         "spoken_languages": [
+            {
+                "english_name": "Spanish",
+                "iso_639_1": "es",
+                "name": "Espa\u00f1ol"
+            },
             {
                 "english_name": "English",
                 "iso_639_1": "en",
                 "name": "English"
-            },
-            {
-                "english_name": "German",
-                "iso_639_1": "de",
-                "name": "Deutsch"
             }
         ],
         "status": "Released",
-        "tagline": "Two assassins. One secret. No turning back.",
-        "title": "Code Name Banshee",
+        "tagline": "Fight for family.",
+        "title": "Beast",
         "video": false,
-        "vote_average": 5.012,
-        "vote_count": 42
+        "vote_average": 6.99,
+        "vote_count": 830
     },
     {
         "adult": false,
-        "backdrop_path": "/tSxbUnrnWlR5dQvUgqMI7sACmFD.jpg",
+        "backdrop_path": "/pUrabCPfEkAXdyml0FZ07rYwur0.jpg",
         "belongs_to_collection": null,
         "budget": 0,
         "genres": [
             {
-                "id": 14,
-                "name": "Fantasy"
+                "id": 35,
+                "name": "Comedy"
             },
             {
-                "id": 28,
-                "name": "Action"
+                "id": 10751,
+                "name": "Family"
             },
             {
-                "id": 18,
-                "name": "Drama"
+                "id": 16,
+                "name": "Animation"
             }
         ],
-        "homepage": "https://www.netflix.com/title/80218885",
-        "id": 779782,
-        "imdb_id": "tt2935622",
+        "homepage": "https://www.netflix.com/title/81260654",
+        "id": 1034470,
+        "imdb_id": "tt22695814",
         "original_language": "en",
-        "original_title": "The School for Good and Evil",
-        "overview": "Best friends Sophie and Agatha navigate an enchanted school for young heroes and villains \u2014 and find themselves on opposing sides of the battle between good and evil.",
-        "popularity": 1489.276,
-        "poster_path": "/6oZeEu1GDILdwezmZ5e2xWISf1C.jpg",
-        "production_companies": [
-            {
-                "id": 61791,
-                "logo_path": "/xyiy5wZdmnxVViRa8oRMXQQvT6F.png",
-                "name": "Feigco Entertainment",
-                "origin_country": "US"
-            }
-        ],
+        "original_title": "Barbie Epic Road Trip",
+        "overview": "In this interactive adventure, Barbie goes on a cross-country trek with friends and makes big decisions about the future. Which dream will she choose?",
+        "popularity": 502.735,
+        "poster_path": "/a2a1Y6a6UriLJ0U7cGjphPOWQPK.jpg",
+        "production_companies": [],
         "production_countries": [
             {
                 "iso_3166_1": "US",
                 "name": "United States of America"
             }
         ],
-        "release_date": "2022-10-19",
+        "release_date": "2022-10-25",
         "revenue": 0,
-        "runtime": 146,
+        "runtime": 37,
         "spoken_languages": [
             {
                 "english_name": "English",
@@ -1394,10 +4145,10 @@
             }
         ],
         "status": "Released",
-        "tagline": "There are two sides to every story.",
-        "title": "The School for Good and Evil",
+        "tagline": "",
+        "title": "Barbie Epic Road Trip",
         "video": false,
-        "vote_average": 7.294,
-        "vote_count": 508
+        "vote_average": 7.7,
+        "vote_count": 5
     }
 ]

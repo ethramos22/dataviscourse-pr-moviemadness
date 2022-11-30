@@ -36,7 +36,7 @@ class DistributionChart {
     drawChart() {
         let _this = this;
         const currentDisplay = this.globalMovieData.displayedMovies
-        const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
+        const groupedData = d3.group(currentDisplay, d => d.genres.length === 0 ? 'None' : d.genres[0].name)
         let data = groupedData; 
         const tooltip = d3.select('#tooltip-barchart');
         // Scales
