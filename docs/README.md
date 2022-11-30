@@ -22,7 +22,7 @@ The movie list displays a few data points about each movie, most notably:
 
 Movies can be sorted by each column value. Also, when a row is selected, the detail card and dotplot are updated to display the selected movie.
 
-// INSERT PICTURE OF MOVIE LIST
+![](docs/img/movielist.png?raw=true "Movie List")
 
 ### Detail Card
 The detail card displays more detailed information on the selected movie
@@ -41,8 +41,7 @@ The dotplot plots movies given two attributes. This visualization includes:
 - Clicking on a circle selects it in the movie list and displays it on the detail card
 - Using the brush to select a group of circles updates the movies in the list as well as the distribution chart
 
-//INSERT PICTURE OF DOTPLOT
-
+![](docs/img/dotplot.png?raw=true "Dotplot")
 
 ## Data
 The dataset was retrieved from [TMDB v3](https://developers.themoviedb.org/3) using the data retrieval python script located in `docs/data/` 
