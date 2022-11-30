@@ -19,13 +19,12 @@ class DistributionChart {
         var tooltip = d3.select('#overview-chart').append('div')
             .style('visibility', 'hidden')
             .style('position', 'absolute')
-            .style('background', '#fff')
             .style('border-radius', 5)
             .style('padding', "0.6em 1em")
             .style('box-shadow', '0 6px 8px rgba(52, 73, 94, .2), 0 1px 1px rgba(52, 73, 94, 0.1)')
             .style('z-index', 10)
             .style('text-align', 'center')
-            .classed('tooltip', true)
+            .classed('card-alt', true)
             .attr('id', 'tooltip-barchart');
         tooltip.append('div')
             .attr('id', 'movie-amount');
@@ -52,14 +51,12 @@ class DistributionChart {
         
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
-            // Outline Bar
-            // d3.select(this).attr('fill', 'rgb(214, 148, 148)');
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
                 .text(`${percentage} of movies`);
             tooltip.select('#movies')
-                .text(datum[1].map(d => d.title).join(' '));
+                .text(datum[1].map(d => d.title).join(', '));
             // Set position
             const x = xScale(datum[0]) - _this.MARGIN.left;
             const y = yScale(datum[1].length) - (2*_this.MARGIN.bottom);
