@@ -52,7 +52,6 @@ class DistributionChart {
         
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
-            // Outline Bar
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
@@ -104,8 +103,6 @@ class DistributionChart {
         let bars = d3.select('#bars')
             .selectAll('rect')
             .data(data)
-
-        console.log('redrawing bars');
         
         bars.join('rect')
             .on('mouseenter', onMouseEnter)
