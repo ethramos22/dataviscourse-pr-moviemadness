@@ -1,0 +1,11 @@
+.bar {
+    fill: lightgrey;
+}
+
+.bar:hover {
+    fill: rgb(214, 148, 148);
+}
+
+#selected-bar {
+    fill: rgb(220, 119, 119);
+}
