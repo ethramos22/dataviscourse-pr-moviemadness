@@ -209,7 +209,7 @@ class Dotplot {
 
                 return d.text + ' in millions'
             })
-            .attr('fill', 'white')
+            .attr('fill', 'lightgrey')
             .attr('transform', `translate(20, ${this.yAxisData.key === 'vote_average' ? this.CHART_HEIGHT/2 :this.CHART_HEIGHT/2 + this.MARGIN.top + 25}) rotate(-90)`);
 
         // X axis label
@@ -225,7 +225,7 @@ class Dotplot {
             })
             .attr('x', d => this.xAxisData.key === 'vote_average' ? this.CHART_WIDTH/2 + 10 :this.CHART_WIDTH/2 - 25)
             .attr('y', this.CHART_HEIGHT)
-            .attr('fill', 'white');
+            .attr('fill', 'lightgrey');
         
         // Chart title
         d3.select('#dotplot-title').selectAll('text')
@@ -234,7 +234,7 @@ class Dotplot {
             .text(d => this.chartTitle)
             .attr('x', this.CHART_WIDTH/2 - 25)
             .attr('y', 15)
-            .attr('fill', 'white')
+            .attr('fill', 'lightgrey')
             .attr('font-size', 18);
     }
 
