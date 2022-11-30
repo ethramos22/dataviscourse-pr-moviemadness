@@ -52,8 +52,6 @@ class DistributionChart {
         
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
-            // Outline Bar
-            // d3.select(this).attr('fill', 'rgb(214, 148, 148)');
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
@@ -115,7 +113,8 @@ class DistributionChart {
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', xScale.bandwidth())
             .attr('height', d => yScale(0) - yScale(d[1].length))
-            .attr('class', 'bar');
+            .attr('class', 'bar')
+            .attr('id', null);
 
             // Tick rotate: https://bl.ocks.org/mbostock/4403522
         xAxis.selectAll('.tick text')
