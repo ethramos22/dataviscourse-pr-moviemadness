@@ -4,27 +4,19 @@
 
 class DistributionChart {
     constructor(globalMovieData) {
-        console.log('Start Constructor of Distribution Chart', this.globalMovieData);
         this.globalMovieData = globalMovieData;
         this.clicked = false;
         this.CHART_WIDTH = 500;
         this.CHART_HEIGHT = 375;
-        this.MARGIN = {top: 25, right: 10, bottom: 75, left: 75}
-
+        this.MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
         this.ANIMATION_DUATION = 300;
-        // Set Color Scale with the data keys
-        let groupedData = d3.group(this.globalMovieData.displayedMovies, d => d.genres[0].name);
-        this.colorScale = d3.scaleOrdinal()
-            .domain(groupedData.keys())
-            .range(['#570408', '#fa4d56', '#012749',
-                '#198038', '#6929c4', '#9f1853', '#005d5d',
-                '#002d9c', '#8a3800', '#1192e8', '#ee538b',
-                '#b28600', '#a56eff', '#009d9a']);
-        this.setupChart();
+        
+        this.setupTooltip();
+        this.drawLabelsAndTitles();
         this.drawChart();
     }
 
-    setupChart() {
+    setupTooltip() {
         var tooltip = d3.select('#overview-chart').append('div')
             .style('visibility', 'hidden')
             .style('position', 'absolute')
@@ -43,10 +35,7 @@ class DistributionChart {
     }
 
     drawChart() {
-        const MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
-        this.drawLabelsAndTitles();
         let _this = this;
-        // TODO: Fix when movies have multiple genres
         const currentDisplay = this.globalMovieData.displayedMovies
         const groupedData = d3.group(currentDisplay, d => d.genres[0].name);
         let data = groupedData; 
@@ -54,11 +43,12 @@ class DistributionChart {
         // Scales
         const xScale = d3.scaleBand()
             .domain(groupedData.keys())
-            .range([MARGIN.left, this.CHART_WIDTH - MARGIN.right])
+            .range([this.MARGIN.left, this.CHART_WIDTH - this.MARGIN.right])
             .padding(.1);
+        
         const yScale = d3.scaleLinear()
             .domain([0, d3.max(groupedData, d => d[1].length)])
-            .range([this.CHART_HEIGHT - MARGIN.bottom - MARGIN.top, 0])
+            .range([this.CHART_HEIGHT - this.MARGIN.bottom - this.MARGIN.top, 0])
             .nice();
         
         function onMouseEnter(e, datum) {
@@ -72,8 +62,8 @@ class DistributionChart {
             tooltip.select('#movies')
                 .text(datum[1].map(d => d.title).join(' '));
             // Set position
-            const x = xScale(datum[0]) - MARGIN.left;
-            const y = yScale(datum[1].length) - 2*MARGIN.bottom;
+            const x = xScale(datum[0]) - _this.MARGIN.left;
+            const y = yScale(datum[1].length) - (2*_this.MARGIN.bottom);
             tooltip.style('top', y + 'px')
             .style('left', x+'px');
         }
@@ -103,12 +93,12 @@ class DistributionChart {
 
         // X Axis
         let xAxis = d3.select('#x-axis')
-            .attr('transform', `translate(0,${this.CHART_HEIGHT - MARGIN.bottom})`)
+            .attr('transform', `translate(0,${this.CHART_HEIGHT - this.MARGIN.bottom})`)
             .call(d3.axisBottom(xScale));
         // Y Axis
         d3.select('#y-axis')
             .call(d3.axisLeft(yScale))
-            .attr('transform', `translate(${MARGIN.left}, ${MARGIN.top})`);
+            .attr('transform', `translate(${this.MARGIN.left}, ${this.MARGIN.top})`);
         // Draw Chart
         let bars = d3.select('#bars')
             .selectAll('rect')
@@ -120,7 +110,7 @@ class DistributionChart {
             .on('click', onMouseClick)
             .transition().duration(this.ANIMATION_DUATION)
             .attr('x', d => xScale(d[0]))
-            .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + MARGIN.top)
+            .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', xScale.bandwidth())
             .attr('height', d => yScale(0) - yScale(d[1].length))
             .attr('fill', 'lightgrey');
