@@ -18,11 +18,11 @@ The data visualization contains 4 distinct components:
 ### Movie List
 The movie list displays a few data points about each movie, most notably:
 - The rating circle - whose outer ring circumference and color scale to the rating value
-- The revenue bar - whose rectangles scale to revenue between $1 million and $1 billion. Movies with revenue outside the range are marked with an asterik and offer more detail when hovered over.
+- The revenue bar - whose rectangles scale to revenue between $1 million and $1 billion. Movies with revenue outside the range are marked with an asterik and offer more detail about the revenue on the detail card.
 
 Movies can be sorted by each column value. Also, when a row is selected, the detail card and dotplot are updated to display the selected movie.
 
-![](docs/img/movielist.png?raw=true "Movie List")
+![](/docs/img/movielist.png?raw=true "Movie List")
 
 ### Detail Card
 The detail card displays more detailed information on the selected movie
@@ -41,7 +41,7 @@ The dotplot plots movies given two attributes. This visualization includes:
 - Clicking on a circle selects it in the movie list and displays it on the detail card
 - Using the brush to select a group of circles updates the movies in the list as well as the distribution chart
 
-![](docs/img/dotplot.png?raw=true "Dotplot")
+![](/docs/img/dotplot.png?raw=true "Dotplot")
 
 ## Data
 The dataset was retrieved from [TMDB v3](https://developers.themoviedb.org/3) using the data retrieval python script located in `docs/data/` 
