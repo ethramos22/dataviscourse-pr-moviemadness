@@ -5,7 +5,6 @@
 class DistributionChart {
     constructor(globalMovieData) {
         this.globalMovieData = globalMovieData;
-        this.clicked = false;
         this.CHART_WIDTH = 500;
         this.CHART_HEIGHT = 375;
         this.MARGIN = { left: 50, bottom: 20, top: 20, right: 20 };
@@ -54,7 +53,7 @@ class DistributionChart {
         function onMouseEnter(e, datum) {
             tooltip.style('visibility', 'visible');
             // Outline Bar
-            d3.select(this).attr('fill', 'rgb(214, 148, 148)');
+            // d3.select(this).attr('fill', 'rgb(214, 148, 148)');
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
@@ -70,22 +69,25 @@ class DistributionChart {
 
         function onMouseLeave(e) {
             tooltip.style('visibility', 'hidden');
-            if (!_this.clicked)
-                d3.select(this).attr('fill', 'lightgrey');
-            _this.clicked = false;
         }
 
         function onMouseClick(e, datum) {
-            if (_this.clicked) 
+
+            // check if selected was clicked again
+            let clickedSelected = d3.select(this).attr('id') === 'selected-bar';
+
+            // reset color styling on previously selected bar
+            d3.select('#selected-bar').attr('id', null);
+
+            if (clickedSelected) {
                 _this.globalMovieData.displayedMovies = currentDisplay;
-            else
+
+            } 
+            else {
                 _this.globalMovieData.displayedMovies = datum[1];
-            _this.clicked = true;
-            let bars = d3.select('#bars').selectAll('rect');
-            console.log(bars);
-            bars.attr('fill', 'lightgrey');
-            
-            d3.select(e.path[0]).attr('fill', 'rgb(220, 119, 119)');
+                // style newly selected bar
+                 d3.select(this).attr('id', 'selected-bar')                
+            }
             // Update charts
             _this.globalMovieData.dotplot.updateChart();
             _this.globalMovieData.movieTable.updateMovieList();
@@ -113,8 +115,9 @@ class DistributionChart {
             .attr('y', d => this.CHART_HEIGHT - (this.CHART_HEIGHT - yScale(d[1].length)) + this.MARGIN.top)
             .attr('width', xScale.bandwidth())
             .attr('height', d => yScale(0) - yScale(d[1].length))
-            .attr('fill', 'lightgrey');
-        // Tick rotate: https://bl.ocks.org/mbostock/4403522
+            .attr('class', 'bar');
+
+            // Tick rotate: https://bl.ocks.org/mbostock/4403522
         xAxis.selectAll('.tick text')
             .attr("y", 0)
             .attr("x", 9)
