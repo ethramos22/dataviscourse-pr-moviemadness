@@ -8,7 +8,7 @@
 ## General Information
 This data visualization consolidates and displays data about _now playing_, _popular_, and _top rated_ movies, to help users easily understand how a movie's quantitative attributes (revenue, budget, runtime, etc.) are related and how they compare to other movies.
 
-// INSERT PICTURE OF WEBSITE HERE
+![](/docs/img/website.png?raw=true "Website")
 
 The project website is hosted using GitHub pages by serving the `docs/index.html` file, which imports a number of javascript files from the `docs/js` directory - one for each data visualization component. Each js file uses the `d3.js` library to draw and manipulate the DOM.
 
@@ -32,7 +32,7 @@ The detail card displays more detailed information on the selected movie
 ### Distribution Chart
 The distribution chart shows how many movies are in each genre
 
-//INSERT PICTURE OF CHART
+![](/docs/img/distributionchart.png?raw=true "Distribution Chart")
 
 ### Dotplot
 The dotplot plots movies given two attributes. This visualization includes:
