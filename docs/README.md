@@ -27,7 +27,7 @@ Movies can be sorted by each column value. Also, when a row is selected, the det
 ### Detail Card
 The detail card displays more detailed information on the selected movie
 
-// INSERT PICTURE OF DETAIL CARD
+![](/docs/img/detailcard.png?raw=true "Detail Card")
 
 ### Distribution Chart
 The distribution chart shows how many movies are in each genre
