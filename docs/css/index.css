@@ -66,6 +66,7 @@ h4 {
 
 #movie-poster {
     width: 20%;
+    height: 68%;
     text-align: center;
 }
 
@@ -94,10 +95,20 @@ h4 {
 .card {
     flex-wrap: wrap;
     color: #adadad;
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
     background: #17191c;
     box-shadow: inset -5px -5px 10px #141618, inset 5px 5px 10px #1a1c20;
+    position: relative;
+}
+
+.card-alt {
+    flex-wrap: wrap;
+    color: #adadad;
+    padding: 15px;
+    border-radius: 15px;
+    background: #33363c;
+    
     position: relative;
 }
 

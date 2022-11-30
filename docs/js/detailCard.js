@@ -15,13 +15,14 @@ class MovieDetailCard {
         let selection = d3.select('#movie-poster');
         selection.append('div')
             .attr('id', 'poster-title');
+        selection.append('div')
+            .attr('id', 'poster-genre');
         // Setup Subheader
         let subhead = selection.append('div')
-            .attr('id', 'poster-subhead');
+            .attr('id', 'poster-subhead')
+            .classed('card-alt', true);
         subhead.append('div')
             .attr('id', 'poster-runtime');
-        subhead.append('div')
-            .attr('id', 'poster-genre');
         subhead.append('div')
             .attr('id', 'poster-revenue');
         // Setup Image section
@@ -32,12 +33,7 @@ class MovieDetailCard {
             .attr('id', 'poster-image');
         // Overview    
         selection.append('div')
-            .attr('id', 'poster-overview');    
-        // Footing
-        let footing = selection.append('div')
-            .attr('id', 'poster-footing');
-        footing.append('div')
-            .attr('id', 'poster-related');
+            .attr('id', 'poster-overview');  
     }
 
     drawPoster() {
@@ -58,7 +54,7 @@ class MovieDetailCard {
             .text(d.genres.map(d => d.name).toString());
         // TODO: format revenue
         d3.select('#poster-revenue')
-            .text(d.revenue == "0" ? "" : '$' + d3.format("~s")(d.revenue));
+            .text(d.revenue == "0" ? "" : '$' + d3.format(".3~s")(d.revenue));
         // Image of poster
         d3.select('#poster-image')
             .attr('href', base_image_url + d.poster_path);
