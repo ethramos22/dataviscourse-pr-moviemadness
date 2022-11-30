@@ -1,6 +1,9 @@
 /* CSS for Movie Poster */
 #poster-title {
     font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: x-large;
 }
 
 #poster-body {
@@ -10,7 +13,22 @@
 #poster-subhead {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#poster-svg {
+    margin-bottom: 20px;
+}
+
+#poster-genre {
+    margin-bottom: 10px;
+}
+
+#poster-overview {
+    overflow-wrap: break-word;
+    height: 15%;
+    overflow: auto;
 }
 
 /* Classes */
