@@ -18,6 +18,7 @@ class DistributionChart {
     setupTooltip() {
         var tooltip = d3.select('#overview-chart').append('div')
             .style('visibility', 'hidden')
+            .style('opacity', 0.9)
             .style('position', 'absolute')
             .style('border-radius', 5)
             .style('padding', "0.6em 1em")
@@ -29,7 +30,7 @@ class DistributionChart {
         tooltip.append('div')
             .attr('id', 'movie-amount');
         tooltip.append('div')
-            .attr('id', 'movies');
+            .attr('id', 'movie-percentage');
     }
 
     drawChart() {
@@ -54,9 +55,10 @@ class DistributionChart {
             // Edit Tooltip
             let percentage = d3.format(".0%")(datum[1].length/currentDisplay.length);
             tooltip.select('#movie-amount')
+                .text(datum[1].length);
+            tooltip.select('#movie-percentage')
                 .text(`${percentage} of movies`);
-            tooltip.select('#movies')
-                .text(datum[1].map(d => d.title).join(', '));
+            //tooltip.select('#movies').text(datum[1].map(d => d.title).join(', '));
             // Set position
             const x = xScale(datum[0]) - _this.MARGIN.left;
             const y = yScale(datum[1].length) - (2*_this.MARGIN.bottom);

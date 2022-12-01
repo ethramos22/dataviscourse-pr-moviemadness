@@ -9,3 +9,8 @@
 #selected-bar {
     fill: rgb(220, 119, 119);
 }
+
+#movie-amount {
+    font-weight: bold;
+    font-size: large;
+}
