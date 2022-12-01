@@ -44,7 +44,7 @@ The dotplot plots movies given two attributes. This visualization includes:
 ![](/docs/img/dotplot.png?raw=true "Dotplot")
 
 ## Data
-The dataset was retrieved from [TMDB v3](https://developers.themoviedb.org/3) using the data retrieval python script located in `docs/data/` 
+The dataset was retrieved from [TMDB v3](https://developers.themoviedb.org/3) using the data retrieval python script located in `docs/data/`. There are ~180 datapoints representing the  _now playing_, _popular_, and _top rated_ movies on Wednesday November 30, 2022.
 
 ### Data Format
 The data consists of an array of movie object, that contain the following fields.
