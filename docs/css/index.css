@@ -108,6 +108,7 @@ p {
 
 .card-alt {
     flex-wrap: wrap;
+    /* flex-direction: column; */
     color: #adadad;
     padding: 15px;
     border-radius: 15px;
