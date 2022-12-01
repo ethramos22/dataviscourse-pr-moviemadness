@@ -147,7 +147,9 @@ class Dotplot {
                         if(_this.yAxisData.key == 'vote_average')
                             return label + d[_this.yAxisData.key]
 
-
+                        if(!d[_this.yAxisData.key]){
+                            return label + 'Uknown'
+                        }
                         return label + d3.format("$,")(d[_this.yAxisData.key]);
                     })
                     .attr('x', cx)
@@ -166,6 +168,9 @@ class Dotplot {
                         if(_this.xAxisData.key == 'vote_average')
                             return label + d[_this.xAxisData.key]
 
+                            if(!d[_this.yAxisData.key]){
+                                return label + 'Uknown'
+                            }
 
                         return label + d3.format("$,")(d[_this.xAxisData.key]);
                     })

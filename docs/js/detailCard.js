@@ -21,12 +21,14 @@ class MovieDetailCard {
         let subhead = selection.append('div')
             .attr('id', 'poster-subhead')
             .classed('card-alt', true);
-        subhead.append('div')
+        let left = subhead.append('div')
             .attr('id', 'poster-runtime');
-        subhead.append('div')
+        let right = subhead.append('div');
+        
+        right.append('div')
             .attr('id', 'poster-revenue');
         // Budget
-        selection.append('div')
+        right.append('div')
             .attr('id', 'poster-budget');
         // Setup Image section
         selection.append('svg')
@@ -57,10 +59,10 @@ class MovieDetailCard {
             .text(d.genres.map(d => d.name).toString());
         // Revenue
         d3.select('#poster-revenue')
-            .text(d.revenue == "0" ? "" : 'Revenue: $' + d3.format(".3~s")(d.revenue));
+            .text(d.revenue == "" ? "Revenue: Unknown" : 'Revenue: $' + d3.format(".3~s")(d.revenue));
         // Budget
         d3.select('#poster-budget')
-            .text(d.budget == "0" ? "" : 'Budget: $' + d3.format(".3~s")(d.budget));
+            .text(d.budget == "0" ? "Budget: Unknown" : 'Budget: $' + d3.format(".3~s")(d.budget));
         // Image of poster
         d3.select('#poster-image')
             .attr('href', base_image_url + d.poster_path);
